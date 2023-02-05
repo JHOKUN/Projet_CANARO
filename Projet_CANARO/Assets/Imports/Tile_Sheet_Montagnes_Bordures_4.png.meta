@@ -1,0 +1,992 @@
+fileFormatVersion: 2
+guid: 9da5c6c6b1dd08444b8fdccde593bd3e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d576beeed983564fa2319b930ff9d36
+      internalID: -1612434299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4341ead9f148d488acddfe5515c7ee
+      internalID: 1516036938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3755175c9fc16041bf8a7a264324ef7
+      internalID: 1779521853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7975f2c1244cbc478b29c0416954874
+      internalID: -1718311027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e368b135257fcfc47a09e2e842a01a39
+      internalID: -1353456189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00d7b0243fed7248bd246ef9b16ffe8
+      internalID: -1599706249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88f9c8df6a93a34d8a4f5a52a49b5e7
+      internalID: 2052775045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab40a3c48d61294685d55d383aaf3d9
+      internalID: 610779032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ae308ee850b774f995eb54db847bbb
+      internalID: 2104484069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f6292d4f0772b4daaf1bb455a85c18
+      internalID: 2056238128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2131ddca22f457248b4104c3bd51d3be
+      internalID: -160363637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1841761fa6265074c92ddf9d09472dd2
+      internalID: -1581431829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3eb00ab29091b42a49740d066bc99a
+      internalID: -1525035353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454e3b66dafc01e48b14b2d690b8cda1
+      internalID: -228238976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5cbc3bfa52bda42b708bdae65c88a8
+      internalID: -290400144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44973e92dd641bb4cb376c5601a6e009
+      internalID: -2110925563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63406aa0bb662b64d9fc193c2c189ffc
+      internalID: 1281526894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_17
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26604b9aeed6f6e4d94933ea55eb0ebf
+      internalID: -913679856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_18
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7310bce247ad9a849a936e56fa02b630
+      internalID: 87623933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecde25c2bbee5f4196f2f4f348c5258
+      internalID: 534652838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8a349b851334744b5d13bd37e16732
+      internalID: 1883403175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_21
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807c7d7b0ea1d534aba43b4be4d7fd85
+      internalID: -586591900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a0a64287e15ae4083f7927f05cabce
+      internalID: 1069683855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_23
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b278bd2a84f7c4c8aa72f51d1d1a12
+      internalID: -1748165345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33ede2c73de1744694cba76efbc2b46
+      internalID: -1129029035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f78b3882e60b764e85caf802567f105
+      internalID: 2099388513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdcf70404a997d4b8228e9596a98bcb
+      internalID: -691503249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc20c7ad77740a04780d8d01826a7413
+      internalID: 1772316448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c966857cf4a6f8943a2d2c71ede5569b
+      internalID: 1015124170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e121f000e31d9e45bbc005817fd93cb
+      internalID: 319336261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4a0edfee500f542adb828eae2d9743
+      internalID: -1626956579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_31
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e49b05cb0f5734da398f706e6c4c55
+      internalID: -100311733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_32
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30229ca714032e41bd8025773bc3b4b
+      internalID: 2068909074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_33
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f18c6a5d62460147a1f67ca23b192fa
+      internalID: -1674973625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_34
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16c7eed4709b864cba3444c6c023bd3
+      internalID: 2033511538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b2f981e7d8dd44a9d83587b47dc4d7
+      internalID: 1010402377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_36
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a07f5380076974ba4e7133ea62da16
+      internalID: -1942036083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_37
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414d5cc0daad96249bb261e258ffe999
+      internalID: 119125305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Sheet_Montagnes_Bordures_4_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769c4aa747c808047addf82b96d51eed
+      internalID: -905392323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tile_Sheet_Montagnes_Bordures_4_16: 1281526894
+      Tile_Sheet_Montagnes_Bordures_4_15: -2110925563
+      Tile_Sheet_Montagnes_Bordures_4_33: -1674973625
+      Tile_Sheet_Montagnes_Bordures_4_36: -1942036083
+      Tile_Sheet_Montagnes_Bordures_4_5: -1599706249
+      Tile_Sheet_Montagnes_Bordures_4_11: -1581431829
+      Tile_Sheet_Montagnes_Bordures_4_17: -913679856
+      Tile_Sheet_Montagnes_Bordures_4_23: -1748165345
+      Tile_Sheet_Montagnes_Bordures_4_20: 1883403175
+      Tile_Sheet_Montagnes_Bordures_4_14: -290400144
+      Tile_Sheet_Montagnes_Bordures_4_2: 1779521853
+      Tile_Sheet_Montagnes_Bordures_4_8: 2104484069
+      Tile_Sheet_Montagnes_Bordures_4_34: 2033511538
+      Tile_Sheet_Montagnes_Bordures_4_12: -1525035353
+      Tile_Sheet_Montagnes_Bordures_4_6: 2052775045
+      Tile_Sheet_Montagnes_Bordures_4_9: 2056238128
+      Tile_Sheet_Montagnes_Bordures_4_27: 1772316448
+      Tile_Sheet_Montagnes_Bordures_4_13: -228238976
+      Tile_Sheet_Montagnes_Bordures_4_24: -1129029035
+      Tile_Sheet_Montagnes_Bordures_4_28: 1015124170
+      Tile_Sheet_Montagnes_Bordures_4_19: 534652838
+      Tile_Sheet_Montagnes_Bordures_4_4: -1353456189
+      Tile_Sheet_Montagnes_Bordures_4_7: 610779032
+      Tile_Sheet_Montagnes_Bordures_4_21: -586591900
+      Tile_Sheet_Montagnes_Bordures_4_22: 1069683855
+      Tile_Sheet_Montagnes_Bordures_4_26: -691503249
+      Tile_Sheet_Montagnes_Bordures_4_38: -905392323
+      Tile_Sheet_Montagnes_Bordures_4_37: 119125305
+      Tile_Sheet_Montagnes_Bordures_4_31: -100311733
+      Tile_Sheet_Montagnes_Bordures_4_25: 2099388513
+      Tile_Sheet_Montagnes_Bordures_4_0: -1612434299
+      Tile_Sheet_Montagnes_Bordures_4_18: 87623933
+      Tile_Sheet_Montagnes_Bordures_4_29: 319336261
+      Tile_Sheet_Montagnes_Bordures_4_3: -1718311027
+      Tile_Sheet_Montagnes_Bordures_4_10: -160363637
+      Tile_Sheet_Montagnes_Bordures_4_32: 2068909074
+      Tile_Sheet_Montagnes_Bordures_4_35: 1010402377
+      Tile_Sheet_Montagnes_Bordures_4_30: -1626956579
+      Tile_Sheet_Montagnes_Bordures_4_1: 1516036938
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
