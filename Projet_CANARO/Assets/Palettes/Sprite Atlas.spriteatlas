@@ -45,11 +45,17 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
+    - {fileID: 2800000, guid: 2b27b1d2e4719df4ca9c1625737654e0, type: 3}
+    - {fileID: 2800000, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 1856782722, guid: 2b27b1d2e4719df4ca9c1625737654e0, type: 3}
+  - {fileID: -1725497878, guid: 2b27b1d2e4719df4ca9c1625737654e0, type: 3}
+  - {fileID: 901846422, guid: 2b27b1d2e4719df4ca9c1625737654e0, type: 3}
+  - {fileID: -2140863027, guid: 2b27b1d2e4719df4ca9c1625737654e0, type: 3}
   - {fileID: 1608335529, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
   - {fileID: 2137321140, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
   - {fileID: -1243178115, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
@@ -136,7 +142,26 @@ SpriteAtlas:
   - {fileID: -731322995, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
   - {fileID: 1584115539, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
   - {fileID: -2016628363, guid: 351af5d39ba92b74495321c0641ebb2b, type: 3}
+  - {fileID: -1164892027, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -1333697988, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 599654861, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -1654354319, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 1907011877, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -1842171681, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -457239190, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 1999210805, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -741616653, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -2080375890, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: -1801335738, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 547949802, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 640521088, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 2064356205, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
+  - {fileID: 1220084158, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Tile_Sheet_Montagnes_Bordure_1_1
+  - Tile_Sheet_Montagnes_Bordure_1_0
+  - Tile_Sheet_Montagnes_Bordure_1_3
+  - Tile_Sheet_Montagnes_Bordure_1_2
   - Tile_Sheet_Plaines_From_GIF_2_80
   - Tile_Sheet_Plaines_From_GIF_2_81
   - Tile_Sheet_Plaines_From_GIF_2_82
@@ -223,6 +248,21 @@ SpriteAtlas:
   - Tile_Sheet_Plaines_From_GIF_2_23
   - Tile_Sheet_Plaines_From_GIF_2_20
   - Tile_Sheet_Plaines_From_GIF_2_21
+  - Tile_Sheet_Chemin_Et_Fleur_1_8
+  - Tile_Sheet_Chemin_Et_Fleur_1_9
+  - Tile_Sheet_Chemin_Et_Fleur_1_2
+  - Tile_Sheet_Chemin_Et_Fleur_1_3
+  - Tile_Sheet_Chemin_Et_Fleur_1_0
+  - Tile_Sheet_Chemin_Et_Fleur_1_1
+  - Tile_Sheet_Chemin_Et_Fleur_1_6
+  - Tile_Sheet_Chemin_Et_Fleur_1_7
+  - Tile_Sheet_Chemin_Et_Fleur_1_4
+  - Tile_Sheet_Chemin_Et_Fleur_1_5
+  - Tile_Sheet_Chemin_Et_Fleur_1_11
+  - Tile_Sheet_Chemin_Et_Fleur_1_10
+  - Tile_Sheet_Chemin_Et_Fleur_1_13
+  - Tile_Sheet_Chemin_Et_Fleur_1_12
+  - Tile_Sheet_Chemin_Et_Fleur_1_14
   m_RenderDataMap: {}
   m_Tag: Sprite Atlas
   m_IsVariant: 0
