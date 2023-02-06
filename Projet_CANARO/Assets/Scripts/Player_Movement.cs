@@ -5,11 +5,18 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     public float Move_Speed = 5f;
-
     public Rigidbody2D rb;
-
+    public Spawn_Point_Definer Start_Position;
 
    Vector2 Movement;
+
+    void Start()
+    {
+
+        transform.position = Start_Position.Spawn_Point_Value;
+
+    }
+
 
     void Update()
     {
