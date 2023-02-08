@@ -31,6 +31,6 @@ public class Player_Movement : MonoBehaviour
         rb.MovePosition(rb.position + Movement * Move_Speed * Time.fixedDeltaTime);
 
         // ici aura lieu le mouvement
-
+        
     }
 }
