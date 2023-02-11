@@ -180,6 +180,10 @@ SpriteAtlas:
   - {fileID: 1854647174, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
   - {fileID: -2076719062, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
   - {fileID: 911601667, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
+  - {fileID: -1730542171, guid: 7032fd89224574b47889a09fdf2bf61a, type: 3}
+  - {fileID: 595545442, guid: 7032fd89224574b47889a09fdf2bf61a, type: 3}
+  - {fileID: -1010822859, guid: 7032fd89224574b47889a09fdf2bf61a, type: 3}
+  - {fileID: -542479733, guid: 7032fd89224574b47889a09fdf2bf61a, type: 3}
   - {fileID: -2009847774, guid: cdcb50a9d52ee174a8de1c68ec7fa516, type: 3}
   - {fileID: 1277160052, guid: cdcb50a9d52ee174a8de1c68ec7fa516, type: 3}
   - {fileID: 1239881234, guid: cdcb50a9d52ee174a8de1c68ec7fa516, type: 3}
@@ -361,6 +365,10 @@ SpriteAtlas:
   - Violet_House_2_Projet_CANARO_4
   - Violet_House_2_Projet_CANARO_3
   - Violet_House_2_Projet_CANARO_2
+  - Tile_House_Interior_Projet_CANARO_CORNER_2_3
+  - Tile_House_Interior_Projet_CANARO_CORNER_2_2
+  - Tile_House_Interior_Projet_CANARO_CORNER_2_1
+  - Tile_House_Interior_Projet_CANARO_CORNER_2_0
   - Tile_Sheet_Montagnes_Bordures_5_28
   - Tile_Sheet_Montagnes_Bordures_5_29
   - Tile_Sheet_Montagnes_Bordures_5_24
