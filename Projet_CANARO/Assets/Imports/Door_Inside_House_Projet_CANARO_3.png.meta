@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e2baf5c5987b9d42acc6a22ff2fdaac
+guid: cde6c662b9de41c49904e7844ab9692f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door_Inside_House__Projet_CANARO_2_0
+      name: Door_Inside_House_Projet_CANARO_3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9557ee39e5a2fe644a1adf3fd6461fa9
-      internalID: 901928082
+      spriteID: 4b0cbdd825b4fd2498629d042cb8b154
+      internalID: 328853321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_Inside_House__Projet_CANARO_2_1
+      name: Door_Inside_House_Projet_CANARO_3_1
       rect:
         serializedVersion: 2
         x: 66
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c338138394860784f9dd25ac1d7055e3
-      internalID: -923770665
+      spriteID: 23e6c44bb1dda93448e7c8da93bb8e10
+      internalID: 1601116476
       vertices: []
       indices: 
       edges: []
@@ -168,8 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Door_Inside_House__Projet_CANARO_2_0: 901928082
-      Door_Inside_House__Projet_CANARO_2_1: -923770665
+      Door_Inside_House_Projet_CANARO_3_0: 328853321
+      Door_Inside_House_Projet_CANARO_3_1: 1601116476
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
