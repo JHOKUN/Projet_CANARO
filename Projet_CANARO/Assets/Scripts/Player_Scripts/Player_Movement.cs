@@ -51,7 +51,7 @@ public class Player_Movement : MonoBehaviour
 
     private void Stamina_Refill()
     {
-        while(Current_Player_Stamina > Max_Player_Stamina)
+        while(Current_Player_Stamina < Max_Player_Stamina)
         {
             Refilling_Stamina();
         }
