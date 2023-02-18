@@ -7,7 +7,6 @@ public class Enemy_Test_Movement : MonoBehaviour
     public float Enemy_Speed;
     public Rigidbody2D rb;
     public Vector2 Direction;
-
     void Start()
     {
         
