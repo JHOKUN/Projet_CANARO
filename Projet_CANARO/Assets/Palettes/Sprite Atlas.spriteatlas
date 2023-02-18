@@ -52,11 +52,42 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
     - {fileID: 2800000, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
     - {fileID: 2800000, guid: 7032fd89224574b47889a09fdf2bf61a, type: 3}
+    - {fileID: 2800000, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+    - {fileID: 2800000, guid: e35a583eb3ac9be4a9b4e16f9953861b, type: 3}
+    - {fileID: 2800000, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+    - {fileID: 2800000, guid: bb494e03838e12348a48be2459547b2d, type: 3}
+    - {fileID: 2800000, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -2057628658, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1947862256, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -319951677, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1824711373, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1426117562, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 1692227700, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 1246332694, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 1829743815, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 1745822552, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1321675742, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 629210438, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 299210403, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -47672854, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -2132955751, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 751382972, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -540360060, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 138053641, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1874246608, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -67119487, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1297188127, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -830619020, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: 1501680311, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -411530732, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -1201283488, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -126296928, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
+  - {fileID: -491311126, guid: d2ef83c04d5dba84298e2f62c66e54bf, type: 3}
   - {fileID: 902343402, guid: 716934223eba819489c42c83226263b4, type: 3}
   - {fileID: 1419979309, guid: 716934223eba819489c42c83226263b4, type: 3}
   - {fileID: -1493627472, guid: 716934223eba819489c42c83226263b4, type: 3}
@@ -143,6 +174,7 @@ SpriteAtlas:
   - {fileID: -496479058, guid: 716934223eba819489c42c83226263b4, type: 3}
   - {fileID: 1643941578, guid: 716934223eba819489c42c83226263b4, type: 3}
   - {fileID: 1987218564, guid: 716934223eba819489c42c83226263b4, type: 3}
+  - {fileID: 21300000, guid: bb494e03838e12348a48be2459547b2d, type: 3}
   - {fileID: 558293659, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
   - {fileID: -1374433823, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
   - {fileID: -2104062907, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
@@ -152,6 +184,15 @@ SpriteAtlas:
   - {fileID: -1005349483, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
   - {fileID: -901753226, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
   - {fileID: -900848722, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
+  - {fileID: 7960284, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -361656505, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -1300517821, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -1748283365, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -1823433946, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -816643440, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -969713022, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: -78926209, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
+  - {fileID: 816120482, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
   - {fileID: 291225615, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
   - {fileID: 567563868, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
   - {fileID: -706770840, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
@@ -242,6 +283,32 @@ SpriteAtlas:
   - {fileID: 2064356205, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
   - {fileID: 1220084158, guid: 4c2099df495411e409cc1f41f227873b, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Village_Flower_Path_Projet_CANARO_19
+  - Village_Flower_Path_Projet_CANARO_18
+  - Village_Flower_Path_Projet_CANARO_15
+  - Village_Flower_Path_Projet_CANARO_14
+  - Village_Flower_Path_Projet_CANARO_17
+  - Village_Flower_Path_Projet_CANARO_16
+  - Village_Flower_Path_Projet_CANARO_11
+  - Village_Flower_Path_Projet_CANARO_10
+  - Village_Flower_Path_Projet_CANARO_13
+  - Village_Flower_Path_Projet_CANARO_12
+  - Village_Flower_Path_Projet_CANARO_24
+  - Village_Flower_Path_Projet_CANARO_25
+  - Village_Flower_Path_Projet_CANARO_20
+  - Village_Flower_Path_Projet_CANARO_21
+  - Village_Flower_Path_Projet_CANARO_22
+  - Village_Flower_Path_Projet_CANARO_23
+  - Village_Flower_Path_Projet_CANARO_8
+  - Village_Flower_Path_Projet_CANARO_9
+  - Village_Flower_Path_Projet_CANARO_6
+  - Village_Flower_Path_Projet_CANARO_7
+  - Village_Flower_Path_Projet_CANARO_4
+  - Village_Flower_Path_Projet_CANARO_5
+  - Village_Flower_Path_Projet_CANARO_2
+  - Village_Flower_Path_Projet_CANARO_3
+  - Village_Flower_Path_Projet_CANARO_0
+  - Village_Flower_Path_Projet_CANARO_1
   - Tile_Sheet_Plaines_1_Projet_CANARO_14
   - Tile_Sheet_Plaines_1_Projet_CANARO_15
   - Tile_Sheet_Plaines_1_Projet_CANARO_16
@@ -328,6 +395,7 @@ SpriteAtlas:
   - Tile_Sheet_Plaines_1_Projet_CANARO_81
   - Tile_Sheet_Plaines_1_Projet_CANARO_71
   - Tile_Sheet_Plaines_1_Projet_CANARO_80
+  - Tile_Sheet_Meuble_Projet_CANARO_1_GIF
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_8
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_4
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_5
@@ -337,6 +405,15 @@ SpriteAtlas:
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_1
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_2
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_3
+  - Sole_Tree_And_Shadow_Projet_CANARO_7
+  - Sole_Tree_And_Shadow_Projet_CANARO_6
+  - Sole_Tree_And_Shadow_Projet_CANARO_5
+  - Sole_Tree_And_Shadow_Projet_CANARO_4
+  - Sole_Tree_And_Shadow_Projet_CANARO_3
+  - Sole_Tree_And_Shadow_Projet_CANARO_2
+  - Sole_Tree_And_Shadow_Projet_CANARO_1
+  - Sole_Tree_And_Shadow_Projet_CANARO_0
+  - Sole_Tree_And_Shadow_Projet_CANARO_8
   - Violet_House_2_Projet_CANARO_1
   - Violet_House_2_Projet_CANARO_0
   - Violet_House_2_Projet_CANARO_9
