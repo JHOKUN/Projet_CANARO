@@ -21,7 +21,6 @@ public class Stamina_Lightnings_Drawer : MonoBehaviour
     private void OnEnable()
     {
         Player_Movement.OnPlayerDashed += Lightnings_Drawing;
-        Debug.Log("Le dash est pris en compte");
     }
 
      private void OnDisable()
@@ -56,6 +55,12 @@ public class Stamina_Lightnings_Drawer : MonoBehaviour
         {
             Create_Filled_Lightnings();
         }
+        for(int i = 0; i < Lightnings.Count; i++)
+        {
+            int Lightnings_Status_Remainder = (int)Mathf.Clamp(Movement_Player.Current_Player_Stamina - i, 0, 1);
+            Lightnings[i].Lightning_Image_Setting((Stamina_System.Stamina_Status)Lightnings_Status_Remainder);
+        }
+
     }
 
 }

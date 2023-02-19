@@ -20,4 +20,13 @@ public class Health_Player : MonoBehaviour
         Current_Player_Health -= Damage_Amount;
     }
 
+    public void Healing(int Healing_Amount)
+    {
+        Current_Player_Health += Healing_Amount;
+        if(Current_Player_Health > Max_Player_Health)
+        {
+            Current_Player_Health = Max_Player_Health;
+        }
+    }
+
 }

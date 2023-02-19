@@ -8,9 +8,10 @@ public class Player_Movement : MonoBehaviour
     private Vector2 Movement;
     public Rigidbody2D rb;
     public Spawn_Point_Definer Start_Position;
-    private bool Is_Dashing = false;
-    private bool Able_To_Dash = true;
-    private bool Able_To_Refill = false;
+    public bool Is_Dashing = false;
+    public bool Able_To_Dash = true;
+    public bool Able_To_Refill = false;
+    public bool Dashed = false;
     public float Max_Player_Stamina;
     public float Current_Player_Stamina;
     public float Move_Speed = 5f;
@@ -35,18 +36,18 @@ public class Player_Movement : MonoBehaviour
             if (Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
             {
                 rb.MovePosition(rb.position + Movement * Dash_Speed * Dash_Time);
+                Dashed = true;
             }
-        
+
     }
 
-    private void Stamina_Refill_Countdown()
+    private void Stamina_Refill()
     {
         if(Current_Player_Stamina < Max_Player_Stamina)
         {
             if(Time.time > Tick)                
             {
                 Tick = Time.time + Dash_Refill_Cooldown;
-                Debug.Log("ça devrait marcher");
                 Current_Player_Stamina += 1;
             }
 
@@ -56,14 +57,18 @@ public class Player_Movement : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        Is_Dashing = true;
-        Dashing();
-        Able_To_Dash = false;
-        Current_Player_Stamina -= 1;
-        yield return new WaitForSeconds(Dash_Time);
-        Is_Dashing = false;
-        yield return new WaitForSeconds(Between_Dash_Cooldown);
-        Able_To_Dash = true;
+        if(Current_Player_Stamina > 0)
+        {
+            Is_Dashing = true;
+            Dashing();
+            Dashed = false;
+            Able_To_Dash = false;
+            Current_Player_Stamina -= 1;
+            yield return new WaitForSeconds(Dash_Time);
+            Is_Dashing = false;
+            yield return new WaitForSeconds(Between_Dash_Cooldown);
+            Able_To_Dash = true;
+        }
     }
 
         void Is_Dash_Starting()
@@ -98,7 +103,7 @@ public class Player_Movement : MonoBehaviour
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
         Is_Dash_Starting();
-        Stamina_Refill_Countdown();
+        Stamina_Refill();
     }
 
     void FixedUpdate()
