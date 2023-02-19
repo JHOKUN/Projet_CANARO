@@ -21,6 +21,7 @@ public class Stamina_Lightnings_Drawer : MonoBehaviour
     private void OnEnable()
     {
         Player_Movement.OnPlayerDashed += Lightnings_Drawing;
+        Debug.Log("Le dash est pris en compte");
     }
 
      private void OnDisable()
