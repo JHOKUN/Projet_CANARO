@@ -20,18 +20,6 @@ public class Player_Movement : MonoBehaviour
     public static event Action OnPlayerDashed;
 
 
-    private IEnumerator After_Dash()
-    {
-        Able_To_Dash = false;
-        yield return new WaitForSeconds(Between_Dash_Cooldown);
-        Able_To_Dash = true;
-    }
-
-    private IEnumerator Refilling_Stamina()
-    {
-        yield return new WaitForSeconds(Dash_Refill_Cooldown);
-        Current_Player_Stamina += 1;
-    }
 
     private void Running()
     {   
@@ -43,9 +31,8 @@ public class Player_Movement : MonoBehaviour
         if(Able_To_Dash == true)
             if (Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
             {
-            rb.MovePosition(rb.position + Movement * Dash_Speed * Dash_Time);
+                rb.MovePosition(rb.position + Movement * Dash_Speed * Dash_Time);
             }
-            After_Dash();
         
     }
 
@@ -58,14 +45,28 @@ public class Player_Movement : MonoBehaviour
 
     }
 
-    private void Is_Dash_Starting()
+    private IEnumerator Dash();
+    {
+        Able_To_Dash = false;
+        Is_Dashing = true;
+        Dashing();
+        Current_Player_Stamina -= 1;
+        yield return new WaitForSeconds(Dash_Time);
+        Is_Dashing = false;
+        yield return new WaitForSeconds(Between_Dash_Cooldown);
+        Able_To_Dash = true
+        yield return new WaitForSeconds(Dash_Refill_Cooldown);
+        Current_Player_Stamina += 1;
+
+    }
+
+        void Is_Dash_Starting()
     {
         if(Able_To_Dash == true)
         {
             if(Input.GetKey(KeyCode.C))
             {
-                Is_Dashing = true;
-                Current_Player_Stamina -= 1;
+               StartCoroutine(Dash());
             }
         }
     }
