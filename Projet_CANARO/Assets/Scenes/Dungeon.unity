@@ -558,9 +558,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19fcac4c4212f24c80819a693fa7d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  target: {fileID: 435656555}
-  minimumDistance: 1
+  Speed: 3
+  Target: {fileID: 435656555}
+  Minimum_Distance: 1
+  Maximum_Distance: 10
 --- !u!114 &380909791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,22 +574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!61 &380909792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3678,13 +3663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91edc4e6fdb449746b367c530b66b6c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 435656555}
-  speed: 200
-  nextWaypointDistance: 3
-  currentWaypoint: 0
-  reachedEndOfPath: 0
-  seeker: {fileID: 0}
-  rb: {fileID: 0}
 --- !u!114 &1681000572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3697,22 +3675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 0
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!1 &1723367182
 GameObject:
   m_ObjectHideFlags: 0
