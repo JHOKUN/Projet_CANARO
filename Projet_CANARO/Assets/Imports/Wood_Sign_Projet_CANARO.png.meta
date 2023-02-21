@@ -108,7 +108,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 66
         width: 66
         height: 66
       alignment: 0
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcc48f6ec73dab34894fe4485afc6ecc
-      internalID: -1526210842
+      spriteID: ce79e8f61efe75c4d9a33a86da8d6f34
+      internalID: 597335225
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 66
-        y: 0
+        y: 66
         width: 66
         height: 66
       alignment: 0
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fe3ad0c57417d443892abeefa75b35c
-      internalID: 567725796
+      spriteID: db81c40a49278994c803751e43b4186a
+      internalID: 456632661
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 132
-        y: 0
+        y: 66
         width: 66
         height: 66
       alignment: 0
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16fc53d59ffc58240889e333f278ff21
-      internalID: 206119451
+      spriteID: 9e26404757280324b898343745d81bb1
+      internalID: 1835720955
       vertices: []
       indices: 
       edges: []
@@ -171,7 +171,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 198
-        y: 0
+        y: 66
         width: 66
         height: 66
       alignment: 0
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccff991c1e271204fbec30082f229324
-      internalID: -1292569700
+      spriteID: 15236f71f6039cd4cadd93b2eb6aa9b9
+      internalID: 2048774416
       vertices: []
       indices: 
       edges: []
@@ -192,6 +192,27 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 264
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b729671e7e52041bf8be1dcf4ec1db
+      internalID: 1320519094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_Sign_Projet_CANARO_5
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 66
         height: 66
@@ -202,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49575be5c3768a340a89a3727e548194
-      internalID: 1848991615
+      spriteID: 6f14fd10c2caf6c489c40a3d8304db9b
+      internalID: 1906557234
       vertices: []
       indices: 
       edges: []
@@ -219,11 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wood_Sign_Projet_CANARO_0: -1526210842
-      Wood_Sign_Projet_CANARO_4: 1848991615
-      Wood_Sign_Projet_CANARO_3: -1292569700
-      Wood_Sign_Projet_CANARO_2: 206119451
-      Wood_Sign_Projet_CANARO_1: 567725796
+      Wood_Sign_Projet_CANARO_0: 597335225
+      Wood_Sign_Projet_CANARO_4: 1320519094
+      Wood_Sign_Projet_CANARO_5: 1906557234
+      Wood_Sign_Projet_CANARO_3: 2048774416
+      Wood_Sign_Projet_CANARO_2: 1835720955
+      Wood_Sign_Projet_CANARO_1: 456632661
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
