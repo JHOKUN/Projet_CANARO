@@ -19,7 +19,6 @@ public class Player_Movement : MonoBehaviour
     public float Dash_Time = 0.2f;
     public float Dash_Refill_Cooldown = 5f;
     public float Between_Dash_Cooldown = 1f;
-    
     public float Tick;
     public static event Action OnPlayerDashed;
 
