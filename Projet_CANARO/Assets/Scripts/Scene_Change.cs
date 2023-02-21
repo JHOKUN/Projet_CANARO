@@ -11,7 +11,7 @@ public class Scene_Change : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if(other.CompareTag("Player"))
         {
             Player_Position_Storage.Spawn_Point_Value = Player_Position;
             SceneManager.LoadScene(Scene_To_Load);
