@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
-    private Vector2 Movement;
+    public Vector2 Movement;
     public Rigidbody2D rb;
     public Spawn_Point_Definer Start_Position;
+    public Animator Player_Animator;
     public bool Is_Dashing = false;
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
     public bool Dashed = false;
+    public bool Player_Running_Down = false;
     public float Max_Player_Stamina;
     public float Current_Player_Stamina;
     public float Move_Speed = 5f;
@@ -93,6 +95,7 @@ public class Player_Movement : MonoBehaviour
         transform.position = Start_Position.Spawn_Point_Value;
         Current_Player_Stamina = Max_Player_Stamina;
         OnPlayerDashed?.Invoke();
+       Player_Animator.SetBool("Is_Running_Down", false);
     }
 
 
@@ -107,7 +110,14 @@ public class Player_Movement : MonoBehaviour
 
     void FixedUpdate()
     {       // ici aura lieu le mouvement
-        
+        if(Movement.y == -1)
+        {
+            Player_Animator.SetBool("Is_Running_Down", true);
+        }
+        else
+        {
+            Player_Animator.SetBool("Is_Running_Down", false);
+        }
         if(Is_Dashing == false)
         {
             Running();
