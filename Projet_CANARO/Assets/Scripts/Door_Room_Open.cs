@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Door_Room_Open : MonoBehaviour
 {
-    public bool Door_Opening = false;
     public Animator Door_Animator;
+    public bool Door_Opening = false;
+
 
     public void OnTriggerEnter2D(Collider2D other)
     {
