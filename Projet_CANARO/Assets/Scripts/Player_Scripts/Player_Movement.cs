@@ -7,6 +7,7 @@ public class Player_Movement : MonoBehaviour
 {
     public Vector2 Movement;
     public Rigidbody2D rb;
+    public TrailRenderer Dash_Trail;
     public Spawn_Point_Definer Start_Position;
     public Animator Player_Animator;
     public bool Is_Dashing = false;
@@ -33,12 +34,14 @@ public class Player_Movement : MonoBehaviour
 
     private void Dashing()
     {
-        if(Able_To_Dash == true)
-            if (Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
-            {
-                rb.MovePosition(rb.position + Movement * Dash_Speed * Dash_Time);
-                Dashed = true;
-            }
+        if(Able_To_Dash == true && Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
+        {
+            rb.velocity = Movement * Dash_Speed;
+            Dash_Trail.emitting = true;
+            Dashed = true;
+        }
+        
+        
 
     }
 
@@ -66,6 +69,7 @@ public class Player_Movement : MonoBehaviour
             Able_To_Dash = false;
             Current_Player_Stamina -= 1;
             yield return new WaitForSeconds(Dash_Time);
+            Dash_Trail.emitting = false;
             Is_Dashing = false;
             yield return new WaitForSeconds(Between_Dash_Cooldown);
             Able_To_Dash = true;
