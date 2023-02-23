@@ -6,10 +6,16 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     public Vector2 Movement;
+    private BoxCollider2D Player_Collider;
     public Rigidbody2D rb;
     public TrailRenderer Dash_Trail;
     public Spawn_Point_Definer Start_Position;
     public Animator Player_Animator;
+    public RaycastHit2D Dash_Raycast;
+    public RaycastHit2D No_Dash_Raycast;
+    public RaycastHit2D Hit;
+    [SerializeField] private LayerMask Dash_Layer_Mask;
+    [SerializeField] private LayerMask No_Dash_Layer_Mask;
     public bool Is_Dashing = false;
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
@@ -35,14 +41,16 @@ public class Player_Movement : MonoBehaviour
     private void Dashing()
     {
         if(Able_To_Dash == true && Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
-        {
+        {   
+            Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 1, Dash_Layer_Mask);
+            No_Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 100, No_Dash_Layer_Mask);
             rb.velocity = Movement * Dash_Speed;
             Dash_Trail.emitting = true;
             Dashed = true;
-        }
-        
-        
-
+            if(Dash_Raycast.collider != null)
+            {   
+                Player_Collider.enabled = false;
+            }
     }
 
     private void Stamina_Refill()
@@ -72,6 +80,7 @@ public class Player_Movement : MonoBehaviour
             Dashed = false;
             Able_To_Dash = false;
             yield return new WaitForSeconds(Dash_Time);
+            Player_Collider.enabled = true;
             Dash_Trail.emitting = false;
             Is_Dashing = false;
             yield return new WaitForSeconds(Between_Dash_Cooldown);
@@ -99,6 +108,7 @@ public class Player_Movement : MonoBehaviour
 
     void Start()
     {
+        Player_Collider = gameObject.GetComponent<BoxCollider2D>();
         transform.position = Start_Position.Spawn_Point_Value;
         Current_Player_Stamina = Max_Player_Stamina;
         OnPlayerDashed?.Invoke();
@@ -111,6 +121,7 @@ public class Player_Movement : MonoBehaviour
         // ici sont stockés les inputs
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
+        //Debug.DrawRay(transform.position, Movement, Color.blue, Dash_Layer_Mask);
         Is_Dash_Starting();
         Stamina_Refill();
     }
