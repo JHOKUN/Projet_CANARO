@@ -51,6 +51,7 @@ public class Player_Movement : MonoBehaviour
             {   
                 Player_Collider.enabled = false;
             }
+        }
     }
 
     private void Stamina_Refill()
