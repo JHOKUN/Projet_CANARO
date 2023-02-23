@@ -95,7 +95,7 @@ public class Player_Movement : MonoBehaviour
         transform.position = Start_Position.Spawn_Point_Value;
         Current_Player_Stamina = Max_Player_Stamina;
         OnPlayerDashed?.Invoke();
-       Player_Animator.SetBool("Is_Running_Down", false);
+        Player_Animator.SetBool("Is_Running_Down", false);
     }
 
 
