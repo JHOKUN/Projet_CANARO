@@ -65,9 +65,12 @@ public class Player_Movement : MonoBehaviour
         {
             Is_Dashing = true;
             Dashing();
+            if(Dashed == true)
+            {
+                Current_Player_Stamina -= 1;
+            }
             Dashed = false;
             Able_To_Dash = false;
-            Current_Player_Stamina -= 1;
             yield return new WaitForSeconds(Dash_Time);
             Dash_Trail.emitting = false;
             Is_Dashing = false;
