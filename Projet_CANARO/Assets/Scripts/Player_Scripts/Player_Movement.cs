@@ -46,7 +46,7 @@ public class Player_Movement : MonoBehaviour
             rb.velocity = Movement * Dash_Speed;
             Dash_Trail.emitting = true;
             Dashed = true;
-            if (Dash_Raycast_Heights.collider != null && Dash_Raycast_Edges_Dash.collider != null)
+            if (Dash_Raycast_Heights.collider != null && Dash_Raycast_Edges_Dash != null)
             {
                 Player_Collider.enabled = false;
             }
