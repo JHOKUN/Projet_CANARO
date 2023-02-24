@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
-{
-    public Vector2 Movement;
+{   
     private BoxCollider2D Player_Collider;
+    public Vector2 Movement;
     public Rigidbody2D rb;
     public TrailRenderer Dash_Trail;
     public Spawn_Point_Definer Start_Position;
