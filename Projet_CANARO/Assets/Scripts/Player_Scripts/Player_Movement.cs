@@ -42,15 +42,20 @@ public class Player_Movement : MonoBehaviour
     {
         if(Able_To_Dash == true && Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
         {   
-            Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 1, Dash_Layer_Mask);
-            No_Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 100, No_Dash_Layer_Mask);
+            Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 0.8f, Dash_Layer_Mask);
+            No_Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 0.6f, No_Dash_Layer_Mask);
             rb.velocity = Movement * Dash_Speed;
             Dash_Trail.emitting = true;
             Dashed = true;
-            if(Dash_Raycast.collider != null)
+            if (No_Dash_Raycast.collider != null)
+            {
+                Player_Collider.enabled = true;
+            }
+            else if(Dash_Raycast.collider != null)
             {   
                 Player_Collider.enabled = false;
             }
+            
         }
     }
 
@@ -119,16 +124,14 @@ public class Player_Movement : MonoBehaviour
 
     void Update()
     {
-        // ici sont stockés les inputs
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
-        //Debug.DrawRay(transform.position, Movement, Color.blue, Dash_Layer_Mask);
         Is_Dash_Starting();
         Stamina_Refill();
     }
 
     void FixedUpdate()
-    {       // ici aura lieu le mouvement
+    {
         if(Movement.y == -1)
         {
             Player_Animator.SetBool("Is_Running_Down", true);

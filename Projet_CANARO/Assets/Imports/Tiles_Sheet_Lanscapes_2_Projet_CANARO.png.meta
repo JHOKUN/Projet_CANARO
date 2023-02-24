@@ -1,0 +1,1046 @@
+fileFormatVersion: 2
+guid: b1f09f7c46356cb4787755913e8ee4ae
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebc7c08ba61934489d9dc9f5bacec3c
+      internalID: -101626202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 528
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3870203f870cdf4cb0edef213921a8a
+      internalID: 371359425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 528
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231dae7778e815b46862fce1570dee09
+      internalID: -959802090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 528
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80831736b32524a479b12fe1fd5eb564
+      internalID: -1277495425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8153e1b7ded4ce4eb8a2d5abba5903d
+      internalID: -156480634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b021528616dca4ca68e75cc03d73f2
+      internalID: -1018172299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317a15572e0c5424c8f6e1fb390a5bb0
+      internalID: -1642970134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cd365dd802b6d4cb7a5d7a3257365e
+      internalID: 138488465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce70dcb99fdcd1469acf9bc643f61bd
+      internalID: -886760560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 462
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddea07647e84e634b90fb49719e079f7
+      internalID: 281833384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4869d41d8f9ce4843ba025645af1e61c
+      internalID: -474122874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0546702fd1412e24cab76cc599442966
+      internalID: -1272569384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc4508406f857f449d67244669dd7d0
+      internalID: -274558623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d3c173f613a5341be1d9f81073ed6f
+      internalID: -676377088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 396
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fe9f9250564c645837def37999af3e
+      internalID: -1396474195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0300d2a081572429d15143a201c317
+      internalID: 1948672560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e00f983725bd74598729b675ae20da
+      internalID: -174927337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_17
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7ec895f88334c489165b05e2630924
+      internalID: -537343943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_18
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b71e451550ec8458a63af73699c156
+      internalID: -1716743412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 330
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3188d895b32fbf47b7f3dcb5ea6aed7
+      internalID: 1110377492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916336ef42b7b4a469974be9fc9ad66a
+      internalID: 396686704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_21
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef1fb0b0ed039f49aa9339787c54eb3
+      internalID: -977921006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b007bcdf28b03de499b1194b7033ab40
+      internalID: -1273162121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_23
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b883a1597baa495429cec24259a57ea7
+      internalID: 1758063447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472eee75512c71b4c9efca645abce800
+      internalID: -340776312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b82b60d257dba49b526f57208cc743
+      internalID: -934430448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ad9f926281d0c4d921421e545d257a
+      internalID: 629045454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d86607aedd90f44d8c3251de70e994e
+      internalID: -1412704868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db47924aa69a1746a8c01890b5a7d6b
+      internalID: -2132825889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 198
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bb8c9ddfcb53a469952c5f881739ff
+      internalID: 267776098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05269697bf3f1504c8a27d11b896a6e3
+      internalID: -385559924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_31
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aed11ecc82d93f4fb7c1faf24fb7540
+      internalID: -1442248986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_32
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396ae8d467a9e5843bdf49b781b25252
+      internalID: -69491778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_33
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb856f89a7bd8de4796100217482b24c
+      internalID: -25667175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_34
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 132
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2343fd3fb3a0a14880790ab7f372212
+      internalID: -2082135218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe83220b6cfaf5b46b8ae28c1bc429d2
+      internalID: 1091106842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_36
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0156e7175d2cb4688af63d15bf439a
+      internalID: 1770276577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_37
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5094afd99047ccf488c2277171dd18bc
+      internalID: 845455159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dc6f4ec469e564eabcc6cfe0b9a04e
+      internalID: 1696952067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_39
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 66
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736e8ec3bcecd5949a5c418de2c16929
+      internalID: -322912837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b4b78485b7a8647b255d128f03c488
+      internalID: -1507629304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Sheet_Lanscapes_2_Projet_CANARO_41
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bce7b8d35511d842a3a96393ab6b5cf
+      internalID: 325463805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_29: 267776098
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_15: 1948672560
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_37: 845455159
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_26: 629045454
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_41: 325463805
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_35: 1091106842
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_38: 1696952067
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_39: -322912837
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_28: -2132825889
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_7: 138488465
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_40: -1507629304
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_12: -274558623
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_18: -1716743412
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_23: 1758063447
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_14: -1396474195
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_8: -886760560
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_9: 281833384
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_4: -156480634
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_0: -101626202
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_10: -474122874
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_16: -174927337
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_36: 1770276577
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_25: -934430448
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_20: 396686704
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_3: -1277495425
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_21: -977921006
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_22: -1273162121
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_30: -385559924
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_27: -1412704868
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_34: -2082135218
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_2: -959802090
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_6: -1642970134
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_1: 371359425
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_13: -676377088
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_19: 1110377492
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_32: -69491778
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_11: -1272569384
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_31: -1442248986
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_5: -1018172299
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_17: -537343943
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_33: -25667175
+      Tiles_Sheet_Lanscapes_2_Projet_CANARO_24: -340776312
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
