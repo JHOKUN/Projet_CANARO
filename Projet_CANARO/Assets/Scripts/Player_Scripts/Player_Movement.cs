@@ -11,11 +11,10 @@ public class Player_Movement : MonoBehaviour
     public TrailRenderer Dash_Trail;
     public Spawn_Point_Definer Start_Position;
     public Animator Player_Animator;
-    public RaycastHit2D Dash_Raycast;
-    public RaycastHit2D No_Dash_Raycast;
-    public RaycastHit2D Hit;
-    [SerializeField] private LayerMask Dash_Layer_Mask;
-    [SerializeField] private LayerMask No_Dash_Layer_Mask;
+    public RaycastHit2D Dash_Raycast_Heights;
+    public RaycastHit2D Dash_Raycast_Edges_Dash;
+    [SerializeField] private LayerMask Dash_Layer_Mask_Heights;
+    [SerializeField] private LayerMask Dash_Layer_Mask_Edges_Dash;
     public bool Is_Dashing = false;
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
@@ -42,19 +41,15 @@ public class Player_Movement : MonoBehaviour
     {
         if(Able_To_Dash == true)
         {   
-            Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 0.8f, Dash_Layer_Mask);
-            No_Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 0.6f, No_Dash_Layer_Mask);
+            Dash_Raycast_Heights = Physics2D.Raycast(transform.position, Movement, 0.1f, Dash_Layer_Mask_Heights);
+            Dash_Raycast_Edges_Dash = Physics2D.Raycast(transform.position, Movement, 2f, Dash_Layer_Mask_Edges_Dash);
             rb.velocity = Movement * Dash_Speed;
             Dash_Trail.emitting = true;
             Dashed = true;
-            if (No_Dash_Raycast.collider != null)
+            if (Dash_Raycast_Heights.collider != null && Dash_Raycast_Edges_Dash.collider != null)
             {
-                Player_Collider.enabled = true;
-            }
-            else if(Dash_Raycast.collider != null)
-            {   
                 Player_Collider.enabled = false;
-            }  
+            }
         }
     }
 
