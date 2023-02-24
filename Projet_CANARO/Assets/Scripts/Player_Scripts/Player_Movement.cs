@@ -40,7 +40,7 @@ public class Player_Movement : MonoBehaviour
 
     private void Dashing()
     {
-        if(Able_To_Dash == true && Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
+        if(Able_To_Dash == true)
         {   
             Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 0.8f, Dash_Layer_Mask);
             No_Dash_Raycast = Physics2D.Raycast(transform.position, Movement, 0.6f, No_Dash_Layer_Mask);
@@ -54,8 +54,7 @@ public class Player_Movement : MonoBehaviour
             else if(Dash_Raycast.collider != null)
             {   
                 Player_Collider.enabled = false;
-            }
-            
+            }  
         }
     }
 
@@ -68,29 +67,31 @@ public class Player_Movement : MonoBehaviour
                 Tick = Time.time + Dash_Refill_Cooldown;
                 Current_Player_Stamina += 1;
             }
-
         }
     }
     
 
     private IEnumerator Dash()
     {
-        if(Current_Player_Stamina > 0)
+        if(Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
         {
-            Is_Dashing = true;
-            Dashing();
-            if(Dashed == true)
+            if(Current_Player_Stamina > 0)
             {
-                Current_Player_Stamina -= 1;
+                Is_Dashing = true;
+                Dashing();
+                if(Dashed == true)
+                {
+                    Current_Player_Stamina -= 1;
+                }
+                Dashed = false;
+                Able_To_Dash = false;
+                yield return new WaitForSeconds(Dash_Time);
+                Player_Collider.enabled = true;
+                Dash_Trail.emitting = false;
+                Is_Dashing = false;
+                yield return new WaitForSeconds(Between_Dash_Cooldown);
+                Able_To_Dash = true;
             }
-            Dashed = false;
-            Able_To_Dash = false;
-            yield return new WaitForSeconds(Dash_Time);
-            Player_Collider.enabled = true;
-            Dash_Trail.emitting = false;
-            Is_Dashing = false;
-            yield return new WaitForSeconds(Between_Dash_Cooldown);
-            Able_To_Dash = true;
         }
     }
 
@@ -143,10 +144,6 @@ public class Player_Movement : MonoBehaviour
         if(Is_Dashing == false)
         {
             Running();
-        }
-        else
-        {
-            Dash();
-        }   
+        } 
     }
 }
