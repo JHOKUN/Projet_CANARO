@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     public float Maximum_Distance;
     public float Minimum_Distance;
     public float Speed;
+    public float Waiting_Time;
 
     void Running()
     {
@@ -21,21 +22,30 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    //void OnCollisionEnter(Collider collision)
-    //{
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            StartCoroutine(Wait_After_Hit());
+        }
+    }
 
-    //}
+    IEnumerator Wait_After_Hit()
+    {
+        
+        Able_To_Run = false;
+        rb.bodyType = RigidbodyType2D.Static;
+        // lancer animation attaque
+        yield return new WaitForSeconds(Waiting_Time);
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        Able_To_Run = true;
+    }
 
-    //IEnumerator Is_Colliding()
-    //{
-    //    if (Collision)
-    //}
+
 
     private void Update()
     {
         Direction = new Vector2(Target.position.x - transform.position.x, Target.position.y - transform.position.y);
-
-        //StartCoroutine(Is_Colliding());
         
         if (Able_To_Run == true)
         {
