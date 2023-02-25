@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955d51bc20914a446a4759b67e21b6a8, type: 3}
   m_Name: Player_Position
   m_EditorClassIdentifier: 
-  Spawn_Point_Value: {x: 1.56, y: -3}
+  Spawn_Point_Value: {x: 11.5, y: -6}
