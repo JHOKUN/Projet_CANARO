@@ -15,6 +15,7 @@ public class Player_Movement : MonoBehaviour
     public RaycastHit2D Dash_Raycast_Edges_Dash;
     [SerializeField] private LayerMask Dash_Layer_Mask_Heights;
     [SerializeField] private LayerMask Dash_Layer_Mask_Edges_Dash;
+    public bool Must_Respawn = false;
     public bool Is_Dashing = false;
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
@@ -120,6 +121,12 @@ public class Player_Movement : MonoBehaviour
 
     void Update()
     {
+        if(Must_Respawn == true)
+        {
+            transform.position = Start_Position.Spawn_Point_Value;
+            Must_Respawn = false;
+        }
+        
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
         Is_Dash_Starting();
