@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Inventory_Menu : MonoBehaviour
 {
+    
     public static bool Game_Is_Paused = false;
     public GameObject Inventory_Menu_UI;
+    
 
     void Pause_Game()
     {
@@ -19,11 +21,12 @@ public class Inventory_Menu : MonoBehaviour
         Game_Is_Paused = false;
     }
 
+   
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            if(Game_Is_Paused == true)
+            if(Game_Is_Paused)
             {
                 Resume_Game();
             }

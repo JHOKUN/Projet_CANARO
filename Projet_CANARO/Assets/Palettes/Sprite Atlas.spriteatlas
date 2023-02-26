@@ -57,7 +57,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 6df9ae44c5f65ed4aba2aa0d61a730a7, type: 3}
     - {fileID: 2800000, guid: bb494e03838e12348a48be2459547b2d, type: 3}
     - {fileID: 2800000, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
-    - {fileID: 2800000, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
+    - {fileID: 2800000, guid: e35a583eb3ac9be4a9b4e16f9953861b, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -175,28 +175,6 @@ SpriteAtlas:
   - {fileID: -496479058, guid: 716934223eba819489c42c83226263b4, type: 3}
   - {fileID: 1643941578, guid: 716934223eba819489c42c83226263b4, type: 3}
   - {fileID: 1987218564, guid: 716934223eba819489c42c83226263b4, type: 3}
-  - {fileID: 1981592642, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 624024199, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 1250908971, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 48835718, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 1594185684, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -1281934891, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -33808706, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 2099832550, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 624978552, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -1242228072, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -657539243, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 1913827607, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -706419149, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 1509072339, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 983636991, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -2143584347, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -1655537106, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -278165346, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -1190492468, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -1945715121, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: 1306580920, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
-  - {fileID: -1443287990, guid: a913fa32d94764b47b1f74176e9f5ca0, type: 3}
   - {fileID: 21300000, guid: bb494e03838e12348a48be2459547b2d, type: 3}
   - {fileID: 558293659, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
   - {fileID: -1374433823, guid: 8d3bf504100101946866ecbe361dc32b, type: 3}
@@ -418,28 +396,6 @@ SpriteAtlas:
   - Tile_Sheet_Plaines_1_Projet_CANARO_81
   - Tile_Sheet_Plaines_1_Projet_CANARO_71
   - Tile_Sheet_Plaines_1_Projet_CANARO_80
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_17
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_16
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_15
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_14
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_13
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_12
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_11
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_10
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_20
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_19
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_21
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_18
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_8
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_9
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_4
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_5
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_6
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_7
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_0
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_1
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_2
-  - Tile_Sheet_Dungeon_Projet_CANARO_2_3
   - Tile_Sheet_Meuble_Projet_CANARO_1_GIF
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_8
   - Tile_Sheet_Plaines_2_Projet_CANARO_3_4

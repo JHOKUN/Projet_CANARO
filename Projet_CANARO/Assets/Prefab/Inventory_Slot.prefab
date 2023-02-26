@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2353974691488319932}
   - component: {fileID: 2353974691488319933}
   - component: {fileID: 2353974691488319935}
+  - component: {fileID: -285263326754555318}
   m_Layer: 5
   m_Name: Inventory_Slot
   m_TagString: Untagged
@@ -121,7 +122,46 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2353974691488319933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -285263326754555318}
+        m_TargetAssemblyTypeName: Inventory_Slot, Assembly-CSharp
+        m_MethodName: Test
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -285263326754555318}
+        m_TargetAssemblyTypeName: Inventory_Slot, Assembly-CSharp
+        m_MethodName: Item_Selection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-285263326754555318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353974691488319923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed48da4ee191b24da26ea526a9d7d05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  New_Item: {fileID: 11400000, guid: 2b6398025e723fb4aad889bca9018f86, type: 2}
+  Item_Icon: {fileID: 2353974693067523909}
+  Player_Using: {fileID: 0}
 --- !u!1 &2353974693067523931
 GameObject:
   m_ObjectHideFlags: 0

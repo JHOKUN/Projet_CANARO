@@ -11,4 +11,5 @@ public class Item : ScriptableObject
     public Sprite Item_Image;
     public GameObject Prefab;
     public int Healing_Amount;
+
 }
