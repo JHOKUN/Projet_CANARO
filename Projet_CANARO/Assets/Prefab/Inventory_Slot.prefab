@@ -125,18 +125,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -285263326754555318}
         m_TargetAssemblyTypeName: Inventory_Slot, Assembly-CSharp
-        m_MethodName: Test
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -285263326754555318}
-        m_TargetAssemblyTypeName: Inventory_Slot, Assembly-CSharp
         m_MethodName: Item_Selection
         m_Mode: 1
         m_Arguments:
@@ -159,8 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed48da4ee191b24da26ea526a9d7d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  New_Item: {fileID: 11400000, guid: 2b6398025e723fb4aad889bca9018f86, type: 2}
+  New_Item: {fileID: 11400000, guid: d49eb260c7ce4a84e8d06543e2148df7, type: 2}
   Item_Icon: {fileID: 2353974693067523909}
+  Slot_Index: 0
   Player_Using: {fileID: 0}
 --- !u!1 &2353974693067523931
 GameObject:

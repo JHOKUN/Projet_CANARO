@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventory_Slot : MonoBehaviour
 {
-    public Item New_Item;
+    public Item New_Item;               // Le problème vient du fait que les slots n'ont pas tous et pas toujours d'item 
     public Image Item_Icon;
     public int Slot_Index;
     public Use_Selected_Item Player_Using;
@@ -29,18 +29,17 @@ public class Inventory_Slot : MonoBehaviour
         Item_Icon.enabled = false;
     }
 
-    public void Test()
-    {
-        Debug.Log("Selected Item" + New_Item.Item_Id + New_Item.Item_Name + New_Item.Item_Description);
-    }
 
     public void Item_Selection()
     {
         if(New_Item != null)
         {   
-            Inventory_System.instance.Content_Current_Index = New_Item.Item_Id;
+            Inventory_System.instance.Current_Item = New_Item;
             Debug.Log("ça detecte");
             Player_Using.Able_To_Use = true;
         }
+    }
+    void Update()
+    {
     }
 }

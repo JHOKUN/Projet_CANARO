@@ -9,7 +9,7 @@ public class Inventory_System : MonoBehaviour
     public Health_Player Player_Health;
     public Inventory_Slot Slots;
     public List<Item> Content = new List<Item>();
-    public Item Current_Item;
+    public Item Current_Item = null;
     public int Content_Current_Index = 0;
     public int Inventory_Space = 9;
     public static Inventory_System instance;
@@ -19,7 +19,7 @@ public class Inventory_System : MonoBehaviour
 
     public void Use_Item()
     {
-        Item Current_Item = Content[Content_Current_Index];
+        //Item Current_Item = Content[Content_Current_Index];
         Player_Health.Healing(Current_Item.Healing_Amount);
         Slots.Slot_Clearing();
         Content.Remove(Current_Item);
@@ -39,6 +39,13 @@ public class Inventory_System : MonoBehaviour
         if(onItemAddedCallBack != null)
         {
             onItemAddedCallBack.Invoke();
+        }
+    }
+    public void Test()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("Selected Item" + Current_Item.Item_Id + Current_Item.Item_Name + Current_Item.Item_Description);
         }
     }
 
@@ -71,6 +78,6 @@ public class Inventory_System : MonoBehaviour
     
     void Update()
     {
-        
+      Test();
     }
 }

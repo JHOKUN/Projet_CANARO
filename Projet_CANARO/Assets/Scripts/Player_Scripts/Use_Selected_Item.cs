@@ -12,7 +12,7 @@ public class Use_Selected_Item : MonoBehaviour
 
     public void Use()
     {
-        if(Input.GetKey(KeyCode.X) && Able_To_Use == true)
+        if(Input.GetKeyDown(KeyCode.X) && Able_To_Use == true)
         {
             Debug.Log("Current Item is " + Inventory_System.instance.Current_Item);
             Inventory_System.instance.Use_Item();
