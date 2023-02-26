@@ -37,7 +37,7 @@ public class Inventory_Slot : MonoBehaviour
     public void Item_Selection()
     {
         if(New_Item != null)
-        {
+        {   
             Inventory_System.instance.Content_Current_Index = New_Item.Item_Id;
             Debug.Log("ça detecte");
             Player_Using.Able_To_Use = true;
