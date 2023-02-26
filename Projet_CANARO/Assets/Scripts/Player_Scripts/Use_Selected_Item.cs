@@ -19,8 +19,9 @@ public class Use_Selected_Item : MonoBehaviour
         }
     }
 
+    
     void Update()
     {
-       
+       Use();
     }
 }

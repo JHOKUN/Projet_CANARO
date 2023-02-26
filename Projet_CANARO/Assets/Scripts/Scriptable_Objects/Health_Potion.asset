@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Item_Id: 1
   Item_Name: Health_Potion
-  Item_Description: Une fois remplie, restore la vie d'un coeur.
-  Item_Image: {fileID: 21300000, guid: 2e687c7ef8caa3d48a4e1b0404d79592, type: 3}
+  Item_Description: "Une fois remplie, restore la vie \xE0 hauteur d'un coeur."
+  Item_Image: {fileID: -291577303, guid: 26325cfb8217c8444b7945646f4670c0, type: 3}
   Prefab: {fileID: 0}
-  Healing_Amount: 1
+  Healing_Amount: 2
