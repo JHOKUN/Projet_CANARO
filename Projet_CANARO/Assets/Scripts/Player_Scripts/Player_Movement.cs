@@ -95,7 +95,7 @@ public class Player_Movement : MonoBehaviour
     {
         if(Able_To_Dash == true)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKey(KeyCode.C))
             {
                StartCoroutine(Dash());
             }
