@@ -22,9 +22,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D Collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (Collision.gameObject.tag == "Player")
         {
             StartCoroutine(Wait_After_Hit());
         }
