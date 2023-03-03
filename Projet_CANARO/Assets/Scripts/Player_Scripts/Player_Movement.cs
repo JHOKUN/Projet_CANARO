@@ -162,6 +162,16 @@ public class Player_Movement : MonoBehaviour
             Player_Animator.SetBool("Is_Running_Side", false);
             Player_Animator.SetBool("Is_Facing_Side", true);
         }
+        if(Movement.x == 1)
+        {
+            Player_Animator.SetBool("Is_Running_Right", true);
+            Player_Animator.SetBool("Is_Facing_Right", false);
+        }
+        else
+        {
+            Player_Animator.SetBool("Is_Running_Right", false);
+            Player_Animator.SetBool("Is_Facing_Right", true);
+        }
 
 
         if(Is_Dashing == false)
