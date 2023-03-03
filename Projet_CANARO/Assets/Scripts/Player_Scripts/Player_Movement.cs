@@ -20,7 +20,6 @@ public class Player_Movement : MonoBehaviour
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
     public bool Dashed = false;
-    public bool Player_Running_Down = false;
     public float Max_Player_Stamina;
     public float Current_Player_Stamina;
     public float Move_Speed = 5f;
@@ -143,6 +142,28 @@ public class Player_Movement : MonoBehaviour
         {
             Player_Animator.SetBool("Is_Running_Down", false);
         }
+        if(Movement.y == 1)
+        {
+            Player_Animator.SetBool("Is_Facing_Backward", false);
+            Player_Animator.SetBool("Is_Running_Up", true);
+        }
+        else
+        {
+            Player_Animator.SetBool("Is_Running_Up", false);
+            Player_Animator.SetBool("Is_Facing_Backward", true);
+        }
+        if(Movement.x == -1)
+        {
+            Player_Animator.SetBool("Is_Running_Side", true);
+            Player_Animator.SetBool("Is_Facing_Side", false);
+        }
+        else
+        {
+            Player_Animator.SetBool("Is_Running_Side", false);
+            Player_Animator.SetBool("Is_Facing_Side", true);
+        }
+
+
         if(Is_Dashing == false)
         {
             Running();
