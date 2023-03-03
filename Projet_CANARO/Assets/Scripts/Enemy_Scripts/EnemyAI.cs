@@ -32,7 +32,6 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator Wait_After_Hit()
     {
-        
         Able_To_Run = false;
         rb.bodyType = RigidbodyType2D.Static;
         // lancer animation attaque
@@ -42,6 +41,10 @@ public class EnemyAI : MonoBehaviour
     }
 
 
+    void Start()
+    {
+        Waiting_Time = 1.5f;
+    }
 
     private void Update()
     {

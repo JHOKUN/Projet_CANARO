@@ -8,7 +8,7 @@ public class Write_Dialogue : MonoBehaviour
 
     public TextMeshProUGUI Text_Component;
     public string[] Lines;
-    public float Text_Speed;
+    public float Text_Speed = 0.00000000000005f;
 
     private int Index;
 
