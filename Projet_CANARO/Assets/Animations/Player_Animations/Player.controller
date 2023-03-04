@@ -430,49 +430,49 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Transition_Done
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Is_Running_Up
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Is_Facing_Backward
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Is_Facing_Side
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Is_Running_Side
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Is_Running_Right
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Is_Facing_Right
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -835,7 +835,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1581678469132205319}
-    m_Position: {x: 410, y: 210, z: 0}
+    m_Position: {x: 370, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4028425982271359523}
     m_Position: {x: 1170, y: -20, z: 0}
@@ -844,7 +844,7 @@ AnimatorStateMachine:
     m_Position: {x: 1400, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3562278357264892943}
-    m_Position: {x: 640, y: -20, z: 0}
+    m_Position: {x: 680, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7427079130639776544}
     m_Position: {x: 360, y: 30, z: 0}
@@ -862,7 +862,7 @@ AnimatorStateMachine:
     m_Position: {x: 1550, y: 390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1477045330827663366}
-    m_Position: {x: 1090, y: 780, z: 0}
+    m_Position: {x: 1020, y: 780, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7062464401953997781}
     m_Position: {x: 1570, y: 700, z: 0}
