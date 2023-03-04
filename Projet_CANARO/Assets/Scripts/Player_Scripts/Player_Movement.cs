@@ -140,26 +140,17 @@ public class Player_Movement : MonoBehaviour
         if(Movement.y == -1)
         {
             Player_Animator.SetBool("Is_Running_Down", true);
-            Player_Animator.SetBool("Is_Running_Up", false);
-            Player_Animator.SetBool("Is_Facing_Backward", false);
-            Player_Animator.SetBool("Is_Running_Side", false);
-            Player_Animator.SetBool("Is_Facing_Side", false);
-            Player_Animator.SetBool("Is_Running_Right", false);
-            Player_Animator.SetBool("Is_Facing_Right", false);
+            Player_Animator.SetBool("Is_Facing_Forward", false);
         }
         else
         {
             Player_Animator.SetBool("Is_Running_Down", false);
+            Player_Animator.SetBool("Is_Facing_Forward", true);
         }
         if(Movement.y == 1)
         {
             Player_Animator.SetBool("Is_Facing_Backward", false);
             Player_Animator.SetBool("Is_Running_Up", true);
-            Player_Animator.SetBool("Is_Running_Down", false);
-            Player_Animator.SetBool("Is_Running_Side", false);
-            Player_Animator.SetBool("Is_Facing_Side", false);
-            Player_Animator.SetBool("Is_Running_Right", false);
-            Player_Animator.SetBool("Is_Facing_Right", false);
         }
         else
         {
@@ -170,11 +161,6 @@ public class Player_Movement : MonoBehaviour
         {
             Player_Animator.SetBool("Is_Running_Side", true);
             Player_Animator.SetBool("Is_Facing_Side", false);
-            Player_Animator.SetBool("Is_Facing_Backward", false);
-            Player_Animator.SetBool("Is_Running_Up", false);
-            Player_Animator.SetBool("Is_Running_Down", false);
-            Player_Animator.SetBool("Is_Running_Right", false);
-            Player_Animator.SetBool("Is_Facing_Right", false);
         }
         else
         {
@@ -185,11 +171,6 @@ public class Player_Movement : MonoBehaviour
         {
             Player_Animator.SetBool("Is_Running_Right", true);
             Player_Animator.SetBool("Is_Facing_Right", false);
-            Player_Animator.SetBool("Is_Running_Side", false);
-            Player_Animator.SetBool("Is_Facing_Side", false);
-            Player_Animator.SetBool("Is_Facing_Backward", false);
-            Player_Animator.SetBool("Is_Running_Up", false);
-            Player_Animator.SetBool("Is_Running_Down", false);
         }
         else
         {

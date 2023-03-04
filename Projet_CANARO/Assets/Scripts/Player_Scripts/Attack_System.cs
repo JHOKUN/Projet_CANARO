@@ -35,7 +35,7 @@ public class Attack_System : MonoBehaviour
         Is_Attacking = true;
         Up_Area.enabled = true;
         Able_To_Attack = false;
-        Player_Animator.SetTrigger("Attack_Side_Trigger");
+        Player_Animator.SetTrigger("Attack_Left_Trigger");
         Player_Animator.SetBool("Is_Running_Side", false);
         Movement_Player.Able_To_Dash = false;
         yield return new WaitForSeconds(Attack_Cooldown);
@@ -85,38 +85,49 @@ public class Attack_System : MonoBehaviour
     {
         if(Able_To_Attack == true && Movement_Player.Is_Dashing == false)
         {
-            if(Player_Animator.GetBool("Is_Running_Up") == true || Player_Animator.GetBool("Is_Facing_Backward") == true)
+            if(Player_Animator.GetBool("Is_Running_Up") == true) 
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
                 if(Input.GetKeyDown(KeyCode.V))
                 {
+                    Player_Animator.SetBool("Is_Facing_Side", false);
+                    Player_Animator.SetBool("Is_Facing_Right", false);
                     StartCoroutine(Attack_Up());
                 }
             }
 
-            else if(Player_Animator.GetBool("Is_Running_Side") == true || Player_Animator.GetBool("Is_Facing_Side") == true)
+            else if(Player_Animator.GetBool("Is_Running_Side") == true) 
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
                 if(Input.GetKeyDown(KeyCode.V))
                 {
+                    Player_Animator.SetBool("Is_Facing_Backward", false);
+                    Player_Animator.SetBool("Is_Facing_Side", false);
+                    Player_Animator.SetBool("Is_Facing_Right", false);
                     StartCoroutine(Attack_Left());
                 }
             }
 
-            else if(Player_Animator.GetBool("Is_Running_Right") == true || Player_Animator.GetBool("Is_Facing_Right") == true)
+            else if(Player_Animator.GetBool("Is_Running_Right") == true) 
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
                 if(Input.GetKeyDown(KeyCode.V))
                 {
+                    Player_Animator.SetBool("Is_Facing_Backward", false);
+                    Player_Animator.SetBool("Is_Facing_Side", false);
+                    Player_Animator.SetBool("Is_Facing_Right", false);
                     StartCoroutine(Attack_Right());
                 }
             }
 
-            else if(Player_Animator.GetBool("Is_Running_Down") == true || Player_Animator.GetBool("Is_Facing_Forward") == true)
+            else if(Player_Animator.GetBool("Is_Running_Down") == true) 
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
                 if(Input.GetKeyDown(KeyCode.V))
                 {
+                    Player_Animator.SetBool("Is_Facing_Backward", false);
+                    Player_Animator.SetBool("Is_Facing_Side", false);
+                    Player_Animator.SetBool("Is_Facing_Right", false);
                     StartCoroutine(Attack_Down());
                 }
             }
