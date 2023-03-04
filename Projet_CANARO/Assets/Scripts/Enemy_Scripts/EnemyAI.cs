@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    
     public Player_Movement Movement_Player;
     public Transform Target;
     public Animator Enemy_Animator;
