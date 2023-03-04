@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {   
+    public Attack_System Attack;
     private BoxCollider2D Player_Collider;
     public Vector2 Movement;
     public Rigidbody2D rb;
@@ -73,6 +74,7 @@ public class Player_Movement : MonoBehaviour
             if(Current_Player_Stamina > 0)
             {
                 Is_Dashing = true;
+                Attack.Able_To_Attack = false;
                 Dashing();
                 if(Dashed == true)
                 {
@@ -84,15 +86,16 @@ public class Player_Movement : MonoBehaviour
                 Player_Collider.enabled = true;
                 Dash_Trail.emitting = false;
                 Is_Dashing = false;
+                Attack.Able_To_Attack = true;
                 yield return new WaitForSeconds(Between_Dash_Cooldown);
                 Able_To_Dash = true;
             }
         }
     }
 
-        void Is_Dash_Starting()
+    void Is_Dash_Starting()
     {
-        if(Able_To_Dash == true)
+        if(Able_To_Dash == true && Attack.Is_Attacking == false)
         {
             if(Input.GetKey(KeyCode.Space))
             {
@@ -174,7 +177,7 @@ public class Player_Movement : MonoBehaviour
         }
 
 
-        if(Is_Dashing == false)
+        if(Is_Dashing == false && Attack.Is_Attacking == false)
         {
             Running();
         } 

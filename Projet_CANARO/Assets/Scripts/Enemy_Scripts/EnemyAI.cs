@@ -77,8 +77,6 @@ public class EnemyAI : MonoBehaviour
             Running();
         }
 
-        Debug.Log(Direction.normalized.x);
-
         if(Direction.normalized.y < 0 && Mathf.Abs(Direction.normalized.y) > Mathf.Abs(Direction.normalized.x))
         {
             Enemy_Animator.SetBool("Is_Facing_Down", true);
