@@ -28,6 +28,22 @@ public class EnemyAI : MonoBehaviour
     {
         if (Collision.gameObject.tag == "Player")
         {
+            if(Enemy_Animator.GetBool("Is_Facing_Up") == true)
+            {
+                Enemy_Animator.SetBool("Is_Attacking_Up", true);
+            }
+            else if(Enemy_Animator.GetBool("Is_Facing_Right") == true)
+            {
+                Enemy_Animator.SetBool("Is_Attacking_Right", true);
+            }
+            else if(Enemy_Animator.GetBool("Is_Facing_Down") == true)
+            {
+                Enemy_Animator.SetBool("Is_Attacking_Down", true);
+            }
+            else
+            {
+                Enemy_Animator.SetBool("Is_Attacking_Left", true);
+            }
             StartCoroutine(Wait_After_Hit());
         }
     }
@@ -36,7 +52,11 @@ public class EnemyAI : MonoBehaviour
     {
         Able_To_Run = false;
         rb.bodyType = RigidbodyType2D.Static;
-        // lancer animation attaque
+        yield return new WaitForSeconds(0.001f);
+        Enemy_Animator.SetBool("Is_Attacking_Up", false);
+        Enemy_Animator.SetBool("Is_Attacking_Right", false);
+        Enemy_Animator.SetBool("Is_Attacking_Left", false);
+        Enemy_Animator.SetBool("Is_Attacking_Down", false);
         yield return new WaitForSeconds(Waiting_Time);
         rb.bodyType = RigidbodyType2D.Dynamic;
         Able_To_Run = true;
