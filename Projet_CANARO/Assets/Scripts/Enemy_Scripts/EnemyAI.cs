@@ -59,7 +59,7 @@ public class EnemyAI : MonoBehaviour
 
         Debug.Log(Direction.normalized.x);
 
-        if(Direction.normalized.y < 0)
+        if(Direction.normalized.y < 0 && Mathf.Abs(Direction.normalized.y) > Mathf.Abs(Direction.normalized.x))
         {
             Enemy_Animator.SetBool("Is_Facing_Down", true);
             Enemy_Animator.SetBool("Is_Facing_Left", false);
@@ -69,7 +69,7 @@ public class EnemyAI : MonoBehaviour
         {
             Enemy_Animator.SetBool("Is_Facing_Down", false);
         }
-        if(Direction.normalized.y > 0)
+        if(Direction.normalized.y > 0 && Mathf.Abs(Direction.normalized.y) > Mathf.Abs(Direction.normalized.x))
         {
             Enemy_Animator.SetBool("Is_Facing_Up", true);
             Enemy_Animator.SetBool("Is_Facing_Left", false);
@@ -79,7 +79,7 @@ public class EnemyAI : MonoBehaviour
         {
             Enemy_Animator.SetBool("Is_Facing_Up", false);
         }
-        if(Direction.normalized.x < 0)
+        if(Direction.normalized.x < 0 && Mathf.Abs(Direction.normalized.y) < Mathf.Abs(Direction.normalized.x))
         {
             Enemy_Animator.SetBool("Is_Facing_Left", true);
             Enemy_Animator.SetBool("Is_Facing_Up", false);
@@ -89,7 +89,7 @@ public class EnemyAI : MonoBehaviour
         {
             Enemy_Animator.SetBool("Is_Facing_Left", false);
         }
-        if(Direction.normalized.x > 0)
+        if(Direction.normalized.x > 0 && Mathf.Abs(Direction.normalized.y) < Mathf.Abs(Direction.normalized.x))
         {
             Enemy_Animator.SetBool("Is_Facing_Right", true);
             Enemy_Animator.SetBool("Is_Facing_Up", false);
