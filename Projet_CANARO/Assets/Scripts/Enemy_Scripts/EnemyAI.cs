@@ -47,7 +47,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    IEnumerator Wait_After_Hit()
+    public IEnumerator Wait_After_Hit()
     {
         Able_To_Run = false;
         rb.bodyType = RigidbodyType2D.Static;

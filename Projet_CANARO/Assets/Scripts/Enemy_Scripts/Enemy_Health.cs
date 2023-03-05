@@ -5,12 +5,15 @@ using UnityEngine;
 public class Enemy_Health : MonoBehaviour
 {
     public GameObject Enemy;
-    public int Enemy_Health_Value = 10;
+    public SpriteRenderer Enemy_Sprite;
+    public EnemyAI AI;
+    public int Enemy_Health_Value = 5;
 
 
     public void Enemy_Taking_Damage(int Damage_Amount)
     {
         Enemy_Health_Value -= Damage_Amount;
+        StartCoroutine(AI.Wait_After_Hit());
     }
 
     void Update()
