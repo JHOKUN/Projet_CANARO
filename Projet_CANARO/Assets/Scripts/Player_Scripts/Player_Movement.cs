@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {   
+    public GameObject Cursor;
     public Attack_System Attack;
     private BoxCollider2D Player_Collider;
     public Vector2 Movement;
@@ -104,6 +105,13 @@ public class Player_Movement : MonoBehaviour
         }
     }
 
+    void Direction_Aiming()
+    {
+        if(Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
+        {
+            Cursor.transform.localPosition = Movement;
+        }
+    }
 
     void Awake()
     {
@@ -131,6 +139,7 @@ public class Player_Movement : MonoBehaviour
         
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
+        Direction_Aiming();
         Is_Dash_Starting();
         Stamina_Refill();
     }
