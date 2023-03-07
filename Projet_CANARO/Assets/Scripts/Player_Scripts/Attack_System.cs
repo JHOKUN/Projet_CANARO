@@ -13,7 +13,7 @@ public class Attack_System : MonoBehaviour
     public Animator Player_Animator;
     public bool Able_To_Attack;
     public bool Is_Attacking;
-    public float Attack_Cooldown = 0.5f;
+    public float Attack_Cooldown = 0.2f;
 
 
     private IEnumerator Attack()
@@ -46,10 +46,10 @@ public class Attack_System : MonoBehaviour
         }
 
         Movement_Player.Able_To_Dash = false;
-        yield return new WaitForSeconds(Attack_Cooldown);
         Up_Area.enabled = false;
         Is_Attacking = false;
         Movement_Player.Able_To_Dash = true;
+        yield return new WaitForSeconds(Attack_Cooldown);
         Able_To_Attack = true;
     }
 
