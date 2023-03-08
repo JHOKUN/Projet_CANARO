@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 353249cfdb8567c4d8507c8f873b406d
+guid: df8a6bbad537be24baa051a2fa02e950
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_0
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aab1227814a452b44b4e1ebcd3c3066c
-      internalID: 1270452650
+      spriteID: 08cb652d9fffb30429544428e8e2d637
+      internalID: -254931771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_1
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_1
       rect:
         serializedVersion: 2
         x: 128
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3c9cb20e14a65c4c9b5a0802d532bf1
-      internalID: 1489045891
+      spriteID: ab0851468e2caca4a9d2677e1b8717cd
+      internalID: 1852082201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_2
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_2
       rect:
         serializedVersion: 2
         x: 256
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c48489f6a8e8a6840b37ff9e69f77406
-      internalID: 2049100672
+      spriteID: 6f72908163d3c314ab0472341ec1334d
+      internalID: -522053877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_3
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_3
       rect:
         serializedVersion: 2
         x: 384
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3466b6e5fe19c9f4e8f467f636465792
-      internalID: -2309171
+      spriteID: 4972897faea7e4c44b68e3f7d0eaa987
+      internalID: -300365641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_4
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_4
       rect:
         serializedVersion: 2
         x: 512
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fc269f0b32548945b8187d4070c04fc
-      internalID: -1488267195
+      spriteID: b2d311838fa34564ebfd196372989bc0
+      internalID: -1152272650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_5
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_5
       rect:
         serializedVersion: 2
         x: 0
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c481375c84cab4fb1ff17d3b64167e
-      internalID: -2025564931
+      spriteID: 735b2666989282b45992b08f62f7b388
+      internalID: 2016286629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_6
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_6
       rect:
         serializedVersion: 2
         x: 128
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c5d3ec7e46076478d95e11f5d6b45c
-      internalID: -969179170
+      spriteID: 166e24a7a9c37e748838b6d814ececd4
+      internalID: -1353121434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_7
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_7
       rect:
         serializedVersion: 2
         x: 256
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06db6da23cc4f7c4eb0893b421f65dd5
-      internalID: -1701108169
+      spriteID: 01ce58f2d1af55f49b2aa2443bdd650b
+      internalID: 1501226147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_8
+      name: Hook_Set_Sprite_Sheet_Projet_CANARO_8
       rect:
         serializedVersion: 2
         x: 384
@@ -298,8 +298,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 687ec0aa6a650504f9f6d0443bc35c6d
-      internalID: -1522517032
+      spriteID: a4dbcda80d0266847a25a6b9cfb819d2
+      internalID: 1423582357
       vertices: []
       indices: 
       edges: []
@@ -315,15 +315,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_1: 1489045891
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_5: -2025564931
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_2: 2049100672
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_4: -1488267195
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_7: -1701108169
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_3: -2309171
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_8: -1522517032
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_6: -969179170
-      Hero_Sprite_Sheet_Hook_Projet_CANARO_Tempo_0: 1270452650
+      Hook_Set_Sprite_Sheet_Projet_CANARO_3: -300365641
+      Hook_Set_Sprite_Sheet_Projet_CANARO_5: 2016286629
+      Hook_Set_Sprite_Sheet_Projet_CANARO_7: 1501226147
+      Hook_Set_Sprite_Sheet_Projet_CANARO_8: 1423582357
+      Hook_Set_Sprite_Sheet_Projet_CANARO_0: -254931771
+      Hook_Set_Sprite_Sheet_Projet_CANARO_4: -1152272650
+      Hook_Set_Sprite_Sheet_Projet_CANARO_1: 1852082201
+      Hook_Set_Sprite_Sheet_Projet_CANARO_2: -522053877
+      Hook_Set_Sprite_Sheet_Projet_CANARO_6: -1353121434
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
