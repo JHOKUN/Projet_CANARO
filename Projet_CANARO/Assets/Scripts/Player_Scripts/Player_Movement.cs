@@ -7,6 +7,7 @@ public class Player_Movement : MonoBehaviour
 {   
     public GameObject Cursor;
     public Attack_System Attack;
+    public Shooting_Hook Hook;
     private BoxCollider2D Player_Collider;
     public Vector2 Movement;
     public Rigidbody2D rb;
@@ -188,7 +189,7 @@ public class Player_Movement : MonoBehaviour
         }
 
 
-        if(Is_Dashing == false && Attack.Is_Attacking == false)
+        if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false)
         {
             Running();
         } 

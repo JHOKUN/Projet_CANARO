@@ -6,6 +6,7 @@ public class Attack_System : MonoBehaviour
 {
     public GameObject Cursor;
     public Player_Movement Movement_Player;
+    public Shooting_Hook Hook;
     public CapsuleCollider2D Up_Area;
     public CapsuleCollider2D Left_Area;
     public CapsuleCollider2D Right_Area;
@@ -63,7 +64,7 @@ public class Attack_System : MonoBehaviour
 
     void Update()
     {
-        if(Able_To_Attack == true && Movement_Player.Is_Dashing == false)
+        if(Able_To_Attack == true && Movement_Player.Is_Dashing == false && Hook.Is_Shooting == false)
         {
             Movement_Player.rb.velocity = new Vector2(0,0);
             if(Input.GetKeyDown(KeyCode.V))
