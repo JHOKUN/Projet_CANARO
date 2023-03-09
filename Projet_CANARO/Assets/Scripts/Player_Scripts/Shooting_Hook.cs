@@ -19,12 +19,11 @@ public class Shooting_Hook : MonoBehaviour
 
     IEnumerator Hook_Shooting()
     {
-        Movement_Player.rb.velocity = new Vector2(0,0);
+        rb.velocity = new Vector2(0,0);
         Is_Shooting = true;
         Hook_Sprite.enabled = true;
         Hook_Collider.enabled = true;
         Able_To_Shoot = false;
-        rb.velocity = Hook.transform.localPosition.normalized * Shooting_Force;
 
         if(Cursor.transform.localPosition.normalized.x == 0 && Cursor.transform.localPosition.normalized.y == 1)
         {
@@ -42,9 +41,9 @@ public class Shooting_Hook : MonoBehaviour
         {
             Player_Animator.SetBool("Is_Hook_Shooting_Left", true);
         }
-        
-        Movement_Player.Able_To_Dash = false;
+        rb.velocity = Hook.transform.localPosition.normalized * Shooting_Force;
         yield return new WaitForSeconds(Shooting_Cooldown);
+        rb.velocity = new Vector2(0,0);
         Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
         Player_Animator.SetBool("Is_Hook_Shooting_Left", false);
         Player_Animator.SetBool("Is_Hook_Shooting_Right", false);
@@ -52,7 +51,6 @@ public class Shooting_Hook : MonoBehaviour
         Is_Shooting = false;
         //Hook_Sprite.enabled = false;
         Hook_Collider.enabled = false;
-        
         
     }
     
@@ -63,14 +61,17 @@ public class Shooting_Hook : MonoBehaviour
         if(Mathf.Abs(Movement_Player.Movement.x) != Mathf.Abs(Movement_Player.Movement.y))
         {
             Hook.transform.localPosition = Movement_Player.Movement;
-        }
-        if(Able_To_Shoot == true && Movement_Player.Is_Dashing == false && Attack.Is_Attacking == false)
-        {
-            if(Input.GetKeyDown(KeyCode.N))
+            if(Able_To_Shoot == true && Movement_Player.Is_Dashing == false && Attack.Is_Attacking == false)
             {
-                StartCoroutine(Hook_Shooting());
-                Able_To_Shoot = true;
+                Movement_Player.rb.velocity = new Vector2(0,0);
+                if(Input.GetKeyDown(KeyCode.N))
+                {
+                    Movement_Player.rb.velocity = new Vector2(0,0);
+                    StartCoroutine(Hook_Shooting());
+                    Able_To_Shoot = true;
+                }
             }
         }
+        
     }
 }

@@ -49,6 +49,7 @@ public class Player_Movement : MonoBehaviour
             rb.velocity = Movement * Dash_Speed;
             Dash_Trail.emitting = true;
             Dashed = true;
+            Debug.Log("Dashing");
             if (Dash_Raycast_Heights.collider != null && Dash_Raycast_Edges_Dash.collider != null)
             {
                 Player_Collider.enabled = false;
@@ -73,7 +74,7 @@ public class Player_Movement : MonoBehaviour
     {
         if(Mathf.Abs(Movement.x) != Mathf.Abs(Movement.y))
         {
-            if(Current_Player_Stamina > 0)
+            if(Current_Player_Stamina > 0 && Attack.Is_Attacking == false && Hook.Is_Shooting == false)
             {
                 Is_Dashing = true;
                 Attack.Able_To_Attack = false;
@@ -81,6 +82,7 @@ public class Player_Movement : MonoBehaviour
                 if(Dashed == true)
                 {
                     Current_Player_Stamina -= 1;
+                    Debug.Log("-1 Stamina");
                 }
                 Dashed = false;
                 Able_To_Dash = false;
@@ -97,7 +99,7 @@ public class Player_Movement : MonoBehaviour
 
     void Is_Dash_Starting()
     {
-        if(Able_To_Dash == true && Attack.Is_Attacking == false)
+        if(Able_To_Dash == true && Attack.Is_Attacking == false && Hook.Is_Shooting == false)
         {
             if(Input.GetKey(KeyCode.Space))
             {
