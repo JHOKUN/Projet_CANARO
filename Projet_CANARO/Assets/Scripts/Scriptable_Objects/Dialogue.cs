@@ -29,9 +29,6 @@ public class Dialogue : MonoBehaviour
     {
         if(Player_In_Range == true && Input.GetKeyDown(KeyCode.R))
         {
-            //player.GetComponent<Player_Movement>().enabled = false;
-            //Movement_Player.Movement.x = 0;
-            //Movement_Player.Movement.y = 0;
             dialogue_box.SetActive(true);
             Time.timeScale = 0.00000000001f;
             Is_Dialoguing = true;
@@ -48,7 +45,6 @@ public class Dialogue : MonoBehaviour
                 dialogue_box.GetComponent<Write_Dialogue>().enabled = false;
                 dialogue_box.GetComponent<Write_Dialogue>().enabled = true;
                 Time.timeScale = 1;
-                //player.GetComponent<Player_Movement>().enabled = true;
             }
     }
 }
