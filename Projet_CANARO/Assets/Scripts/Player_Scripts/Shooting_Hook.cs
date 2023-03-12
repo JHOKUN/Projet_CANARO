@@ -41,7 +41,7 @@ public class Shooting_Hook : MonoBehaviour
         {
             Player_Animator.SetBool("Is_Hook_Shooting_Left", true);
         }
-        rb.velocity = Hook.transform.localPosition.normalized * Shooting_Force;
+        rb.velocity = transform.forward * Shooting_Force;
         yield return new WaitForSeconds(Shooting_Cooldown);
         rb.velocity = new Vector2(0,0);
         Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
@@ -58,6 +58,7 @@ public class Shooting_Hook : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(Hook.transform.localPosition.normalized);
         if(Mathf.Abs(Movement_Player.Movement.x) != Mathf.Abs(Movement_Player.Movement.y))
         {
             Hook.transform.localPosition = Movement_Player.Movement;
