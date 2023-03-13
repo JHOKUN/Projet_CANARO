@@ -6,62 +6,62 @@ public class Shooting_Hook : MonoBehaviour
 {
     public GameObject Hook;
     public GameObject Cursor;
+    public Transform Shoot_Origin_Down;
+    public Transform Shoot_Origin_Right;
+    public Transform Shoot_Origin_Left;
+    public Transform Shoot_Origin_Up;
     public Player_Movement Movement_Player;
     public Attack_System Attack;
     public Animator Player_Animator;
     public SpriteRenderer Hook_Sprite;
+    public Rigidbody2D rb_Hook;
     public BoxCollider2D Hook_Collider;
-    public Rigidbody2D rb;
+    public Vector2 Aim_Direction;
     public float Shooting_Force = 10f;
     public float Shooting_Cooldown = 0.5f;
+    public float Shoot_Duration = 1f;
     public bool Able_To_Shoot = true;
     public bool Is_Shooting = false;
 
     IEnumerator Hook_Shooting()
     {
-        rb.velocity = new Vector2(0,0);
         Is_Shooting = true;
-        Hook_Sprite.enabled = true;
-        Hook_Collider.enabled = true;
         Able_To_Shoot = false;
 
         if(Cursor.transform.localPosition.normalized.x == 0 && Cursor.transform.localPosition.normalized.y == 1)
         {
+            Instantiate(Hook, Shoot_Origin_Up.position, Shoot_Origin_Up.rotation);
             Player_Animator.SetBool("Is_Hook_Shooting_Up", true);
         }
         if(Cursor.transform.localPosition.normalized.x == 0 && Cursor.transform.localPosition.normalized.y == -1)
         {
+            Instantiate(Hook, Shoot_Origin_Down.position, Shoot_Origin_Down.rotation);
             Player_Animator.SetBool("Is_Hook_Shooting_Down", true);
         }
         if(Cursor.transform.localPosition.normalized.x == 1 && Cursor.transform.localPosition.normalized.y == 0)
         {
+            Instantiate(Hook, Shoot_Origin_Right.position, Shoot_Origin_Right.rotation);
             Player_Animator.SetBool("Is_Hook_Shooting_Right", true);
         }
         if(Cursor.transform.localPosition.normalized.x == -1 && Cursor.transform.localPosition.normalized.y == 0)
         {
+            Instantiate(Hook, Shoot_Origin_Left.position, Shoot_Origin_Left.rotation);
             Player_Animator.SetBool("Is_Hook_Shooting_Left", true);
         }
-        rb.velocity = transform.forward * Shooting_Force;
+        //yield return new WaitForSeconds(Shoot_Duration);
+        //DestroyImmediate(Hook, true);
+        
         yield return new WaitForSeconds(Shooting_Cooldown);
-        rb.velocity = new Vector2(0,0);
         Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
         Player_Animator.SetBool("Is_Hook_Shooting_Left", false);
         Player_Animator.SetBool("Is_Hook_Shooting_Right", false);
         Player_Animator.SetBool("Is_Hook_Shooting_Down", false);
         Is_Shooting = false;
-        //Hook_Sprite.enabled = false;
-        Hook_Collider.enabled = false;
-        
     }
-    
-
-
     void Update()
     {
-        Debug.Log(Hook.transform.localPosition.normalized);
-        if(Mathf.Abs(Movement_Player.Movement.x) != Mathf.Abs(Movement_Player.Movement.y))
+        if(Mathf.Abs(Movement_Player.Movement.x) != Mathf.Abs(Movement_Player.Movement.y) || Player_Animator.GetBool("Is_Facing_Backward") == true)
         {
-            Hook.transform.localPosition = Movement_Player.Movement;
             if(Able_To_Shoot == true && Movement_Player.Is_Dashing == false && Attack.Is_Attacking == false)
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
