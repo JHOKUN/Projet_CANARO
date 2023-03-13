@@ -48,9 +48,6 @@ public class Shooting_Hook : MonoBehaviour
             Instantiate(Hook, Shoot_Origin_Left.position, Shoot_Origin_Left.rotation);
             Player_Animator.SetBool("Is_Hook_Shooting_Left", true);
         }
-        //yield return new WaitForSeconds(Shoot_Duration);
-        //DestroyImmediate(Hook, true);
-        
         yield return new WaitForSeconds(Shooting_Cooldown);
         Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
         Player_Animator.SetBool("Is_Hook_Shooting_Left", false);
