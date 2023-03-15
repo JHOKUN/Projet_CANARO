@@ -6,6 +6,7 @@ public class Hook_Script : MonoBehaviour
 {
     public Rigidbody2D rb;
     public BoxCollider2D Collider;
+    public bool Exists;
     public float Shooting_Force = 10f;
 
 
@@ -14,11 +15,21 @@ public class Hook_Script : MonoBehaviour
         if(collision.gameObject.CompareTag("Hookable"))
         {
             rb.velocity = new Vector2(0,0);
+            Collider.enabled = false;
         }
     }
 
     void Start()
     {
-        rb.velocity = transform.right * Shooting_Force;    
+        rb.velocity = transform.right * Shooting_Force;
+        Exists = true;
+    }
+
+    void Update()
+    {
+        if(Exists == false)
+        {
+            Destroy(gameObject);
+        }
     }
 }

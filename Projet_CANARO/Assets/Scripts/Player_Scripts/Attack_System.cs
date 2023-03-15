@@ -20,37 +20,43 @@ public class Attack_System : MonoBehaviour
     private IEnumerator Attack()
     {
         Is_Attacking = true;
-        Up_Area.enabled = true;
         Able_To_Attack = false;
         if(Cursor.transform.localPosition.normalized.x == 0 && Cursor.transform.localPosition.normalized.y == 1)
         {
             Player_Animator.SetTrigger("Attack_Up_Trigger");
             Player_Animator.SetBool("Is_Running_Up", false);
+            Up_Area.enabled = true;
         }
 
         if(Cursor.transform.localPosition.normalized.x == 0 && Cursor.transform.localPosition.normalized.y == -1)
         {
             Player_Animator.SetTrigger("Attack_Down_Trigger");
             Player_Animator.SetBool("Is_Running_Down", false);
+            Down_Area.enabled = true;
         }
 
         if(Cursor.transform.localPosition.normalized.x == 1 && Cursor.transform.localPosition.normalized.y == 0)
         {
             Player_Animator.SetTrigger("Attack_Right_Trigger");
             Player_Animator.SetBool("Is_Running_Right", false);
+            Right_Area.enabled = true;
         }
 
         if(Cursor.transform.localPosition.normalized.x == -1 && Cursor.transform.localPosition.normalized.y == 0)
         {
             Player_Animator.SetTrigger("Attack_Left_Trigger");
             Player_Animator.SetBool("Is_Running_Side", false);
+            Left_Area.enabled = true;
         }
 
         Movement_Player.Able_To_Dash = false;
-        Up_Area.enabled = false;
         Is_Attacking = false;
         Movement_Player.Able_To_Dash = true;
         yield return new WaitForSeconds(Attack_Cooldown);
+        Up_Area.enabled = false;
+        Down_Area.enabled = false;
+        Right_Area.enabled = false;
+        Left_Area.enabled = false;
         Able_To_Attack = true;
     }
 
@@ -59,6 +65,10 @@ public class Attack_System : MonoBehaviour
 
     void Start()
     {
+        Up_Area.enabled = false;
+        Down_Area.enabled = false;
+        Right_Area.enabled = false;
+        Left_Area.enabled = false;
         Able_To_Attack = true;
     }
 

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Hookable
+  - Hook
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Holes
   - Player_Projectiles
   - Enemies
-  - 
+  - Hookable_Objects
   - 
   - 
   - 

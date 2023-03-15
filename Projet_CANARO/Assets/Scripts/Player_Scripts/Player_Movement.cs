@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {   
+    public GameObject Hook_Object;
     public GameObject Cursor;
     public Attack_System Attack;
     public Shooting_Hook Hook;
+    public Hook_Script Script_Hook;
+    public Hookable_Object_Script Drag_Script;
     private BoxCollider2D Player_Collider;
     public Vector2 Movement;
+    public Vector2 New_Direction;
+    public Transform Target = null;
     public Rigidbody2D rb;
     public TrailRenderer Dash_Trail;
     public Spawn_Point_Definer Start_Position;
@@ -107,6 +112,19 @@ public class Player_Movement : MonoBehaviour
             }
         }
     }
+    public void Set_Target(Transform New_Target)
+    {
+        Target = New_Target;
+    }
+    public void Hook_Drag()
+    {
+        New_Direction = new Vector2(Target.position.x, Target.position.y);
+        transform.position = Vector2.MoveTowards(transform.position, New_Direction, 10f * Time.deltaTime);
+        if(Vector2.Distance(Target.position, transform.position) < 0.1f )
+        {
+            Drag_Script.Player_Must_Drag = false;
+        }
+    }
 
     void Direction_Aiming()
     {
@@ -190,10 +208,13 @@ public class Player_Movement : MonoBehaviour
             Player_Animator.SetBool("Is_Facing_Right", true);
         }
 
-
+        if(Drag_Script.Player_Must_Drag == true)
+        {
+            Hook_Drag();
+        }
         if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false)
         {
             Running();
-        } 
+        }
     }
 }

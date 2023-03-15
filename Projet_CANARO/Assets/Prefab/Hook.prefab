@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5381166410765214432}
   m_Layer: 10
   m_Name: Hook
-  m_TagString: Untagged
+  m_TagString: Hook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7328465888177927157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03161025, y: -0.035215378}
+  m_Offset: {x: -0.0016270578, y: 0.05716443}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.82267904, y: 1.0736008}
+  m_Size: {x: 1.1707871, y: 0.88884115}
   m_EdgeRadius: 0
 --- !u!114 &5381166410765214432
 MonoBehaviour:
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae81089e7fd065e46abf7dc8675d6cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hook: {fileID: 0}
-  Aim_Direction: {x: 0, y: 0}
   rb: {fileID: 6442913280490653946}
+  Collider: {fileID: 6097042999102436531}
+  Exists: 0
   Shooting_Force: 10

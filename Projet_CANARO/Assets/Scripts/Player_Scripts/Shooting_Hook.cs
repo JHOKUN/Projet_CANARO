@@ -10,6 +10,8 @@ public class Shooting_Hook : MonoBehaviour
     public Transform Shoot_Origin_Right;
     public Transform Shoot_Origin_Left;
     public Transform Shoot_Origin_Up;
+    public Hook_Script Script_Hook;
+    public Hookable_Object_Script Target_Script;
     public Player_Movement Movement_Player;
     public Attack_System Attack;
     public Animator Player_Animator;
@@ -20,6 +22,7 @@ public class Shooting_Hook : MonoBehaviour
     public float Shooting_Force = 10f;
     public float Shooting_Cooldown = 0.5f;
     public float Shoot_Duration = 1f;
+    public bool Player_Being_Drag = false;
     public bool Able_To_Shoot = true;
     public bool Is_Shooting = false;
 
@@ -47,6 +50,11 @@ public class Shooting_Hook : MonoBehaviour
         {
             Instantiate(Hook, Shoot_Origin_Left.position, Shoot_Origin_Left.rotation);
             Player_Animator.SetBool("Is_Hook_Shooting_Left", true);
+        }
+        yield return new WaitForSeconds(Shoot_Duration);
+        if(Player_Being_Drag == false)
+        {
+            Script_Hook.Exists = false;
         }
         yield return new WaitForSeconds(Shooting_Cooldown);
         Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
