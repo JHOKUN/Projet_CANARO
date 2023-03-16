@@ -21,7 +21,7 @@ public class Shooting_Hook : MonoBehaviour
     public Vector2 Aim_Direction;
     public float Shooting_Force = 10f;
     public float Shooting_Cooldown = 0.5f;
-    public float Shoot_Duration = 1f;
+    public float Shoot_Duration = 0.7f;
     public bool Player_Being_Drag = false;
     public bool Able_To_Shoot = true;
     public bool Is_Shooting = false;
@@ -30,7 +30,6 @@ public class Shooting_Hook : MonoBehaviour
     {
         Is_Shooting = true;
         Able_To_Shoot = false;
-
         if(Cursor.transform.localPosition.normalized.x == 0 && Cursor.transform.localPosition.normalized.y == 1)
         {
             Instantiate(Hook, Shoot_Origin_Up.position, Shoot_Origin_Up.rotation);
@@ -56,11 +55,13 @@ public class Shooting_Hook : MonoBehaviour
         {
             Script_Hook.Exists = false;
         }
-        yield return new WaitForSeconds(Shooting_Cooldown);
-        Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
-        Player_Animator.SetBool("Is_Hook_Shooting_Left", false);
-        Player_Animator.SetBool("Is_Hook_Shooting_Right", false);
-        Player_Animator.SetBool("Is_Hook_Shooting_Down", false);
+        if(Script_Hook.Exists == false)
+        {
+            Player_Animator.SetBool("Is_Hook_Shooting_Up", false);
+            Player_Animator.SetBool("Is_Hook_Shooting_Left", false);
+            Player_Animator.SetBool("Is_Hook_Shooting_Right", false);
+            Player_Animator.SetBool("Is_Hook_Shooting_Down", false);  
+        }
         Is_Shooting = false;
     }
     void Update()
@@ -74,6 +75,7 @@ public class Shooting_Hook : MonoBehaviour
                 {
                     Movement_Player.rb.velocity = new Vector2(0,0);
                     StartCoroutine(Hook_Shooting());
+                    
                     Able_To_Shoot = true;
                 }
             }

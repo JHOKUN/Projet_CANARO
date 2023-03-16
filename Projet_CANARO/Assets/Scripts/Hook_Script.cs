@@ -6,7 +6,9 @@ public class Hook_Script : MonoBehaviour
 {
     public Rigidbody2D rb;
     public BoxCollider2D Collider;
+    public TrailRenderer Rope;
     public bool Exists;
+    public bool Hookable_Touched = false;
     public float Shooting_Force = 10f;
 
 
@@ -14,8 +16,14 @@ public class Hook_Script : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Hookable"))
         {
+            Hookable_Touched = true;
             rb.velocity = new Vector2(0,0);
-            Collider.enabled = false;
+            Collider.isTrigger = true;
+            Rope.time = 0.3879f;
+        }
+        else if(collision.gameObject.CompareTag("Unhookable"))
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -23,11 +31,13 @@ public class Hook_Script : MonoBehaviour
     {
         rb.velocity = transform.right * Shooting_Force;
         Exists = true;
+        Hookable_Touched = false;
+        Rope.emitting = true;
     }
 
-    void Update()
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if(Exists == false)
+        if(collider.gameObject.tag == "Player")
         {
             Destroy(gameObject);
         }
