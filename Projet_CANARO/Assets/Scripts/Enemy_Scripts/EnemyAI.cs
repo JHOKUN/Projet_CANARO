@@ -45,6 +45,10 @@ public class EnemyAI : MonoBehaviour
             }
             StartCoroutine(Wait_After_Hit());
         }
+        if(Collision.gameObject.CompareTag("Hook"))
+        {
+            StartCoroutine(Wait_After_Hit());
+        }
     }
 
     public IEnumerator Wait_After_Hit()
@@ -60,7 +64,6 @@ public class EnemyAI : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
         Able_To_Run = true;
     }
-
 
     void Start()
     {

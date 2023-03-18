@@ -25,6 +25,10 @@ public class Hook_Script : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Start()
