@@ -996,9 +996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d858ec5683a9e64999676af0f40102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player_Position: {x: 11.5, y: -6}
+  Player_Position: {x: -20, y: 2}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
-  Movement_Player: {fileID: 0}
 --- !u!1 &428005042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1419,8 @@ MonoBehaviour:
   Key_Amount: 0
   Potion_Amount: 0
   Is_Getting_Hook: 1
+  Player_In_Range: 0
+  Able_To_Open: 0
 --- !u!95 &919920780
 Animator:
   serializedVersion: 4

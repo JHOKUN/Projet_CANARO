@@ -122,6 +122,7 @@ public class Player_Movement : MonoBehaviour
     }
     public void Hook_Drag()
     {
+        Hook.Player_Being_Drag = true;
         New_Direction = new Vector2(Target.position.x, Target.position.y);
         transform.position = Vector2.MoveTowards(transform.position, New_Direction, 10f * Time.deltaTime);
         if(Vector2.Distance(Target.position, transform.position) < 0.1f )

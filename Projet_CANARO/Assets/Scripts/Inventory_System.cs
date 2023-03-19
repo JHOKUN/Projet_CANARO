@@ -15,19 +15,23 @@ public class Inventory_System : MonoBehaviour
 
   public void Add_Potion(int Amount)
   {
-    Potions ++;
+    Potions += Amount;
     Potion_Count.text = Potions.ToString();
   }
 
   public void Remove_Potion(int Amount)
   {
-    Potions --;
-    Potion_Count.text = Potions.ToString();
+    if(Potions > 0)
+    {
+      Potions -= Amount;
+      Potion_Count.text = Potions.ToString();
+    }
+    
   }
 
   public void Add_Key(int Amount)
   {
-    Keys ++;
+    Keys += Amount;
     Key_Count.text = Keys.ToString();
   }
 
@@ -35,14 +39,14 @@ public class Inventory_System : MonoBehaviour
   {
     if(Keys > 0)
     {
-      Keys --;
+      Keys -= Amount;
       Key_Count.text = Keys.ToString();
     }
   }
 
   void Start()
   {
-    
+
   }
   
 }
