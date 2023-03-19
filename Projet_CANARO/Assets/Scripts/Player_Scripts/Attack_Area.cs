@@ -11,7 +11,7 @@ public class Attack_Area : MonoBehaviour
     {
         if(Collider.gameObject.tag == "Enemy")
         {
-            Enemy_Life.Enemy_Health_Value -= 1;
+            Collider.GetComponent<Enemy_Health>().Enemy_Health_Value -= 1;
         }
     }
 

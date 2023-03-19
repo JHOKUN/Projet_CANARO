@@ -23,9 +23,17 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.gameObject.CompareTag("Player"))
+        {
+            Target = collider.gameObject.GetComponent<Transform>();
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D Collision)
     {
-        if (Collision.gameObject.tag == "Player")
+        if(Collision.gameObject.tag == "Player")
         {
             if(Enemy_Animator.GetBool("Is_Facing_Up") == true)
             {

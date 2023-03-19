@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    public GameObject player;
     public GameObject dialogue_box;
-    public Player_Movement Movement_Player;
     public bool Is_Dialoguing = false;
     public bool Player_In_Range = false;
 

@@ -23,6 +23,7 @@ public class Player_Movement : MonoBehaviour
     public RaycastHit2D Dash_Raycast_Edges_Dash;
     [SerializeField] private LayerMask Dash_Layer_Mask_Heights;
     [SerializeField] private LayerMask Dash_Layer_Mask_Edges_Dash;
+    public bool Player_Must_Drag = false;
     public bool Must_Respawn = false;
     public bool Is_Dashing = false;
     public bool Able_To_Dash = true;
@@ -122,7 +123,7 @@ public class Player_Movement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, New_Direction, 10f * Time.deltaTime);
         if(Vector2.Distance(Target.position, transform.position) < 0.1f )
         {
-            Drag_Script.Player_Must_Drag = false;
+            Player_Must_Drag = false;
         }
     }
 
@@ -208,7 +209,7 @@ public class Player_Movement : MonoBehaviour
             Player_Animator.SetBool("Is_Facing_Right", true);
         }
 
-        if(Drag_Script.Player_Must_Drag == true)
+        if(Player_Must_Drag == true)
         {
             Hook_Drag();
         }
