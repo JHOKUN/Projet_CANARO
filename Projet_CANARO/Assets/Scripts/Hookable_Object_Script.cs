@@ -23,8 +23,4 @@ public class Hookable_Object_Script : MonoBehaviour
 
         Player.GetComponent<Shooting_Hook>().Player_Being_Drag = false;
     }
-    void Update()
-    {
-        Debug.Log(Player);
-    }
 }
