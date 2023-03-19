@@ -6,6 +6,7 @@ public class Shooting_Hook : MonoBehaviour
 {
     public GameObject Hook;
     public GameObject Cursor;
+    public Inventory_System Inventory;
     public Transform Shoot_Origin_Down;
     public Transform Shoot_Origin_Right;
     public Transform Shoot_Origin_Left;
@@ -68,7 +69,7 @@ public class Shooting_Hook : MonoBehaviour
     {
         if(Mathf.Abs(Movement_Player.Movement.x) != Mathf.Abs(Movement_Player.Movement.y) || Player_Animator.GetBool("Is_Facing_Backward") == true)
         {
-            if(Able_To_Shoot == true && Movement_Player.Is_Dashing == false && Attack.Is_Attacking == false)
+            if(Inventory.Hook_Get == true && Able_To_Shoot == true && Movement_Player.Is_Dashing == false && Attack.Is_Attacking == false)
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
                 if(Input.GetKeyDown(KeyCode.N))

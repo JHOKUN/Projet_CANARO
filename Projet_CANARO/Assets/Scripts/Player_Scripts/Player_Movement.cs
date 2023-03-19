@@ -21,8 +21,10 @@ public class Player_Movement : MonoBehaviour
     public Animator Player_Animator;
     public RaycastHit2D Dash_Raycast_Heights;
     public RaycastHit2D Dash_Raycast_Edges_Dash;
+    public RaycastHit2D Dash_Raycast_Holes;
     [SerializeField] private LayerMask Dash_Layer_Mask_Heights;
     [SerializeField] private LayerMask Dash_Layer_Mask_Edges_Dash;
+    [SerializeField] private LayerMask Dash_Layer_Mask_Holes;
     public bool Player_Must_Drag = false;
     public bool Must_Respawn = false;
     public bool Is_Dashing = false;
@@ -52,15 +54,16 @@ public class Player_Movement : MonoBehaviour
         {   
             Dash_Raycast_Heights = Physics2D.Raycast(transform.position, Movement, 0.1f, Dash_Layer_Mask_Heights);
             Dash_Raycast_Edges_Dash = Physics2D.Raycast(transform.position, Movement, 2f, Dash_Layer_Mask_Edges_Dash);
+            Dash_Raycast_Holes = Physics2D.Raycast(transform.position, Movement, 2f, Dash_Layer_Mask_Holes);
             rb.velocity = Movement * Dash_Speed;
             Dash_Trail.emitting = true;
             Dashed = true;
-            Debug.Log("Dashing");
-            if (Dash_Raycast_Heights.collider != null && Dash_Raycast_Edges_Dash.collider != null)
+            if (Dash_Raycast_Heights.collider != null && Dash_Raycast_Edges_Dash.collider != null || Dash_Raycast_Holes.collider != null)
             {
                 Player_Collider.enabled = false;
             }
         }
+        
     }
 
     private void Stamina_Refill()

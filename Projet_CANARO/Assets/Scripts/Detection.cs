@@ -12,7 +12,6 @@ public class Detection : MonoBehaviour
         if(collider.gameObject.CompareTag("Player"))
         {
             Script.Player = collider.gameObject;
-            Debug.Log("c bon");
         }
     }
 }

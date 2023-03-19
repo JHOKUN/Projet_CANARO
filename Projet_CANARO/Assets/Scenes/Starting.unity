@@ -1013,9 +1013,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caddbb5c6ccfce746b6c2d9319fe04fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene_To_Load: House_Inside_2
-  Player_Position: {x: 0, y: 0}
-  Player_Position_Storage: {fileID: 0}
+  Scene_To_Load: Dungeon
+  Player_Position: {x: 5.5, y: -8}
+  Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &363036106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1076,7 +1076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363036103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.166998, y: 12.254999, z: 0}
+  m_LocalPosition: {x: 3.9, y: -4.4, z: 0}
   m_LocalScale: {x: 1.205, y: 1.205, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1324,6 +1324,7 @@ GameObject:
   - component: {fileID: 435656560}
   - component: {fileID: 435656561}
   - component: {fileID: 435656562}
+  - component: {fileID: 435656563}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1362,6 +1363,12 @@ MonoBehaviour:
   Dash_Layer_Mask_Edges_Dash:
     serializedVersion: 2
     m_Bits: 256
+  Dash_Layer_Mask_Dungeon_Ground:
+    serializedVersion: 2
+    m_Bits: 8192
+  Dash_Layer_Mask_Holes:
+    serializedVersion: 2
+    m_Bits: 512
   Player_Must_Drag: 0
   Must_Respawn: 0
   Is_Dashing: 0
@@ -1699,6 +1706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hook: {fileID: 7328465888177927157, guid: 232135d87ab015048a8918cd81793470, type: 3}
   Cursor: {fileID: 2001607990}
+  Inventory: {fileID: 1740590242}
   Shoot_Origin_Down: {fileID: 2025854780}
   Shoot_Origin_Right: {fileID: 2094535133}
   Shoot_Origin_Left: {fileID: 45654832}
@@ -1718,6 +1726,20 @@ MonoBehaviour:
   Player_Being_Drag: 0
   Able_To_Shoot: 1
   Is_Shooting: 0
+--- !u!114 &435656563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435656551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2599c314fc620d41958f36b1502bf7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Real_Inventory: {fileID: 1740590242}
+  Hook_Getting: 0
 --- !u!1 &470552265
 GameObject:
   m_ObjectHideFlags: 0
