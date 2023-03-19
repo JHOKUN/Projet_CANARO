@@ -10,28 +10,28 @@ public class Use_Selected_Item : MonoBehaviour
     
     //il faut créer un event UI qui utilisera l'Item, event qui sera Trigger par l'input use item
 
-    public void Use()
-    {
-        if(Input.GetKeyDown(KeyCode.X) && Able_To_Use == true)
-        {
-            Debug.Log("Current Item is " + Inventory_System.instance.Current_Item);
-            Inventory_System.instance.Use_Item();
-            Debug.Log("Item used");
-            Able_To_Use = false;
-        }
-    }
+   // public void Use()
+   // {
+       // if(Input.GetKeyDown(KeyCode.X) && Able_To_Use == true)
+       // {
+            //Debug.Log("Current Item is " + Inventory_System.instance.Current_Item);
+            //Inventory_System.instance.Use_Item();
+           // Debug.Log("Item used");
+            //Able_To_Use = false;
+       // }
+   // }
 
-    public void Add_Test()
-    {
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            Inventory_System.instance.Add_Item(item);
-        }
-    }
+    //public void Add_Test()
+    //{
+        //if(Input.GetKeyDown(KeyCode.B))
+        //{
+        //   Player_Inventory.Hook_Get = true;
+        //}
+    //}
     
-    void Update()
-    {
-       Use();
-       Add_Test();
-    }
+    //void Update()
+    //{
+       //Use();
+      // Add_Test();
+    //}
 }

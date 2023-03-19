@@ -1,83 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class Inventory_System : MonoBehaviour
 {
-    
-    public Health_Player Player_Health;
-    public Inventory_Slot Slots;
-    public List<Item> Content = new List<Item>();
-    public Item Current_Item = null;
-    public int Content_Current_Index = 0;
-    public int Inventory_Space = 9;
-    public static Inventory_System instance;
+  public TextMeshProUGUI Key_Count;
+  public TextMeshProUGUI Potion_Count;
+  public bool Hook_Get = false;
+  public int Keys;
+  public int Potions;
 
-    public delegate void OnItemAdded();
-    public OnItemAdded onItemAddedCallBack;
 
-    public void Use_Item()
+  public void Add_Potion()
+  {
+    Potions ++;
+    Potion_Count.text = Potions.ToString();
+  }
+
+  public void Remove_Potion()
+  {
+    Potions --;
+    Potion_Count.text = Potions.ToString();
+  }
+
+  public void Add_Key()
+  {
+    Keys ++;
+    Key_Count.text = Keys.ToString();
+  }
+
+  public void Remove_Key()
+  {
+    if(Keys > 0)
     {
-        //Item Current_Item = Content[Content_Current_Index];
-        Player_Health.Healing(Current_Item.Healing_Amount);
-        Slots.Slot_Clearing();
-        Content.Remove(Current_Item);
+      Keys --;
+      Key_Count.text = Keys.ToString();
     }
-    
-    public void Add_Item(Item item)
-    {
-        if(Content.Count >= Inventory_Space)
-        {
-            Debug.Log("Inventaire plein");
-            return;
-        }
+  }
 
-        Content.Add(item);
-        Debug.Log("Item added");
-
-        if(onItemAddedCallBack != null)
-        {
-            onItemAddedCallBack.Invoke();
-        }
-    }
-    public void Test()
-    {
-        if(Input.GetKeyDown(KeyCode.M))
-        {
-            Debug.Log("Selected Item" + Current_Item.Item_Id + Current_Item.Item_Name + Current_Item.Item_Description);
-        }
-    }
-
-    //public void Get_Next_Item()
-    //{
-      //  Content_Current_Index += 1;
-    //}
-
-    //public void Get_Previous_Item()
-    //{
-      //  Content_Current_Index -= 1;
-    //}                                                                                     On réutilisera ça pour la case qui montre l'objet selectionné (si on a le temps)
-
-    //void Update_Inventory_UI(int Content_Current_Index)
-    //{
-      //  Item_Icon.sprite = Content[Content_Current_Index].Item_Image;
-    //}
-
-
-    private void Awake()
-    {
-        instance = this;
-    }
-
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-      Test();
-    }
+  void Start()
+  {
+    Keys = 0;
+  }
+  
 }

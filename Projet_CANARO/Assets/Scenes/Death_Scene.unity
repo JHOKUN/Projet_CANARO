@@ -1560,7 +1560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5d5566b6a6eaa40bf9ed34f5dca0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   Player_Animator: {fileID: 435656558}
+  Death_Position: {fileID: 0}
   Max_Player_Health: 6
   Current_Player_Health: 0
   Can_Take_Damage: 1
