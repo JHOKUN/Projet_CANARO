@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Land.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Dungeon.unity
+    path: Assets/Scenes/Dungeon_Floor_1.unity
     guid: cfb268a6165070148ba1d89802e41795
   - enabled: 1
     path: Assets/Scenes/House_Inside_1.unity
