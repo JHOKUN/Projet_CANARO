@@ -13,11 +13,8 @@ public class Falling_System : MonoBehaviour
         if(other.CompareTag("Player") && other.gameObject.GetComponent<Shooting_Hook>().Player_Being_Drag == false)
         {
             other.GetComponent<Player_Movement>().Is_Falling = true;
-            while(other.GetComponent<Player_Movement>().Is_Falling == true)
-            {
-                other.gameObject.GetComponent<Health_Player>().Taking_Damage(1);
-                other.GetComponent<Player_Movement>().Fall();
-            }
+            other.gameObject.GetComponent<Health_Player>().Taking_Damage(1);
+            other.GetComponent<Player_Movement>().Fall();
             Player_Position_Storage.Spawn_Point_Value = Player_Position;
             other.GetComponent<Player_Movement>().Must_Respawn = true;
         }

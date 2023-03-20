@@ -1321,10 +1321,10 @@ GameObject:
   - component: {fileID: 435656553}
   - component: {fileID: 435656557}
   - component: {fileID: 435656552}
-  - component: {fileID: 435656560}
   - component: {fileID: 435656561}
   - component: {fileID: 435656562}
   - component: {fileID: 435656563}
+  - component: {fileID: 435656564}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1348,6 +1348,7 @@ MonoBehaviour:
   Cursor: {fileID: 2001607990}
   Attack: {fileID: 435656561}
   Hook: {fileID: 435656562}
+  Use_Potion: {fileID: 435656564}
   Script_Hook: {fileID: 5381166410765214432, guid: 232135d87ab015048a8918cd81793470, type: 3}
   Drag_Script: {fileID: 1515987493}
   Movement: {x: 0, y: 0}
@@ -1368,6 +1369,7 @@ MonoBehaviour:
     m_Bits: 512
   Player_Must_Drag: 0
   Must_Respawn: 0
+  Is_Falling: 0
   Is_Dashing: 0
   Able_To_Dash: 1
   Able_To_Refill: 0
@@ -1652,21 +1654,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.3
   m_Autodestruct: 0
   m_Emitting: 0
---- !u!114 &435656560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435656551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf911cb07326bb543a169cdaa6b1de2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player_Inventory: {fileID: 1740590242}
-  item: {fileID: 11400000, guid: d49eb260c7ce4a84e8d06543e2148df7, type: 2}
-  Able_To_Use: 1
 --- !u!114 &435656561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1738,6 +1725,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Real_Inventory: {fileID: 1740590242}
   Hook_Getting: 0
+--- !u!114 &435656564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435656551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2069db32b972f74c8ba3728cfd721ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory: {fileID: 1740590242}
+  Health: {fileID: 435656557}
+  Able_To_Use: 1
 --- !u!1 &456358506
 GameObject:
   m_ObjectHideFlags: 0

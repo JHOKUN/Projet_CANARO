@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     public GameObject Cursor;
     public Attack_System Attack;
     public Shooting_Hook Hook;
+    public Potion_Use Use_Potion ;
     public Hook_Script Script_Hook;
     public Hookable_Object_Script Drag_Script;
     private BoxCollider2D Player_Collider;
@@ -232,7 +233,12 @@ public class Player_Movement : MonoBehaviour
         }
         if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false && Is_Falling == false)
         {
+            Use_Potion.Able_To_Use = true;
             Running();
+        }
+        else
+        {
+            Use_Potion.Able_To_Use = false;
         }
     }
 }
