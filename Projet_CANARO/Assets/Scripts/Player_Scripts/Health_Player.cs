@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health_Player : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject Death_UI;
     public Animator Player_Animator;
     public Transform Death_Position;
     public float Max_Player_Health;
@@ -47,6 +49,16 @@ public class Health_Player : MonoBehaviour
             Current_Player_Health = Max_Player_Health;
         }
     }
+
+    IEnumerator Dying()
+    {
+        Player.GetComponent<Player_Movement>().Player_Animator.SetBool("Is_Facing_Forward", false);
+        Player_Animator.SetBool("Is_Dead", true);
+        Player.transform.position = Death_Position.position;
+        yield return new WaitForSeconds(2f);
+        Death_UI.SetActive(true);
+
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.M))
@@ -55,8 +67,7 @@ public class Health_Player : MonoBehaviour
         }
         if(Current_Player_Health == 0)
         {
-            Player_Animator.SetBool("Is_Dead", true);
-            Player.transform.position = Death_Position.position;
+            StartCoroutine(Dying());
         }
     }
 

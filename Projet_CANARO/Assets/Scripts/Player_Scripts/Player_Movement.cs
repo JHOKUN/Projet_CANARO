@@ -27,6 +27,7 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private LayerMask Dash_Layer_Mask_Holes;
     public bool Player_Must_Drag = false;
     public bool Must_Respawn = false;
+    public bool Is_Falling = false;
     public bool Is_Dashing = false;
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
@@ -91,7 +92,6 @@ public class Player_Movement : MonoBehaviour
                 if(Dashed == true)
                 {
                     Current_Player_Stamina -= 1;
-                    Debug.Log("-1 Stamina");
                 }
                 Dashed = false;
                 Able_To_Dash = false;
@@ -137,6 +137,19 @@ public class Player_Movement : MonoBehaviour
         {
             Cursor.transform.localPosition = Movement;
         }
+    }
+
+    public void Fall()
+    {
+        StartCoroutine(Falling_Animation());
+    }
+
+    public IEnumerator Falling_Animation()
+    {
+        Player_Animator.SetBool("Is_Falling", true);
+        yield return new WaitForSeconds(1f);
+        Player_Animator.SetBool("Is_Falling", false);
+        Is_Falling = false;
     }
 
     void Awake()
@@ -217,7 +230,7 @@ public class Player_Movement : MonoBehaviour
         {
             Hook_Drag();
         }
-        if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false)
+        if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false && Is_Falling == false)
         {
             Running();
         }

@@ -18,6 +18,7 @@ public class Chest_Activate : MonoBehaviour
     {
         if(Player_In_Range && Input.GetKeyDown(KeyCode.H) && Is_Open == false)
         {
+            Chest_Animator.SetTrigger("Open_Chest");
             Able_To_Open = true;
         }
     }
@@ -44,7 +45,6 @@ public class Chest_Activate : MonoBehaviour
     {
         if(Able_To_Open)
         {
-            Chest_Animator.SetTrigger("Open_Chest");
             Collider.gameObject.GetComponent<Inventory_Placeholder>().Hook_Getting = Is_Getting_Hook;
             Collider.gameObject.GetComponent<Inventory_Placeholder>().Add_Key_To_Inventory(Key_Amount);
             Collider.gameObject.GetComponent<Inventory_Placeholder>().Add_Potion_To_Inventory(Potion_Amount);
