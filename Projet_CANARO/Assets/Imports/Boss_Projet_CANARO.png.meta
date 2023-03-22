@@ -1,0 +1,760 @@
+fileFormatVersion: 2
+guid: 236ef7ca10d844741b57177c54e9e887
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f87fa140f4a4c46b18236c288fadca
+      internalID: -532890451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 410
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f791da313480b459e28472b63df9f5
+      internalID: -1686578961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 410
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca85da0a565beb4abbc5ce0dd715374
+      internalID: 1553726232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_3
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 410
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa55c4d7ef5c8944b1cbd221854416d
+      internalID: -890152681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 410
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7cf5f0600e56246ab305949f845f61
+      internalID: -1152403789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 328
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60adf791806b3b8448532cd92159036c
+      internalID: 1314790032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 328
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c721e399ac452634f966a3b8cdd7ed17
+      internalID: 231328065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 328
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea9e7fa24d63324cb3f16336f3d0af5
+      internalID: -219587089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_8
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 328
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9591dd5edf88fa54faa07d94370162f1
+      internalID: -1718181320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 328
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b12a7213a352c42a89b020c0e8a660
+      internalID: 1940596732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991ba4be2dcafba44891213e42b86dee
+      internalID: -1502709945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 246
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2d24db283ea304ea67df038347c6a6
+      internalID: -1854763863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 246
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848775699d705694d845aecf62db0ee1
+      internalID: 623407830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_13
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 246
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2aaf8d440ca0147945ba2457ac5a7c
+      internalID: -1232887692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 246
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e80756ec800734b9d520c8773d4ed4
+      internalID: 248572383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d146c6e1dd3a548b138e2d4c87a156
+      internalID: 919781768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 164
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb211da06680d543b01cdd2504780ba
+      internalID: -450335760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 164
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabeaf14931a84d49b5b1f1ce7e6892f
+      internalID: 1476976593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 164
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314a365dc13ca6b45bb90e450346ea52
+      internalID: 127028130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 164
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef53dd57bc6c51c4fbb25aaf13c87fd1
+      internalID: 1110877391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38b7db65c6177b429b3ab66b77b8842
+      internalID: 525990427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 82
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f161c2b758ddc0a499064712f09280c9
+      internalID: -565046060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 82
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c0e3dd4266cc642a8dd31c39ad72d5
+      internalID: -1925513243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_23
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 82
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92fa217e754b842bf28b6ec4fb2180
+      internalID: 685094848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_24
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 82
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed20f958c31f59243815cdc9cae39a70
+      internalID: 651689425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cdd185d2d8c5b4fbb506a63bbe0eab
+      internalID: -1702501796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_26
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef9568fdba33304cb52e384be9ff3e9
+      internalID: -1024019431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_27
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0929006dd8bce1e40a144571e9e62c5a
+      internalID: -1973432997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Projet_CANARO_28
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9350913821db9b4439e9f609b7eb838e
+      internalID: -691654333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Boss_Projet_CANARO_13: -1232887692
+      Boss_Projet_CANARO_11: -1854763863
+      Boss_Projet_CANARO_0: -532890451
+      Boss_Projet_CANARO_21: -565046060
+      Boss_Projet_CANARO_19: 1110877391
+      Boss_Projet_CANARO_1: -1686578961
+      Boss_Projet_CANARO_20: 525990427
+      Boss_Projet_CANARO_24: 651689425
+      Boss_Projet_CANARO_7: -219587089
+      Boss_Projet_CANARO_12: 623407830
+      Boss_Projet_CANARO_25: -1702501796
+      Boss_Projet_CANARO_8: -1718181320
+      Boss_Projet_CANARO_18: 127028130
+      Boss_Projet_CANARO_10: -1502709945
+      Boss_Projet_CANARO_14: 248572383
+      Boss_Projet_CANARO_4: -1152403789
+      Boss_Projet_CANARO_5: 1314790032
+      Boss_Projet_CANARO_3: -890152681
+      Boss_Projet_CANARO_28: -691654333
+      Boss_Projet_CANARO_15: 919781768
+      Boss_Projet_CANARO_26: -1024019431
+      Boss_Projet_CANARO_16: -450335760
+      Boss_Projet_CANARO_23: 685094848
+      Boss_Projet_CANARO_6: 231328065
+      Boss_Projet_CANARO_27: -1973432997
+      Boss_Projet_CANARO_17: 1476976593
+      Boss_Projet_CANARO_22: -1925513243
+      Boss_Projet_CANARO_2: 1553726232
+      Boss_Projet_CANARO_9: 1940596732
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

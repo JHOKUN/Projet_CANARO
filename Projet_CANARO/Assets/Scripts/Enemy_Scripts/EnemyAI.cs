@@ -72,11 +72,6 @@ public class EnemyAI : MonoBehaviour
         Able_To_Run = true;
     }
 
-    void Start()
-    {
-        Waiting_Time = 1.5f;
-    }
-
     private void Update()
     {
         Direction = new Vector2(Target.position.x - transform.position.x, Target.position.y - transform.position.y);

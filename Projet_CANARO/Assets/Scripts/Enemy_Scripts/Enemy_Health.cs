@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy_Health : MonoBehaviour
 {
     public GameObject Enemy;
-    public SpriteRenderer Enemy_Sprite;
     public EnemyAI AI;
     public int Enemy_Health_Value = 5;
 
