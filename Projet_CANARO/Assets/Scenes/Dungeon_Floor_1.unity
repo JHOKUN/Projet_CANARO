@@ -4592,6 +4592,7 @@ Transform:
   - {fileID: 1299744688}
   - {fileID: 1815259645}
   - {fileID: 1925858252}
+  - {fileID: 1652207194}
   m_Father: {fileID: 523673741}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4743,6 +4744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene_To_Load: Main_Land
   Player_Position: {x: 45, y: 41}
+  Position_To_Load: {x: 0, y: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &1581320103
 SpriteRenderer:
@@ -4796,6 +4798,80 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1652207193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652207194}
+  - component: {fileID: 1652207196}
+  - component: {fileID: 1652207195}
+  m_Layer: 0
+  m_Name: Resume_Point
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1652207194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652207193}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.5, y: -7.975, z: 1.5641688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1274639850}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1652207195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652207193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74aaf143cf7fff84892ef89888f9b645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Script_Resume_Game: {fileID: 0}
+  Collider2D: {fileID: 1652207196}
+  Position: {fileID: 1652207194}
+--- !u!61 &1652207196
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652207193}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1687177880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,8 +5365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caddbb5c6ccfce746b6c2d9319fe04fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene_To_Load: Main_Land
-  Player_Position: {x: -2.5, y: 2.5}
+  Scene_To_Load: Dungeon_Floor_2
+  Player_Position: {x: 0, y: 0}
+  Position_To_Load: {x: -2.5, y: 2.5}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &1936514939
 SpriteRenderer:
@@ -5547,7 +5624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2017321337}
-  Enemy_Sprite: {fileID: 2017321343}
   AI: {fileID: 2017321340}
   Enemy_Health_Value: 5
 --- !u!1 &2034118702

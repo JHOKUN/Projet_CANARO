@@ -42,7 +42,7 @@ public class Normal_Chest_Actvate : MonoBehaviour
     
     void OnTriggerStay2D(Collider2D Collider)
     {
-        if(Able_To_Open)
+        if(Able_To_Open && Is_Open == false)
         {
             Collider.gameObject.GetComponent<Inventory_Placeholder>().Add_Key_To_Inventory(Key_Amount);
             Collider.gameObject.GetComponent<Inventory_Placeholder>().Add_Potion_To_Inventory(Potion_Amount);
