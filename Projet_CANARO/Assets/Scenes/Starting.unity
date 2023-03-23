@@ -550,8 +550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caddbb5c6ccfce746b6c2d9319fe04fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene_To_Load: Main_Land
+  Scene_To_Load: Dungeon_Boss_Floor
   Player_Position: {x: 0, y: 0}
+  Position_To_Load: {x: 7.5, y: 3}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!1 &189986965
 GameObject:
@@ -690,6 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene_To_Load: House_Inside_3
   Player_Position: {x: 0, y: 0}
+  Position_To_Load: {x: 0, y: 0}
   Player_Position_Storage: {fileID: 0}
 --- !u!212 &209376975
 SpriteRenderer:
@@ -1015,6 +1017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon
   Player_Position: {x: 5.5, y: -8}
+  Position_To_Load: {x: 0, y: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &363036106
 SpriteRenderer:
@@ -1463,7 +1466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435656551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.743, y: -5.608, z: 0}
+  m_LocalPosition: {x: 1, y: -5.97, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4778,6 +4781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon
   Player_Position: {x: 0.5, y: -3.5}
+  Position_To_Load: {x: 0, y: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &1581320103
 SpriteRenderer:

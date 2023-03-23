@@ -161,6 +161,8 @@ public class Player_Movement : MonoBehaviour
 
     void Start()
     {
+        Start_Position.Spawn_Point_Value.x = 1f;
+        Start_Position.Spawn_Point_Value.y = -6f;
         Player_Collider = gameObject.GetComponent<BoxCollider2D>();
         transform.position = Start_Position.Spawn_Point_Value;
         Current_Player_Stamina = Max_Player_Stamina;

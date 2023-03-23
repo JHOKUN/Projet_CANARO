@@ -236,11 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f7b04da058a53448c39cc440b0c24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   Collider: {fileID: 713405556}
   Target: {fileID: 1423721840}
-  Movement_Player: {fileID: 0}
-  Player_Condition: {fileID: 0}
-  Player_Must_Drag: 0
 --- !u!4 &713405555
 Transform:
   m_ObjectHideFlags: 0
@@ -2043,7 +2041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2017321338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,7 +2087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19fcac4c4212f24c80819a693fa7d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movement_Player: {fileID: 0}
   Target: {fileID: 0}
   Enemy_Animator: {fileID: 2017321344}
   rb: {fileID: 2017321339}
@@ -2133,7 +2130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017321337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.95, y: 11.92, z: 0}
+  m_LocalPosition: {x: 1.5, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2225,7 +2222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2017321337}
-  Enemy_Sprite: {fileID: 2017321343}
   AI: {fileID: 2017321340}
   Enemy_Health_Value: 5
 --- !u!1 &2034118702
@@ -3739,4 +3735,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4d779459352814ba9cc86e2ca3ec56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
