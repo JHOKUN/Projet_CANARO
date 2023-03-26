@@ -10,11 +10,12 @@ public class Falling_System : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && other.gameObject.GetComponent<Shooting_Hook>().Player_Being_Drag == false)
+        if(other.CompareTag("Player") && other.gameObject.GetComponent<Shooting_Hook>().Player_Being_Drag == false && other.gameObject.GetComponent<Shooting_Hook>().Player_Being_Drag == false)
         {
             other.GetComponent<Player_Movement>().Is_Falling = true;
             other.gameObject.GetComponent<Health_Player>().Taking_Damage(1);
             other.GetComponent<Player_Movement>().Fall();
+            Debug.Log("ça devrait fonctionner");
             Player_Position_Storage.Spawn_Point_Value = Player_Position;
             other.GetComponent<Player_Movement>().Must_Respawn = true;
         }

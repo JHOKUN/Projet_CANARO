@@ -63,6 +63,7 @@ public class Shooting_Hook : MonoBehaviour
             Player_Animator.SetBool("Is_Hook_Shooting_Right", false);
             Player_Animator.SetBool("Is_Hook_Shooting_Down", false);  
         }
+        Player_Being_Drag = false;
         Is_Shooting = false;
     }
     void Update()

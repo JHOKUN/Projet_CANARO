@@ -16,6 +16,7 @@ public class Player_Movement : MonoBehaviour
     public Vector2 Movement;
     public Vector2 New_Direction;
     public Transform Target = null;
+    public Transform Last_Check_Point = null;
     public Rigidbody2D rb;
     public TrailRenderer Dash_Trail;
     public Spawn_Point_Definer Start_Position;
@@ -161,6 +162,7 @@ public class Player_Movement : MonoBehaviour
 
     void Start()
     {
+        Last_Check_Point = null;
         Start_Position.Spawn_Point_Value.x = 1f;
         Start_Position.Spawn_Point_Value.y = -6f;
         Player_Collider = gameObject.GetComponent<BoxCollider2D>();

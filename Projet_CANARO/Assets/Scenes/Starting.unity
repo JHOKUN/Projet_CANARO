@@ -1856,6 +1856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Real_Inventory: {fileID: 1740590242}
   Hook_Getting: 0
+  Has_Key: 0
 --- !u!114 &435656564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2543,7 +2544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686162826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.81, y: -6.96, z: 0}
+  m_LocalPosition: {x: 2.42, y: -6.22, z: 0}
   m_LocalScale: {x: 1.205, y: 1.205, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2590,7 +2591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon_Floor_2
   Player_Position: {x: 0, y: 0}
-  Position_To_Load: {x: 23, y: 8}
+  Position_To_Load: {x: 5, y: 2}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &686162830
 SpriteRenderer:

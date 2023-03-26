@@ -6,6 +6,7 @@ public class Inventory_Placeholder : MonoBehaviour
 {
     public Inventory_System Real_Inventory;
     public bool Hook_Getting = false;
+    public bool Has_Key = false;
 
     public void Add_Potion_To_Inventory(int Amount)
     {
@@ -32,6 +33,11 @@ public class Inventory_Placeholder : MonoBehaviour
         if(Hook_Getting == true)
         {
             Real_Inventory.Hook_Get = true;
+        }
+
+        if(Real_Inventory.Keys > 0)
+        {
+            Has_Key = true;
         }
     }
 }
