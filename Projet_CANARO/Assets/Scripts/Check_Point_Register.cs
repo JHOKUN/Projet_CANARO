@@ -12,7 +12,6 @@ public class Check_Point_Register : MonoBehaviour
     {
         if(Collider.gameObject.CompareTag("Player"))
         {
-            Collider.GetComponent<Player_Movement>().Last_Check_Point = Position;
             Holes.Last_Check_Point = Position;
         }
     }
