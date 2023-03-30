@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Enemy_Door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Enemy_Detection_Door Zone;
+    public Animator Door_Animator;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Zone.Doors_Open == true)
+        {
+            Door_Animator.SetBool("Must_Open_Door", true);
+        }
     }
 }

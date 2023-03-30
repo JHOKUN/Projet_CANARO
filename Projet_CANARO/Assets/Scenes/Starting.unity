@@ -5774,8 +5774,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon_Floor_3
-  Player_Position: {x: 8.5, y: 24}
-  Position_To_Load: {x: 8.5, y: 24}
+  Player_Position: {x: 8.5, y: 26}
+  Position_To_Load: {x: 8.5, y: 26}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &1691148990
 SpriteRenderer:
