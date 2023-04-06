@@ -1634,14 +1634,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22fbd32010d6b34ba8135d1f7533d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   Chest_Animator: {fileID: 919920780}
   Collider: {fileID: 919920776}
   Is_Open: 0
-  Key_Amount: 0
-  Potion_Amount: 0
   Is_Getting_Hook: 1
   Player_In_Range: 0
-  Able_To_Open: 0
 --- !u!95 &919920780
 Animator:
   serializedVersion: 4
@@ -5668,7 +5666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2017321338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5757,7 +5755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017321337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.37, y: 5.08, z: 0}
+  m_LocalPosition: {x: -11.91, y: -4.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
