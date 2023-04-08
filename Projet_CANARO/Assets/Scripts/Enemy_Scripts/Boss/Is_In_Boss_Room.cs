@@ -6,6 +6,7 @@ public class Is_In_Boss_Room : MonoBehaviour
 {
     public bool Is_In_Boss_Room_Bool;
     public GameObject Player; 
+    public Rigidbody2D Player_Rigidbody;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class Is_In_Boss_Room : MonoBehaviour
         {
             Is_In_Boss_Room_Bool = true;
             Player = other.gameObject;
+            Player_Rigidbody = Player.GetComponent<Rigidbody2D>();
         }
     }
 }

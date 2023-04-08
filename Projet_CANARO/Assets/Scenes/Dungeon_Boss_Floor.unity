@@ -3174,6 +3174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_In_Boss_Room_Bool: 0
   Player: {fileID: 0}
+  Player_Rigidbody: {fileID: 0}
 --- !u!61 &1498477059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3964,10 +3965,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Is_In_Boss_Room: {fileID: 1498477058}
+  Player_Rigidbody: {fileID: 0}
+  Player: {fileID: 0}
   rb: {fileID: 2017321339}
   Direction: {x: 0, y: 0}
   Able_To_Run: 0
+  Is_In_Boss_Room_Bool: 0
   Speed: 0
+  Knockback: 0
 --- !u!1 &2034118702
 GameObject:
   m_ObjectHideFlags: 0
