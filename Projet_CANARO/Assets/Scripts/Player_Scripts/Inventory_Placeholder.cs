@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Inventory_Placeholder : MonoBehaviour
 {
+    public Resume_Game_Script Resume;
     public Inventory_System Real_Inventory;
+    public Transform New_Pos;
+    public bool In_Village;
+    public bool Entrance_Dungeon;
+    public bool Exit_Dungeon;
     public bool Hook_Getting = false;
     public bool Has_Key = false;
 
@@ -26,6 +31,14 @@ public class Inventory_Placeholder : MonoBehaviour
     public void Remove_Key_To_Inventory(int Amount)
     {
         Real_Inventory.Remove_Key(Amount);
+    }
+
+    public void Update_Bools()
+    {
+        Resume.Last_Place_Village = In_Village;
+        Resume.Last_Place_Dungeon_Entrance = Entrance_Dungeon;
+        Resume.Last_Place_Dungeon_Exit = Exit_Dungeon;
+        Resume.Last_Resume_Point = New_Pos;
     }
 
     void Update()

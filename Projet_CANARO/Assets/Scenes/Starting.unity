@@ -679,8 +679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon_Boss_Floor
-  Player_Position: {x: 0, y: 0}
-  Position_To_Load: {x: 0, y: 0}
+  Player_Position: {x: 6, y: 6}
+  Position_To_Load: {x: 6, y: 6}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!1 &189986965
 GameObject:
@@ -1854,7 +1854,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2599c314fc620d41958f36b1502bf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Resume: {fileID: 1756993578}
   Real_Inventory: {fileID: 1740590242}
+  New_Pos: {fileID: 435656555}
+  In_Village: 0
+  Entrance_Dungeon: 0
+  Exit_Dungeon: 0
   Hook_Getting: 0
   Has_Key: 0
 --- !u!114 &435656564
@@ -1905,6 +1910,9 @@ MonoBehaviour:
   Script_Resume_Game: {fileID: 1756993578}
   Collider2D: {fileID: 456358508}
   Position: {fileID: 456358509}
+  Place_Village: 1
+  Place_Dungeon_Entrance: 0
+  Place_Dungeon_Exit: 0
 --- !u!61 &456358508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6092,6 +6100,9 @@ MonoBehaviour:
   Player_Position: {x: 0, y: 0}
   Last_Resume_Point: {fileID: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
+  Last_Place_Village: 1
+  Last_Place_Dungeon_Entrance: 0
+  Last_Place_Dungeon_Exit: 0
 --- !u!114 &1756993579
 MonoBehaviour:
   m_ObjectHideFlags: 0

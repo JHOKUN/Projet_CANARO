@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Resume_Point_Register : MonoBehaviour
 {
-    public Resume_Game_Script Script_Resume_Game;
     public BoxCollider2D Collider2D;
     public Transform Position;
+    [SerializeField] public bool Place_Village;
+    [SerializeField] public bool Place_Dungeon_Entrance;
+    [SerializeField] public bool Place_Dungeon_Exit;
 
     void OnTriggerEnter2D(Collider2D Collider)
     {
         if(Collider.gameObject.CompareTag("Player"))
         {
-            Script_Resume_Game.Last_Resume_Point = Position;
+            Collider.GetComponent<Inventory_Placeholder>().In_Village = Place_Village;
+            Collider.GetComponent<Inventory_Placeholder>().Entrance_Dungeon = Place_Dungeon_Entrance;
+            Collider.GetComponent<Inventory_Placeholder>().Exit_Dungeon = Place_Dungeon_Exit;
+            Collider.GetComponent<Inventory_Placeholder>().New_Pos = Position;
         }
     }
 }
