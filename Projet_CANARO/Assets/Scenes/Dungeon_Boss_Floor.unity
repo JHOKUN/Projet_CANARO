@@ -3963,6 +3963,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87fdf86017f2dea489bbbbfa687d9fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Is_In_Boss_Room: {fileID: 1498477058}
+  rb: {fileID: 2017321339}
+  Direction: {x: 0, y: 0}
+  Able_To_Run: 0
+  Speed: 0
 --- !u!1 &2034118702
 GameObject:
   m_ObjectHideFlags: 0

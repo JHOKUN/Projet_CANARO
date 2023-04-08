@@ -35,4 +35,10 @@ public class Boss_Main : MonoBehaviour
     {
         rb.MovePosition(rb.position + Direction.normalized * Speed * Time.fixedDeltaTime);
     }
+
+    void OnCollisionEnter2D(Collision2D Collision)
+    {
+        Is_In_Boss_Room.Player.Rigidbody2D.
+    }
+
 }
