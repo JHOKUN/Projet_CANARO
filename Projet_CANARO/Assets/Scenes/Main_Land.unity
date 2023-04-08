@@ -5568,7 +5568,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 81
-      m_TileSpriteIndex: 40
+      m_TileSpriteIndex: 43
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -5861,14 +5861,14 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -148020012, guid: 26258536b28a1ed449988ad166928932, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -576000004, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
   - m_RefCount: 26
     m_Data: {fileID: -370630663, guid: 26258536b28a1ed449988ad166928932, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -148020012, guid: 26258536b28a1ed449988ad166928932, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 601130449, guid: a043075405c186b4eadaa73484d1f1b2, type: 3}
   - m_RefCount: 2
@@ -6007,6 +6007,69 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 100000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &1151636121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1151636122}
+  - component: {fileID: 1151636124}
+  - component: {fileID: 1151636123}
+  m_Layer: 11
+  m_Name: Player_Detect_Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1151636122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151636121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017321342}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1151636123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151636121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d934b5c92be174f80dc3e37c9c1402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AI: {fileID: 2017321340}
+  Collider: {fileID: 1151636124}
+--- !u!58 &1151636124
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151636121}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.228343
 --- !u!1 &1244849394
 GameObject:
   m_ObjectHideFlags: 0
@@ -6823,7 +6886,6 @@ GameObject:
   - component: {fileID: 2017321344}
   - component: {fileID: 2017321343}
   - component: {fileID: 2017321341}
-  - component: {fileID: 2017321346}
   - component: {fileID: 2017321339}
   - component: {fileID: 2017321340}
   - component: {fileID: 2017321338}
@@ -6888,7 +6950,7 @@ MonoBehaviour:
   Maximum_Distance: 7
   Minimum_Distance: 0
   Speed: 3
-  Waiting_Time: 0
+  Waiting_Time: 2
 --- !u!61 &2017321341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6926,7 +6988,8 @@ Transform:
   m_LocalPosition: {x: -1.09, y: 24.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1151636122}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7017,22 +7080,6 @@ MonoBehaviour:
   Enemy: {fileID: 2017321337}
   AI: {fileID: 2017321340}
   Enemy_Health_Value: 5
---- !u!58 &2017321346
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017321337}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.117461205, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.228343
 --- !u!1 &2034118702
 GameObject:
   m_ObjectHideFlags: 0
