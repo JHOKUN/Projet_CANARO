@@ -884,14 +884,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22fbd32010d6b34ba8135d1f7533d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   Chest_Animator: {fileID: 919920780}
   Collider: {fileID: 919920776}
   Is_Open: 0
-  Key_Amount: 0
-  Potion_Amount: 0
   Is_Getting_Hook: 1
   Player_In_Range: 0
-  Able_To_Open: 0
 --- !u!95 &919920780
 Animator:
   serializedVersion: 4
@@ -2984,6 +2982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244849395}
+  - component: {fileID: 1244849396}
   m_Layer: 0
   m_Name: Dialogue_Boxes
   m_TagString: Unhookable
@@ -2999,13 +2998,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244849394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: 7.5, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1244849396
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244849394}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000047683716, y: -0.56349707}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.228745, y: 13.171561}
+  m_EdgeRadius: 0
 --- !u!1 &1274639849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,6 +3172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a83f10d6f696003428af43696b58df57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Is_In_Boss_Room_Bool: 0
+  Player: {fileID: 0}
 --- !u!61 &1498477059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3875,7 +3902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2017321337}
   AI: {fileID: 0}
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 15
 --- !u!70 &2017321346
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
