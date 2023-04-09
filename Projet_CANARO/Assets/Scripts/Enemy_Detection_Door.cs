@@ -7,6 +7,7 @@ public class Enemy_Detection_Door : MonoBehaviour
     public GameObject Door_1;
     public GameObject Door_2;
     public BoxCollider2D Collider;
+    public int Enemy_Death_Count = 0;
     public bool Player_In = false;
     public bool No_More_Ennemies = false;
     public bool Doors_Open = false;
@@ -18,6 +19,11 @@ public class Enemy_Detection_Door : MonoBehaviour
         {
             Player_In = true;
         }
+
+        if(collider.gameObject.tag == "Enemy")
+        {
+            No_More_Ennemies = false;
+        }
     }
     void OnTriggerExit2D(Collider2D collider)
     {
@@ -28,7 +34,7 @@ public class Enemy_Detection_Door : MonoBehaviour
 
         if(collider.gameObject.tag == "Enemy")
         {
-            No_More_Ennemies = true;
+            Enemy_Death_Count += 1;
         }
     }
 
@@ -41,6 +47,11 @@ public class Enemy_Detection_Door : MonoBehaviour
 
     void Update()
     {
+        if(Enemy_Death_Count == 3)
+        {
+            No_More_Ennemies = true;
+        }
+
         if(Player_In == true && No_More_Ennemies == false)
         {
             Door_1.SetActive(true);
