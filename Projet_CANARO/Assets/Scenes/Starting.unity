@@ -1791,6 +1791,7 @@ MonoBehaviour:
   Death_Position: {fileID: 1246097246}
   Max_Player_Health: 6
   Current_Player_Health: 0
+  Is_Dead: 0
   Can_Take_Damage: 1
   Invicibility: 2
   Tick: 0
@@ -6521,6 +6522,7 @@ MonoBehaviour:
   Player_Position: {x: 0, y: 0}
   Last_Resume_Point: {fileID: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
+  Dead: 0
   Last_Place_Village: 1
   Last_Place_Dungeon_Entrance: 0
   Last_Place_Dungeon_Exit: 0
@@ -6575,6 +6577,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1756993574}
+        m_TargetAssemblyTypeName: Resume_Game_Script, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
