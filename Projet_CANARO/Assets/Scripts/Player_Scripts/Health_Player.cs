@@ -8,12 +8,15 @@ using UnityEngine.UI;
 public class Health_Player : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject Health;
+    public GameObject Stamina;
     public GameObject Death_UI;
     public Animator Player_Animator;
     public Transform Death_Position;
     public float Max_Player_Health;
     public float Current_Player_Health;
     public static event Action OnPlayerDamaged;
+    public bool Is_Dead = false;
     public bool Can_Take_Damage = true;
     public float Invicibility = 2f;
     public float Tick;
@@ -54,8 +57,11 @@ public class Health_Player : MonoBehaviour
     {
         Player.GetComponent<Player_Movement>().Player_Animator.SetBool("Is_Facing_Forward", false);
         Player_Animator.SetBool("Is_Dead", true);
+        Is_Dead = true;
         Player.transform.position = Death_Position.position;
         yield return new WaitForSeconds(2f);
+        Health.SetActive(false);
+        Stamina.SetActive(false);
         Death_UI.SetActive(true);
 
     }

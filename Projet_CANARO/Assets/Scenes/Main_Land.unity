@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene_To_Load: House_Inside_1
   Player_Position: {x: 1.5, y: -7.5}
-  Position_To_Load: {x: 0, y: 0}
+  Position_To_Load: {x: 1.5, y: -7.5}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!1 &209376972
 GameObject:
@@ -444,9 +444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: House_Inside_3
-  Player_Position: {x: 0, y: 0}
-  Position_To_Load: {x: 0, y: 0}
-  Player_Position_Storage: {fileID: 0}
+  Player_Position: {x: 1.5, y: -7.5}
+  Position_To_Load: {x: 1.5, y: -7.5}
+  Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &209376975
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -572,9 +572,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: House_Inside_2
-  Player_Position: {x: 0, y: 0}
-  Position_To_Load: {x: 0, y: 0}
-  Player_Position_Storage: {fileID: 0}
+  Player_Position: {x: 1.5, y: -7.5}
+  Position_To_Load: {x: 1.5, y: -7.5}
+  Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &363036106
 SpriteRenderer:
   m_ObjectHideFlags: 0

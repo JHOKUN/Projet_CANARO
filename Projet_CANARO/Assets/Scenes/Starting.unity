@@ -1729,7 +1729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435656551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -5.97, z: 0}
+  m_LocalPosition: {x: -1.15, y: -3.1, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1784,6 +1784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 435656551}
+  Health: {fileID: 1607920516}
+  Stamina: {fileID: 1086424400}
   Death_UI: {fileID: 1644086936}
   Player_Animator: {fileID: 435656558}
   Death_Position: {fileID: 1246097246}
@@ -3204,6 +3206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008405541}
   - component: {fileID: 1008405545}
+  - component: {fileID: 1008405546}
   - component: {fileID: 1008405544}
   m_Layer: 0
   m_Name: Game_Manager
@@ -3260,6 +3263,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory_Menu_UI: {fileID: 781338352}
+--- !u!114 &1008405546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008405540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d7cf04392c7b0e469b776a979998fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title_Screen_UI: {fileID: 1820222587}
 --- !u!1 &1015343929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,8 +3945,9 @@ GameObject:
   - component: {fileID: 1110505436}
   - component: {fileID: 1110505438}
   - component: {fileID: 1110505437}
+  - component: {fileID: 1110505439}
   m_Layer: 5
-  m_Name: Press_Start_Text
+  m_Name: Press_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3976,7 +3993,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Start
+  m_text: Press Here To Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6ac297ccbcd8b24bb3de65a6c5ffdd4, type: 2}
   m_sharedMaterial: {fileID: 2812375589873633722, guid: e6ac297ccbcd8b24bb3de65a6c5ffdd4, type: 2}
@@ -4053,6 +4070,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110505435}
   m_CullTransparentMesh: 1
+--- !u!114 &1110505439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110505435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1110505437}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1008405546}
+        m_TargetAssemblyTypeName: Title_Screen, Assembly-CSharp
+        m_MethodName: Starting_Game
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1113653298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6443,6 +6516,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 435656551}
   Death_UI: {fileID: 1644086936}
+  Health: {fileID: 1607920516}
+  Stamina: {fileID: 1086424400}
   Player_Position: {x: 0, y: 0}
   Last_Resume_Point: {fileID: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
