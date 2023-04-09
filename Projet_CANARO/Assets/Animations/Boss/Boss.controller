@@ -224,7 +224,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Is_Attackingh_Down
+  - m_Name: Is_Attacking_Down
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0

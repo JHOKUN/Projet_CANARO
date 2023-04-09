@@ -4,23 +4,16 @@ using UnityEngine;
 
 public class Is_In_Boss_Room : MonoBehaviour
 {
-    public bool Is_In_Boss_Room_Bool;
-    public GameObject Player; 
-    public Rigidbody2D Player_Rigidbody;
+    public Boss_Main bm;
+    public float Time_Detection;
 
-    void Start()
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        Is_In_Boss_Room_Bool = false;
-    }
-    
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("Player"))
+        if(collider.gameObject.CompareTag("Player"))
         {
-            Is_In_Boss_Room_Bool = true;
-            Player = other.gameObject;
-            Player_Rigidbody = Player.GetComponent<Rigidbody2D>();
+            bm.Player = collider.gameObject;
+            bm.Able_To_Run = true;
+            Time_Detection = Time.time;
         }
-    }
+    } 
 }

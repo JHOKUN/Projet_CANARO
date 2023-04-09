@@ -4,34 +4,41 @@ using UnityEngine;
 
 public class Boss_Main : MonoBehaviour
 {
-    public Is_In_Boss_Room Is_In_Boss_Room;
+    public GameObject Player;
     public Rigidbody2D rb;
     public Vector2 Direction;
+    public bool Able_To_Attack;
     public bool Able_To_Run;
+    public bool Can_Wait_To_Attack;
     public float Speed;
-    public float Knockback;
+    public float Wait_Time_After_Hit;
+    public float Wait_Time_To_Attack;
 
     void Start()
     {
+        Able_To_Attack = false;
         Able_To_Run = false;
+        Can_Wait_To_Attack = true;
         Speed = 3f;
-        Knockback = 10f;
+        Wait_Time_After_Hit = 0.5f;
+        Wait_Time_To_Attack = 6f;
+        
         
     }
 
     void Update()
     {
-        if (Is_In_Boss_Room.Is_In_Boss_Room_Bool)
-        {
-            Able_To_Run = true;
-        }
+        Direction = new Vector2(Player.transform.position.x - transform.position.x, Player.transform.position.y - transform.position.y);
         
         if (Able_To_Run)
         {
             Running();
         }
 
-        Direction = new Vector2(Is_In_Boss_Room.Player.transform.position.x - transform.position.x, Is_In_Boss_Room.Player.transform.position.y - transform.position.y);
+        if (Can_Wait_To_Attack)
+        {
+            StartCoroutine(Wait_To_Attack());
+        }
     }
 
     void Running()
@@ -41,8 +48,23 @@ public class Boss_Main : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D Collision)
     {
-        Is_In_Boss_Room.Player_Rigidbody.AddForce(Direction.normalized * 50, ForceMode2D.Impulse);
-        Is_In_Boss_Room.Player.GetComponent<Rigidbody2D>().MovePosition(Is_In_Boss_Room.Player.GetComponent<Rigidbody2D>().position + Direction.normalized * Knockback * Time.fixedDeltaTime);
+        StartCoroutine(Wait_After_Hit());
+    }
+
+    IEnumerator Wait_After_Hit()
+    {
+        rb.bodyType = RigidbodyType2D.Static;
+        Able_To_Run = false;
+        yield return new WaitForSeconds(Wait_Time_After_Hit);
+        Able_To_Run = true;
+        rb.bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    IEnumerator Wait_To_Attack()
+    {
+        Can_Wait_To_Attack = false;
+        yield return new WaitForSeconds(Wait_Time_To_Attack);
+        Able_To_Attack = true;
     }
 
 }
