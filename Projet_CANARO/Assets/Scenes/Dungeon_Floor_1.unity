@@ -5593,9 +5593,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74aaf143cf7fff84892ef89888f9b645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Script_Resume_Game: {fileID: 0}
   Collider2D: {fileID: 1652207196}
   Position: {fileID: 1652207194}
+  Place_Village: 0
+  Place_Dungeon_Entrance: 0
+  Place_Dungeon_Exit: 1
 --- !u!61 &1652207196
 BoxCollider2D:
   m_ObjectHideFlags: 0

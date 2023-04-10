@@ -7741,7 +7741,7 @@ MonoBehaviour:
   Position: {fileID: 1308486644}
   Place_Village: 0
   Place_Dungeon_Entrance: 0
-  Place_Dungeon_Exit: 0
+  Place_Dungeon_Exit: 1
 --- !u!61 &1308486643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7969,7 +7969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Collider2D: {fileID: 1445860979}
   Position: {fileID: 1445860980}
-  Place_Village: 0
+  Place_Village: 1
   Place_Dungeon_Entrance: 0
   Place_Dungeon_Exit: 0
 --- !u!61 &1445860979
@@ -7985,7 +7985,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5298042, y: 1.1193366}
+  m_Offset: {x: -0.49762344, y: 1.0550523}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7996,7 +7996,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 32.195595, y: 25.44268}
+  m_Size: {x: 33.134377, y: 25.860615}
   m_EdgeRadius: 0
 --- !u!4 &1445860980
 Transform:

@@ -43,6 +43,8 @@ public class Inventory_Placeholder : MonoBehaviour
 
     void Update()
     {
+        Update_Bools();
+
         if(Hook_Getting == true)
         {
             Real_Inventory.Hook_Get = true;
