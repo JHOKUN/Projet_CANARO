@@ -5,7 +5,6 @@ using UnityEngine;
 public class Is_In_Boss_Room : MonoBehaviour
 {
     public Boss_Main bm;
-    public float Time_Detection;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -13,7 +12,7 @@ public class Is_In_Boss_Room : MonoBehaviour
         {
             bm.Player = collider.gameObject;
             bm.Able_To_Run = true;
-            Time_Detection = Time.time;
+            bm.Tick = Time.time + bm.Wait_Time_To_Attack;
         }
     } 
 }

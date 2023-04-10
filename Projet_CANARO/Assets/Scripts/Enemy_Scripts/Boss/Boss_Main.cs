@@ -11,6 +11,7 @@ public class Boss_Main : MonoBehaviour
     public bool Able_To_Run;
     public bool Can_Wait_To_Attack;
     public float Speed;
+    public float Tick;
     public float Wait_Time_After_Hit;
     public float Wait_Time_To_Attack;
 
@@ -22,8 +23,6 @@ public class Boss_Main : MonoBehaviour
         Speed = 3f;
         Wait_Time_After_Hit = 0.5f;
         Wait_Time_To_Attack = 6f;
-        
-        
     }
 
     void Update()
@@ -37,7 +36,12 @@ public class Boss_Main : MonoBehaviour
 
         if (Can_Wait_To_Attack)
         {
-            StartCoroutine(Wait_To_Attack());
+            Wait_To_Attack();
+        }
+
+        if (Able_To_Attack)
+        {
+            Attack();
         }
     }
 
@@ -60,11 +64,21 @@ public class Boss_Main : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
-    IEnumerator Wait_To_Attack()
+    void Wait_To_Attack()
     {
-        Can_Wait_To_Attack = false;
-        yield return new WaitForSeconds(Wait_Time_To_Attack);
-        Able_To_Attack = true;
+        
+        if (Time.time > Tick)
+        {
+            Tick = Time.time + Wait_Time_To_Attack;
+            Able_To_Attack = true;
+            Can_Wait_To_Attack = false;
+        }
+        
+    }
+
+    void Attack()
+    {
+        
     }
 
 }
