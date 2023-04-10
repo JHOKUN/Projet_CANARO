@@ -31,7 +31,7 @@ public class Picking_Up_Item : MonoBehaviour
 
     void Dialogue_Engaging()
     {
-        if(Player_In_Range == true && Input.GetKeyDown(KeyCode.R))
+        if(Player_In == true && Input.GetKeyDown(KeyCode.R))
         {
             dialogue_box.SetActive(true);
             Time.timeScale = 0.00000000001f;
