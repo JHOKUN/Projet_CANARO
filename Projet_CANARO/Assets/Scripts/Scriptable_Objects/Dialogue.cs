@@ -33,7 +33,6 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    
     void Update()
     {
         Dialogue_Engaging();
@@ -43,6 +42,7 @@ public class Dialogue : MonoBehaviour
                 dialogue_box.GetComponent<Write_Dialogue>().enabled = false;
                 dialogue_box.GetComponent<Write_Dialogue>().enabled = true;
                 Time.timeScale = 1;
+                Is_Dialoguing = false;
             }
     }
 }
