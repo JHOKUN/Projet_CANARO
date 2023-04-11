@@ -890,6 +890,8 @@ MonoBehaviour:
   Is_Open: 0
   Is_Getting_Hook: 1
   Player_In_Range: 0
+  dialogue_box: {fileID: 0}
+  Is_Dialoguing: 0
 --- !u!95 &919920780
 Animator:
   serializedVersion: 4
@@ -1055,7 +1057,7 @@ GameObject:
   - component: {fileID: 962776492}
   m_Layer: 11
   m_Name: Cursor
-  m_TagString: Untagged
+  m_TagString: Boss1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3170,7 +3172,7 @@ GameObject:
   - component: {fileID: 1498477058}
   m_Layer: 0
   m_Name: Boss_Trigger_Area
-  m_TagString: Untagged
+  m_TagString: Boss1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3796,7 +3798,7 @@ GameObject:
   - component: {fileID: 2017321348}
   m_Layer: 11
   m_Name: Boss
-  m_TagString: Enemy
+  m_TagString: Boss1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3962,13 +3964,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87fdf86017f2dea489bbbbfa687d9fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 2017321337}
   rb: {fileID: 2017321339}
-  Direction: {x: 0, y: 0}
+  Direction_To_Attack: {x: 0, y: 0}
+  Direction_To_Run: {x: 0, y: 0}
   Able_To_Attack: 0
   Able_To_Run: 0
   Can_Wait_To_Attack: 0
-  Speed: 0
+  Is_Attacking: 0
+  Is_Stunned: 0
+  Attack_Speed: 0
+  Run_Speed: 0
+  Stunned_Time: 0
   Tick: 0
   Wait_Time_After_Hit: 0
   Wait_Time_To_Attack: 0

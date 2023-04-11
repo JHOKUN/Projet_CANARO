@@ -13,6 +13,8 @@ public class Is_In_Boss_Room : MonoBehaviour
             bm.Player = collider.gameObject;
             bm.Able_To_Run = true;
             bm.Tick = Time.time + bm.Wait_Time_To_Attack;
+            bm.Can_Wait_To_Attack = true;
+
         }
     } 
 }
