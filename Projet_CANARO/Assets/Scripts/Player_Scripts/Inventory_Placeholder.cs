@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,12 +7,14 @@ public class Inventory_Placeholder : MonoBehaviour
 {
     public Resume_Game_Script Resume;
     public Inventory_System Real_Inventory;
+    public Animator Fader;
     public Transform New_Pos;
     public bool In_Village;
     public bool Entrance_Dungeon;
     public bool Exit_Dungeon;
     public bool Hook_Getting = false;
     public bool Has_Key = false;
+    public bool Must_Fade = false;
 
     public void Add_Potion_To_Inventory(int Amount)
     {
@@ -33,6 +36,15 @@ public class Inventory_Placeholder : MonoBehaviour
         Real_Inventory.Remove_Key(Amount);
     }
 
+    public void Fading()
+    {
+        if(Must_Fade == true)
+        {
+            Fader.SetTrigger("Fading");
+            Must_Fade = false;
+        }
+    }
+
     public void Update_Bools()
     {
         Resume.Last_Place_Village = In_Village;
@@ -44,6 +56,7 @@ public class Inventory_Placeholder : MonoBehaviour
     void Update()
     {
         Update_Bools();
+        Fading();
 
         if(Hook_Getting == true)
         {

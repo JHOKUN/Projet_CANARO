@@ -9,12 +9,14 @@ public class Scene_Change : MonoBehaviour
     public Vector2 Player_Position;
     public Vector2 Position_To_Load;
     public Spawn_Point_Definer Player_Position_Storage;
+    public Animator Fade;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
             Player_Position_Storage.Spawn_Point_Value = Player_Position;
+            other.GetComponent<Inventory_Placeholder>().Must_Fade == true;
             SceneManager.LoadScene(Scene_To_Load);
             other.transform.position = Position_To_Load;
         }

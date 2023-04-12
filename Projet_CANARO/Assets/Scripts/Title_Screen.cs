@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Title_Screen : MonoBehaviour
 {
-    public static bool Game_Started = false;
+    public bool Game_Started = false;
     public GameObject Title_Screen_UI;
 
     public void Starting_Game()
@@ -15,13 +15,13 @@ public class Title_Screen : MonoBehaviour
         SceneManager.LoadScene("House_Inside_1");
     }
 
+    void Start()
+    {
+        Title_Screen_UI.SetActive(true);
+    }
     void Update()
     {
-        if(Game_Started == false)
-        {
-            Title_Screen_UI.SetActive(true);
-        }
-        else if(Game_Started == false && Input.GetKeyDown(KeyCode.Return))
+        if(Game_Started == false && Input.GetKeyDown(KeyCode.R))
         {
             Starting_Game();
         }
