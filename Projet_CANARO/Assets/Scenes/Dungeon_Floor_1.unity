@@ -5827,8 +5827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Main_Land
-  Player_Position: {x: 45, y: 41}
-  Position_To_Load: {x: 0, y: 0}
+  Player_Position: {x: 20.72, y: 50.5}
+  Position_To_Load: {x: 20.72, y: 50.5}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &1581320103
 SpriteRenderer:
