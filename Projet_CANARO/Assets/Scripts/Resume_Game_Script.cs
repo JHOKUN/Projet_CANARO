@@ -24,26 +24,16 @@ public class Resume_Game_Script : MonoBehaviour
         Time.timeScale = 1;
         Player.GetComponent<Health_Player>().Healing(100);
         Player.GetComponent<Health_Player>().Player_Animator.SetBool("Is_Dead", false);
-
-        if(Last_Place_Dungeon_Entrance == true)
+        if(Last_Place_Village == true || Last_Place_Dungeon_Exit == true)
+        {
+            SceneManager.LoadScene("Main_Land");
+            Player_Position_Storage.Spawn_Point_Value = Player_Position;
+        }
+        else if(Last_Place_Dungeon_Entrance == true)
         {
             SceneManager.LoadScene("Dungeon_Floor_1");
             Player_Position_Storage.Spawn_Point_Value = Player_Position;
-            Debug.Log("ok");
         }
-        else if(Last_Place_Village == true)
-        {
-            SceneManager.LoadScene("Main_Land");
-            Player_Position_Storage.Spawn_Point_Value = Player_Position;
-            Debug.Log("non");
-        }
-        else if(Last_Place_Dungeon_Exit == true)
-        {
-            SceneManager.LoadScene("Main_Land");
-            Player_Position_Storage.Spawn_Point_Value = Player_Position;
-            Debug.Log("n");
-        }
-        
         Death_UI.SetActive(false);
         Player.GetComponent<Player_Movement>().Must_Respawn = true;
     }
