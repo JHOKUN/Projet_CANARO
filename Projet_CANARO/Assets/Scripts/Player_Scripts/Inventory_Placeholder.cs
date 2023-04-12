@@ -7,11 +7,13 @@ public class Inventory_Placeholder : MonoBehaviour
     public Resume_Game_Script Resume;
     public Inventory_System Real_Inventory;
     public Transform New_Pos;
+    public Animator Fader;
     public bool In_Village;
     public bool Entrance_Dungeon;
     public bool Exit_Dungeon;
     public bool Hook_Getting = false;
     public bool Has_Key = false;
+    public bool Must_Fade = false;
 
     public void Add_Potion_To_Inventory(int Amount)
     {
@@ -33,6 +35,16 @@ public class Inventory_Placeholder : MonoBehaviour
         Real_Inventory.Remove_Key(Amount);
     }
 
+    IEnumerator Fade()
+    {
+        if(Must_Fade == true)
+        {
+            Fader.SetBool("Fading", true);
+            yield return new WaitForSeconds(0.1f);
+            Fader.SetBool("Fading", false); 
+            Must_Fade = false;
+        }
+    }
     public void Update_Bools()
     {
         Resume.Last_Place_Village = In_Village;
@@ -44,6 +56,7 @@ public class Inventory_Placeholder : MonoBehaviour
     void Update()
     {
         Update_Bools();
+        StartCoroutine(Fade());
 
         if(Hook_Getting == true)
         {

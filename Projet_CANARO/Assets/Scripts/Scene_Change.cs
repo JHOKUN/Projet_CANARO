@@ -14,9 +14,16 @@ public class Scene_Change : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Player_Position_Storage.Spawn_Point_Value = Player_Position;
-            SceneManager.LoadScene(Scene_To_Load);
-            other.transform.position = Position_To_Load;
+            StartCoroutine(Changing_Scene(other));
         }
+    }
+
+    IEnumerator Changing_Scene(Collider2D other)
+    {
+        Player_Position_Storage.Spawn_Point_Value = Player_Position;
+        other.GetComponent<Inventory_Placeholder>().Must_Fade = true;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(Scene_To_Load);
+        other.transform.position = Position_To_Load;
     }
 }
