@@ -6,16 +6,11 @@ public class Boss_Main : MonoBehaviour
 {
     public GameObject Player;
     public Rigidbody2D rb;
-    public Vector2 Direction_To_Attack;
-    public Vector2 Direction_To_Run;
+    public Vector2 Direction;
     public bool Able_To_Attack;
     public bool Able_To_Run;
     public bool Can_Wait_To_Attack;
-    public bool Is_Attacking;
-    public bool Is_Stunned;
-    public float Attack_Speed;
-    public float Run_Speed;
-    public float Stunned_Time;
+    public float Speed;
     public float Tick;
     public float Wait_Time_After_Hit;
     public float Wait_Time_To_Attack;
@@ -24,48 +19,49 @@ public class Boss_Main : MonoBehaviour
     {
         Able_To_Attack = false;
         Able_To_Run = false;
-        Can_Wait_To_Attack = false;
-        Is_Attacking = false;
-        Is_Stunned = false;
-        Attack_Speed = 10f;
-        Run_Speed = 3f;
-        Stunned_Time = 4.5f;
+        Can_Wait_To_Attack = true;
+        Speed = 3f;
         Wait_Time_After_Hit = 0.5f;
         Wait_Time_To_Attack = 6f;
     }
 
     void Update()
     {
-        Direction_To_Run = new Vector2(Player.transform.position.x - transform.position.x, Player.transform.position.y - transform.position.y);
+        Direction = new Vector2(Player.transform.position.x - transform.position.x, Player.transform.position.y - transform.position.y);
         
-        if(Is_Stunned)
+        if (Able_To_Run)
         {
-            Tick = Time.time + Wait_Time_To_Attack;
+            Running();
         }
 
-        else if(Is_Stunned == false)
+        if (Can_Wait_To_Attack)
         {
-            if (Able_To_Run)
-            {
-                Running();
-            }
+            Wait_To_Attack();
+        }
 
-            if (Can_Wait_To_Attack)
-            {
-                Wait_To_Attack();
-            }
-
-            if (Able_To_Attack)
-            {
-                Able_To_Run = false;
-                Attack();
-            }
+        if (Able_To_Attack)
+        {
+            Attack();
         }
     }
 
     void Running()
     {
-        rb.MovePosition(rb.position + Direction_To_Run.normalized * Run_Speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + Direction.normalized * Speed * Time.fixedDeltaTime);
+    }
+
+    void OnCollisionEnter2D(Collision2D Collision)
+    {
+        StartCoroutine(Wait_After_Hit());
+    }
+
+    IEnumerator Wait_After_Hit()
+    {
+        rb.bodyType = RigidbodyType2D.Static;
+        Able_To_Run = false;
+        yield return new WaitForSeconds(Wait_Time_After_Hit);
+        Able_To_Run = true;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     void Wait_To_Attack()
@@ -82,46 +78,7 @@ public class Boss_Main : MonoBehaviour
 
     void Attack()
     {
-        Is_Attacking = true;
-        rb.MovePosition(rb.position + Direction_To_Attack.normalized * Attack_Speed * Time.fixedDeltaTime);
-    }
-
-    IEnumerator Wait_After_Hit()
-    {
-        rb.bodyType = RigidbodyType2D.Static;
-        Able_To_Run = false;
-        yield return new WaitForSeconds(Wait_Time_After_Hit);
-        Able_To_Run = true;
-        rb.bodyType = RigidbodyType2D.Dynamic;
-    }
-
-    IEnumerator Stun()
-    {
-        rb.bodyType = RigidbodyType2D.Static;
-        Is_Attacking = false;
-        yield return new WaitForSeconds(Stunned_Time);
-        Is_Stunned = false;
-        Able_To_Run = true;
-        Can_Wait_To_Attack = true;
-        rb.bodyType = RigidbodyType2D.Dynamic;
-    }
-
-    void OnCollisionEnter2D(Collision2D Collision)
-    {
-        if(Is_Attacking == true && Collision.gameObject.CompareTag("Unhookable")) //peut être rajouter si le grappin à voir avec Jean
-        {
-            Able_To_Attack = false;
-            Is_Stunned = true;
-            StartCoroutine(Stun());
-        }
         
-        if(Collision.gameObject.CompareTag("Player") && Is_Stunned == false)
-        {
-            Able_To_Attack = false;
-            Is_Attacking = false;
-            StartCoroutine(Wait_After_Hit());
-            Can_Wait_To_Attack = true;
-        }
-
     }
+
 }

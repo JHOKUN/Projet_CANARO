@@ -9,10 +9,9 @@ public class Cursor_Position : MonoBehaviour
 
     void Update()
     {
-
-        if (Mathf.Abs(bm.Direction_To_Run.x) > Mathf.Abs(bm.Direction_To_Run.y))
+        if (Mathf.Abs(bm.Direction.x) > Mathf.Abs(bm.Direction.y))
         {
-            if (bm.Direction_To_Run.x > 0)
+            if (bm.Direction.x > 0)
             {
                 bc2d.transform.localPosition = new Vector2(1f,0f);
             }
@@ -23,7 +22,7 @@ public class Cursor_Position : MonoBehaviour
         }
         else
         {
-            if (bm.Direction_To_Run.y > 0)
+            if (bm.Direction.y > 0)
             {
                 bc2d.transform.localPosition = new Vector2(0f,1f);
             }
@@ -31,11 +30,6 @@ public class Cursor_Position : MonoBehaviour
             {
                 bc2d.transform.localPosition = new Vector2(0f,-1f);
             }
-        }
-
-        if(bm.Is_Attacking == false)
-        {
-            bm.Direction_To_Attack = new Vector2(transform.position.x - bm.transform.position.x, transform.position.y - bm.transform.position.y);
         }
     }
 }
