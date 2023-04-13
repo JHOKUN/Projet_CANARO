@@ -732,6 +732,70 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &789322519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789322520}
+  - component: {fileID: 789322522}
+  - component: {fileID: 789322521}
+  m_Layer: 11
+  m_Name: Tail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789322520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789322519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017321342}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789322521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789322519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7119e32ee3eba4aaa9944ce4351a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bm: {fileID: 2017321349}
+  cp: {fileID: 962776491}
+  cc2d: {fileID: 789322522}
+--- !u!58 &789322522
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789322519}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.079
 --- !u!1 &919920774
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +954,8 @@ MonoBehaviour:
   Is_Open: 0
   Is_Getting_Hook: 1
   Player_In_Range: 0
+  dialogue_box: {fileID: 0}
+  Is_Dialoguing: 0
 --- !u!95 &919920780
 Animator:
   serializedVersion: 4
@@ -1089,6 +1155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bm: {fileID: 2017321349}
   bc2d: {fileID: 962776492}
+  Cursor_Direction: 
 --- !u!61 &962776492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3796,7 +3863,7 @@ GameObject:
   - component: {fileID: 2017321348}
   m_Layer: 11
   m_Name: Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3847,6 +3914,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 962776489}
+  - {fileID: 789322520}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3962,13 +4030,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87fdf86017f2dea489bbbbfa687d9fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 2017321337}
   rb: {fileID: 2017321339}
-  Direction: {x: 0, y: 0}
+  Direction_To_Attack: {x: 0, y: 0}
+  Direction_To_Run: {x: 0, y: 0}
   Able_To_Attack: 0
   Able_To_Run: 0
   Can_Wait_To_Attack: 0
-  Speed: 0
+  Is_Attacking: 0
+  Is_Stunned: 0
+  Attack_Speed: 0
+  Run_Speed: 0
+  Stunned_Time: 0
   Tick: 0
   Wait_Time_After_Hit: 0
   Wait_Time_To_Attack: 0

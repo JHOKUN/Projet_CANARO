@@ -6,30 +6,43 @@ public class Cursor_Position : MonoBehaviour
 {
     public Boss_Main bm;
     public BoxCollider2D bc2d;
+    public string Cursor_Direction;
 
     void Update()
     {
-        if (Mathf.Abs(bm.Direction.x) > Mathf.Abs(bm.Direction.y))
+        if(bm.Is_Attacking == false)
         {
-            if (bm.Direction.x > 0)
+            if (Mathf.Abs(bm.Direction_To_Run.x) > Mathf.Abs(bm.Direction_To_Run.y))
             {
-                bc2d.transform.localPosition = new Vector2(1f,0f);
+                if (bm.Direction_To_Run.x > 0)
+                {
+                    bc2d.transform.localPosition = new Vector2(1f,0f);
+                    Cursor_Direction = "r";
+                }
+                else
+                {
+                    bc2d.transform.localPosition = new Vector2(-1f,0f);
+                    Cursor_Direction = "g";
+                }
             }
             else
             {
-                bc2d.transform.localPosition = new Vector2(-1f,0f);
+                if (bm.Direction_To_Run.y > 0)
+                {
+                    bc2d.transform.localPosition = new Vector2(0f,1f);
+                    Cursor_Direction = "h";
+                }
+                else
+                {
+                    bc2d.transform.localPosition = new Vector2(0f,-1f);
+                    Cursor_Direction = "b";
+                }  
             }
         }
-        else
+
+        if(bm.Is_Attacking == false || bm.Is_Stunned == false)
         {
-            if (bm.Direction.y > 0)
-            {
-                bc2d.transform.localPosition = new Vector2(0f,1f);
-            }
-            else
-            {
-                bc2d.transform.localPosition = new Vector2(0f,-1f);
-            }
+            bm.Direction_To_Attack = new Vector2(transform.position.x - bm.transform.position.x, transform.position.y - bm.transform.position.y);
         }
     }
 }

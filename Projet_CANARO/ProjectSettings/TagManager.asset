@@ -8,6 +8,7 @@ TagManager:
   - Hookable
   - Hook
   - Unhookable
+  - Boss
   layers:
   - Default
   - TransparentFX
