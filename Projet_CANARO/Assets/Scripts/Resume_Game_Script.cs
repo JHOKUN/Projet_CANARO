@@ -45,8 +45,8 @@ public class Resume_Game_Script : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.R))
             {
                 Death_UI.SetActive(false);
-                Player.GetComponent<Health_Player>().Is_Dead = false;
                 Resume_The_Game();
+                Player.GetComponent<Health_Player>().Is_Dead = false;
             }
         }
     }

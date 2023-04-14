@@ -55,7 +55,6 @@ public class Health_Player : MonoBehaviour
 
     IEnumerator Dying()
     {
-        Player.GetComponent<Player_Movement>().Player_Animator.SetBool("Is_Facing_Forward", false);
         Player_Animator.SetBool("Is_Dead", true);
         Is_Dead = true;
         Player.transform.position = Death_Position.position;
@@ -63,6 +62,7 @@ public class Health_Player : MonoBehaviour
         Health.SetActive(false);
         Stamina.SetActive(false);
         Death_UI.SetActive(true);
+        Time.timeScale = 0.00000000001f;
 
     }
     void Update()
@@ -71,7 +71,7 @@ public class Health_Player : MonoBehaviour
         {
             Current_Player_Health = 0;
         }
-        if(Current_Player_Health == 0)
+        if(Current_Player_Health == 0 && Is_Dead == false)
         {
             StartCoroutine(Dying());
         }

@@ -6562,7 +6562,6 @@ MonoBehaviour:
   Player_Position: {x: 0, y: 0}
   Last_Resume_Point: {fileID: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
-  Dead: 0
   Last_Place_Village: 1
   Last_Place_Dungeon_Entrance: 0
   Last_Place_Dungeon_Exit: 0
