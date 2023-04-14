@@ -1609,8 +1609,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Is_Facing_Forward
+  - m_ConditionMode: 2
+    m_ConditionEvent: Is_Dead
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1581678469132205319}
@@ -2647,7 +2647,7 @@ AnimatorStateMachine:
     m_Position: {x: 870, y: 1820, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7216845319995991607}
-    m_Position: {x: 860, y: 500, z: 0}
+    m_Position: {x: 870, y: 500, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5339904777730740253}
     m_Position: {x: 820, y: 410, z: 0}

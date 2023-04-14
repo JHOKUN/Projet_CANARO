@@ -1699,7 +1699,7 @@ MonoBehaviour:
   Lines:
   - VOUS AVEZ OBTENU LE GRAPPIN !
   - "VOUS POUVEZ VOUS ACCROCHER SUR CERTAINES SURFACES POUR VOUS D\xC9PLACER"
-  - APPUYEZ SUR N POUR TIRER.
+  - APPUYEZ SUR -Y- POUR TIRER.
   Text_Speed: 5e-13
 --- !u!1 &608373726
 GameObject:
@@ -5928,7 +5928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collider2D: {fileID: 1652207196}
-  Position: {fileID: 1652207194}
+  Position: {x: 5.5, y: -7.375}
   Place_Village: 0
   Place_Dungeon_Entrance: 1
   Place_Dungeon_Exit: 0

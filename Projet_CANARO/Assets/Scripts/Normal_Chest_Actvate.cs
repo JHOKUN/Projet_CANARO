@@ -35,30 +35,31 @@ public class Normal_Chest_Actvate : MonoBehaviour
         }
     }
 
-    void Dialogue_Engaging()
+    IEnumerator Opening_Chest()
     {
-        if(Player_In_Range == true && Input.GetKeyDown(KeyCode.R))
-        {
-            dialogue_box.SetActive(true);
-            Time.timeScale = 0.00000000001f;
-            Is_Dialoguing = true;
-        }
+        Chest_Animator.SetTrigger("Open_Chest");
+        Player.GetComponent<Inventory_Placeholder>().Add_Key_To_Inventory(Key_Amount);
+        Player.GetComponent<Inventory_Placeholder>().Add_Potion_To_Inventory(Potion_Amount);
+        yield return new WaitForSeconds(1f);
+        dialogue_box.SetActive(true);
+        Time.timeScale = 0.00000000001f;
+        Is_Dialoguing = true;
     }
     
     void Update()
     {
         if(Player_In_Range && Input.GetKeyDown(KeyCode.R) && Is_Open == false)
         {
-            Chest_Animator.SetTrigger("Open_Chest");
-            Player.GetComponent<Inventory_Placeholder>().Add_Key_To_Inventory(Key_Amount);
-            Player.GetComponent<Inventory_Placeholder>().Add_Potion_To_Inventory(Potion_Amount);
-            if (Is_Dialoguing == true && dialogue_box.activeInHierarchy == false)
-                {
-                    dialogue_box.GetComponent<Write_Dialogue>().enabled = false;
-                    dialogue_box.GetComponent<Write_Dialogue>().enabled = true;
-                    Time.timeScale = 1;
-                }
+            StartCoroutine(Opening_Chest());
             Is_Open = true;
         }
+
+        if (Is_Dialoguing == true && dialogue_box.activeInHierarchy == false)
+            {
+                dialogue_box.GetComponent<Write_Dialogue>().enabled = false;
+                dialogue_box.GetComponent<Write_Dialogue>().enabled = true;
+                Time.timeScale = 1;
+            }
+        
     }
 }

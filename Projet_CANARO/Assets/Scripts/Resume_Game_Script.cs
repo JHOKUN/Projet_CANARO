@@ -10,7 +10,7 @@ public class Resume_Game_Script : MonoBehaviour
     public GameObject Health;
     public GameObject Stamina;
     public Vector2 Player_Position;
-    public Transform Last_Resume_Point;
+    public Vector2 Last_Resume_Point;
     public Spawn_Point_Definer Player_Position_Storage;
     public bool Last_Place_Village = true;
     public bool Last_Place_Dungeon_Entrance = false;
@@ -38,7 +38,7 @@ public class Resume_Game_Script : MonoBehaviour
 
     void Update()
     {
-        Player_Position = new Vector2(Last_Resume_Point.position.x, Last_Resume_Point.position.y);
+        Player_Position = Last_Resume_Point;
 
         if(Player.GetComponent<Health_Player>().Is_Dead == true);
         {

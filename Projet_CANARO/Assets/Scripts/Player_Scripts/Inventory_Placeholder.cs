@@ -6,7 +6,7 @@ public class Inventory_Placeholder : MonoBehaviour
 {
     public Resume_Game_Script Resume;
     public Inventory_System Real_Inventory;
-    public Transform New_Pos;
+    public Vector2 New_Pos;
     public Animator Fader;
     public bool In_Village;
     public bool Entrance_Dungeon;

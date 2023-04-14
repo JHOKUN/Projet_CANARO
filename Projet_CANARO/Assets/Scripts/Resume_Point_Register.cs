@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resume_Point_Register : MonoBehaviour
 {
     public BoxCollider2D Collider2D;
-    public Transform Position;
+    public Vector2 Position;
     [SerializeField] public bool Place_Village;
     [SerializeField] public bool Place_Dungeon_Entrance;
     [SerializeField] public bool Place_Dungeon_Exit;

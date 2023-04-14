@@ -73,7 +73,7 @@ public class Shooting_Hook : MonoBehaviour
             if(Inventory.Hook_Get == true && Able_To_Shoot == true && Movement_Player.Is_Dashing == false && Attack.Is_Attacking == false)
             {
                 Movement_Player.rb.velocity = new Vector2(0,0);
-                if(Input.GetKeyDown(KeyCode.N))
+                if(Input.GetKeyDown(KeyCode.Y))
                 {
                     Movement_Player.rb.velocity = new Vector2(0,0);
                     StartCoroutine(Hook_Shooting());
