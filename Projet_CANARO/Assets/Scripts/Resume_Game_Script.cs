@@ -12,7 +12,6 @@ public class Resume_Game_Script : MonoBehaviour
     public Vector2 Player_Position;
     public Transform Last_Resume_Point;
     public Spawn_Point_Definer Player_Position_Storage;
-    public bool Dead;
     public bool Last_Place_Village = true;
     public bool Last_Place_Dungeon_Entrance = false;
     public bool Last_Place_Dungeon_Exit = false;
@@ -34,12 +33,21 @@ public class Resume_Game_Script : MonoBehaviour
             SceneManager.LoadScene("Dungeon_Floor_1");
             Player_Position_Storage.Spawn_Point_Value = Player_Position;
         }
-        Death_UI.SetActive(false);
         Player.GetComponent<Player_Movement>().Must_Respawn = true;
     }
 
     void Update()
     {
         Player_Position = new Vector2(Last_Resume_Point.position.x, Last_Resume_Point.position.y);
+
+        if(Player.GetComponent<Health_Player>().Is_Dead == true);
+        {
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                Death_UI.SetActive(false);
+                Player.GetComponent<Health_Player>().Is_Dead = false;
+                Resume_The_Game();
+            }
+        }
     }
 }
