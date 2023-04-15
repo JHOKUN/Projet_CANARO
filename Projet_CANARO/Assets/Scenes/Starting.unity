@@ -1935,7 +1935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Resume: {fileID: 1756993578}
   Real_Inventory: {fileID: 1740590242}
-  New_Pos: {fileID: 435656555}
+  New_Pos: {x: 0, y: 0}
   Fader: {fileID: 739328134}
   In_Village: 0
   Entrance_Dungeon: 0
@@ -1989,7 +1989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collider2D: {fileID: 456358508}
-  Position: {fileID: 456358509}
+  Position: {x: 0, y: 0}
   Place_Village: 1
   Place_Dungeon_Entrance: 0
   Place_Dungeon_Exit: 0
@@ -6561,7 +6561,7 @@ MonoBehaviour:
   Health: {fileID: 1607920516}
   Stamina: {fileID: 1086424400}
   Player_Position: {x: 0, y: 0}
-  Last_Resume_Point: {fileID: 0}
+  Last_Resume_Point: {x: 0, y: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
   Last_Place_Village: 1
   Last_Place_Dungeon_Entrance: 0
@@ -6686,7 +6686,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820222587}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}

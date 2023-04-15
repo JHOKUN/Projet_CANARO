@@ -17,12 +17,12 @@ public class Cursor_Position : MonoBehaviour
                 if (bm.Direction_To_Run.x > 0)
                 {
                     bc2d.transform.localPosition = new Vector2(1f,0f);
-                    Cursor_Direction = "r";
+                    Cursor_Direction = "Right";
                 }
                 else
                 {
                     bc2d.transform.localPosition = new Vector2(-1f,0f);
-                    Cursor_Direction = "g";
+                    Cursor_Direction = "Left";
                 }
             }
             else
@@ -30,12 +30,12 @@ public class Cursor_Position : MonoBehaviour
                 if (bm.Direction_To_Run.y > 0)
                 {
                     bc2d.transform.localPosition = new Vector2(0f,1f);
-                    Cursor_Direction = "h";
+                    Cursor_Direction = "Up";
                 }
                 else
                 {
                     bc2d.transform.localPosition = new Vector2(0f,-1f);
-                    Cursor_Direction = "b";
+                    Cursor_Direction = "Down";
                 }  
             }
         }
