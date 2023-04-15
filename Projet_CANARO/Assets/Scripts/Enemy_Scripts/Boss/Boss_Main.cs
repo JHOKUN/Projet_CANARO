@@ -18,6 +18,7 @@ public class Boss_Main : MonoBehaviour
     public float Stunned_Time;
     public float Tick;
     public float Wait_Time_After_Hit;
+    public float Wait_Time_After_Hooked;
     public float Wait_Time_To_Attack;
 
     void Start()
@@ -31,6 +32,7 @@ public class Boss_Main : MonoBehaviour
         Run_Speed = 3f;
         Stunned_Time = 4.5f;
         Wait_Time_After_Hit = 0.5f;
+        Wait_Time_After_Hooked = 2;
         Wait_Time_To_Attack = 6f;
     }
 
@@ -84,12 +86,15 @@ public class Boss_Main : MonoBehaviour
         rb.MovePosition(rb.position + Direction_To_Attack.normalized * Attack_Speed * Time.fixedDeltaTime);
     }
 
-    IEnumerator Wait_After_Hit()
+    IEnumerator Wait_After_Hit(float Time)
     {
         rb.bodyType = RigidbodyType2D.Static;
         Able_To_Run = false;
-        yield return new WaitForSeconds(Wait_Time_After_Hit);
+        Able_To_Attack = false;
+        Is_Attacking = false;
+        yield return new WaitForSeconds(Time);
         Able_To_Run = true;
+        Can_Wait_To_Attack = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
@@ -117,8 +122,13 @@ public class Boss_Main : MonoBehaviour
         {
             Able_To_Attack = false;
             Is_Attacking = false;
-            StartCoroutine(Wait_After_Hit());
+            StartCoroutine(Wait_After_Hit(Wait_Time_After_Hit));
             Can_Wait_To_Attack = true;
+        }
+
+        if( Collision.gameObject.CompareTag("Hook"))
+        {
+            StartCoroutine(Wait_After_Hit(Wait_Time_After_Hooked));
         }
     }
 }

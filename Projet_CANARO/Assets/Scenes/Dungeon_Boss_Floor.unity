@@ -744,9 +744,10 @@ GameObject:
   - component: {fileID: 789322522}
   - component: {fileID: 789322521}
   - component: {fileID: 789322523}
+  - component: {fileID: 789322524}
   m_Layer: 11
   m_Name: Tail
-  m_TagString: Hookable
+  m_TagString: Unhookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -849,6 +850,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &789322524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789322519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99b9c5b853903543b8c930a6faf51ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc2d: {fileID: 789322522}
+  Boss: {fileID: 2017321337}
+  Boss_Health_Value: 5
 --- !u!1 &919920774
 GameObject:
   m_ObjectHideFlags: 0
@@ -4085,6 +4101,7 @@ MonoBehaviour:
   Stunned_Time: 0
   Tick: 0
   Wait_Time_After_Hit: 0
+  Wait_Time_After_Hooked: 0
   Wait_Time_To_Attack: 0
 --- !u!114 &2017321350
 MonoBehaviour:

@@ -11,8 +11,6 @@ public class Tail_Position : MonoBehaviour
 
     void Update()
     {
-        cc2d.enabled = false;
-
         if(bm.Is_Stunned)
         {
             cc2d.enabled = true;
@@ -34,5 +32,10 @@ public class Tail_Position : MonoBehaviour
                 cc2d.transform.localPosition = new Vector2(0f,0.24f);
             }
         }
+        else if(bm.Is_Stunned == false)
+        {
+            cc2d.enabled = false;
+        }
+
     }
 }

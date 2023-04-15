@@ -25,7 +25,7 @@ public class Hook_Script : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if(collision.gameObject.CompareTag("Enemy"))
+        else if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
         {
             Destroy(gameObject);
         }
