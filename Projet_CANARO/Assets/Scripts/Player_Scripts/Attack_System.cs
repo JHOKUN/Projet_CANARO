@@ -77,7 +77,7 @@ public class Attack_System : MonoBehaviour
         if(Able_To_Attack == true && Movement_Player.Is_Dashing == false && Hook.Is_Shooting == false)
         {
             Movement_Player.rb.velocity = new Vector2(0,0);
-            if(Input.GetKeyDown(KeyCode.V))
+            if(Input.GetKeyDown(KeyCode.T))
             {
                 StartCoroutine(Attack());
             }

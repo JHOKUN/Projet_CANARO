@@ -46,6 +46,12 @@ public class Chest_Activate : MonoBehaviour
 
     void Update()
     {
+
+        //if(Input.GetKeyDown(KeyCode.P))
+        //{
+        //    Player.GetComponent<Inventory_Placeholder>().Hook_Getting = Is_Getting_Hook;
+        //}
+
         if(Player_In_Range && Input.GetKeyDown(KeyCode.R) && Is_Open == false)
         {
             StartCoroutine(Opening_Chest());
