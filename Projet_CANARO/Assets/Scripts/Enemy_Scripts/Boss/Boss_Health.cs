@@ -6,6 +6,7 @@ public class Boss_Health : MonoBehaviour
 {
     public CircleCollider2D cc2d;
     public GameObject Boss;
+    public GameObject Player;
     public int Boss_Health_Value;
 
     void Start()
@@ -15,8 +16,11 @@ public class Boss_Health : MonoBehaviour
 
     void Update()
     {
+        Player = Boss.GetComponent<Boss_Main>().Player;
+
         if(Boss_Health_Value <= 0)
         {
+            Player.GetComponent<Player_Achievements>().Boss_Beaten = true;
             Destroy(Boss);
         }
     }

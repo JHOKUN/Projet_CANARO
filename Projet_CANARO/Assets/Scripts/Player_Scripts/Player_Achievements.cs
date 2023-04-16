@@ -44,6 +44,10 @@ public class Player_Achievements : MonoBehaviour
         {
             collider.GetComponent<Enemy_Detection_Door>().Doors_Open = true;
         }
+        if(collider.CompareTag("Boss") && Boss_Beaten == true)
+        {
+            collider.gameObject.SetActive(false);
+        }
     }
 
     void Update()
