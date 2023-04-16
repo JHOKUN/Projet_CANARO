@@ -2341,6 +2341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  Chest: {fileID: 919920774}
   Chest_Animator: {fileID: 919920780}
   Collider: {fileID: 919920776}
   Is_Open: 0
