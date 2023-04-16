@@ -10,7 +10,7 @@ public class Player_Achievements : MonoBehaviour
     public bool Chest_2_Opened = false;
     public bool Chest_3_Opened = false;
     public bool Door_1_Opened = false;
-    public bool Door_2_Opened = false; 
+    public bool Door_2_Opened = false;
     public bool Door_3_Opened = false;
     public bool Door_4_Opened = false;
 
@@ -40,7 +40,7 @@ public class Player_Achievements : MonoBehaviour
         {
             collider.GetComponent<Key_Door_Open>().Activate = true;
         }
-        if(collider.GetComponent<Enemy_Detection_Door>() && Door_3_Open)
+        if(collider.GetComponent<Enemy_Detection_Door>() && Door_3_Opened)
         {
             collider.GetComponent<Enemy_Detection_Door>().Doors_Open = true;
         }
