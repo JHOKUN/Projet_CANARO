@@ -23,6 +23,14 @@ public class Chest_Activate : MonoBehaviour
             Player_In_Range = true;
             Player = Collider.gameObject;
         }
+
+        if(Collider.gameObject.CompareTag("Disabler"))
+        {
+            if(Collider.gameObject.GetComponent<Player_Achievements>().Chest_1_Opened == true)
+            {
+                Collider.gameObject.SetActive(false);
+            }
+        }
     
 
     }
@@ -38,6 +46,7 @@ public class Chest_Activate : MonoBehaviour
     {
         Chest_Animator.SetTrigger("Open_Chest");
         Player.GetComponent<Inventory_Placeholder>().Hook_Getting = Is_Getting_Hook;
+        Player.GetComponent<Player_Achievements>().Chest_1_Opened = true;
         yield return new WaitForSeconds(1f);
         dialogue_box.SetActive(true);
         Time.timeScale = 0.00000000001f;
