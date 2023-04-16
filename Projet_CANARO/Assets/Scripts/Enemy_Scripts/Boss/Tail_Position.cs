@@ -17,19 +17,23 @@ public class Tail_Position : MonoBehaviour
 
             if(cp.Cursor_Direction == "Right")
             {
-                cc2d.transform.localPosition = new Vector2(-0.29f,0-0.063f);
+                cc2d.transform.localPosition = new Vector2(-0.5775896f, 0.1817577f);
+                cc2d.radius = 0.1556002f;
             }
             else if(cp.Cursor_Direction == "Left")
             {
-                cc2d.transform.localPosition = new Vector2(0.29f,0-0.063f);
+                cc2d.transform.localPosition = new Vector2(0.5775896f, 0.1817577f);
+                cc2d.radius = 0.1556002f;
             }
             else if(cp.Cursor_Direction == "Up")
             {
-                cc2d.transform.localPosition = new Vector2(0f,-0.305f);
+                cc2d.transform.localPosition = new Vector2(0f,-0.3f);
+                cc2d.radius = 0.1556002f;
             }
             else if(cp.Cursor_Direction == "Down")
             {
-                cc2d.transform.localPosition = new Vector2(0f,0.24f);
+                cc2d.transform.localPosition = new Vector2(0f,0.6884373f);
+                cc2d.radius = 0.1547078f;
             }
         }
         else if(bm.Is_Stunned == false)

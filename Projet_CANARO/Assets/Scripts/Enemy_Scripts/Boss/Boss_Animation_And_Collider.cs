@@ -31,8 +31,8 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Right", false);
                 ba.SetBool("Is_Stunned_Right", false);
 
-                Capsule.offset = new Vector2(0.0300488f, 0.01829199f);
-                Capsule.size = new Vector2(0.3768222f, 0.7006721f);
+                Capsule.offset = new Vector2(0.06188626f, 0.02510474f);
+                Capsule.size = new Vector2(0.7732959f, 1.411959f);
                 Capsule.direction = CapsuleDirection2D.Vertical;
             }
 
@@ -42,8 +42,8 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Right", true);
                 ba.SetBool("Is_Stunned_Right", false);
 
-                Capsule.offset = new Vector2(0.03500583f, 0.01366544f);
-                Capsule.size = new Vector2(0.4157422f, 0.7074328f);
+                Capsule.offset = new Vector2(0.08794212f, 0.02510474f);
+                Capsule.size = new Vector2(0.8254077f, 1.411959f);
                 Capsule.direction = CapsuleDirection2D.Vertical;
             }
 
@@ -53,9 +53,6 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Right", false);
                 ba.SetBool("Is_Stunned_Right", true);
 
-                Capsule.offset = new Vector2(0.03500583f, 0.01366544f);
-                Capsule.size = new Vector2(0.4157422f, 0.7074328f);
-                Capsule.direction = CapsuleDirection2D.Vertical;
             }
         }
         else if(cp.Cursor_Direction == "Left")
@@ -78,9 +75,9 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Left", false);
                 ba.SetBool("Is_Stunned_Left", false);
 
-                //Capsule.offset = new Vector2(f, f);
-                //Capsule.size = new Vector2(f, f);
-                //Capsule.direction = 0;
+                Capsule.offset = new Vector2(-0.03639656f, 0.02510474f);
+                Capsule.size = new Vector2(0.7605355f, 1.411959f);
+                Capsule.direction = CapsuleDirection2D.Vertical;
             }
 
             if(bm.Able_To_Attack)
@@ -88,6 +85,10 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Facing_Left", false);
                 ba.SetBool("Is_Attacking_Left", true);
                 ba.SetBool("Is_Stunned_Left", false);
+
+                Capsule.offset = new Vector2(-0.07843431f, 0.02510474f);
+                Capsule.size = new Vector2(0.844611f, 1.411959f);
+                Capsule.direction = CapsuleDirection2D.Vertical;
 
             }
 
@@ -119,6 +120,10 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Up", false);
                 ba.SetBool("Is_Stunned_Up", false);
 
+                Capsule.offset = new Vector2(-0.0006367338f, 0.02389092f);
+                Capsule.size = new Vector2(1.563937f, 1.244692f);
+                Capsule.direction = CapsuleDirection2D.Horizontal;
+
             }
 
             if(bm.Able_To_Attack)
@@ -126,6 +131,10 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Facing_Up", false);
                 ba.SetBool("Is_Attacking_Up", true);
                 ba.SetBool("Is_Stunned_Up", false);
+
+                Capsule.offset = new Vector2(-0.0007249049f, -0.05306011f);
+                Capsule.size = new Vector2(1.605619f, 1.025286f);
+                Capsule.direction = CapsuleDirection2D.Horizontal;
 
             }
 
@@ -157,8 +166,8 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Down", false);
                 ba.SetBool("Is_Stunned_Down", false);
 
-                Capsule.offset = new Vector2(0.002486747f, -0.01616034f);
-                Capsule.size = new Vector2(0.7695759f, 0.5576625f);
+                Capsule.offset = new Vector2(-0.0007249049f, -0.05306011f);
+                Capsule.size = new Vector2(1.605619f, 1.025286f);
                 Capsule.direction = CapsuleDirection2D.Horizontal;
             }
 
@@ -168,8 +177,8 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Attacking_Down", true);
                 ba.SetBool("Is_Stunned_Down", false);
 
-                Capsule.offset = new Vector2(0.002486753f, 0.02690534f);
-                Capsule.size = new Vector2(0.7695761f, 0.3957389f);
+                Capsule.offset = new Vector2(-0.000636727f, 0.08107939f);
+                Capsule.size = new Vector2(1.563937f, 1.178475f);
                 Capsule.direction = CapsuleDirection2D.Horizontal;
             }
 
@@ -178,10 +187,6 @@ public class Boss_Animation_And_Collider : MonoBehaviour
                 ba.SetBool("Is_Facing_Down", false);
                 ba.SetBool("Is_Attacking_Down", false);
                 ba.SetBool("Is_Stunned_Down", true);
-
-                Capsule.offset = new Vector2(0.00248675f, 0.004510988f);
-                Capsule.size = new Vector2(0.7695762f, 0.3509516f);
-                Capsule.direction = CapsuleDirection2D.Horizontal;
             }
         }
         

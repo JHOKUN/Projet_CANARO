@@ -771,9 +771,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.3}
   serializedVersion: 2
-  m_Radius: 0.079
+  m_Radius: 0.15560018
 --- !u!114 &789322524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3263,9 +3263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon_Floor_3
-  Player_Position: {x: 13.5, y: 16.5}
   Position_To_Load: {x: 0, y: 0}
-  Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &1581320103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3792,7 +3790,7 @@ Transform:
   m_GameObject: {fileID: 2017321337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.5, y: 15, z: 0}
-  m_LocalScale: {x: 5.5000005, y: 5.5, z: 1}
+  m_LocalScale: {x: 2.25, y: 2.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 962776489}
@@ -3841,7 +3839,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -532890451, guid: 236ef7ca10d844741b57177c54e9e887, type: 3}
+  m_Sprite: {fileID: 640379999, guid: 959d79e747af8c84292b8063680a048d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3865,9 +3863,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022160573, y: 0.016313467}
-  m_Size: {x: 0.38753846, y: 0.6915441}
-  m_Direction: 0
+  m_Offset: {x: -0.00063672697, y: 0.081079386}
+  m_Size: {x: 1.5639371, y: 1.1784745}
+  m_Direction: 1
 --- !u!95 &2017321347
 Animator:
   serializedVersion: 4
