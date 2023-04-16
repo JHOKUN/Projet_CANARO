@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Main_Land
-  Position_To_Load: {x: 5, y: -5.8}
+  Position_To_Load: {x: 5, y: 5.8}
 --- !u!1 &1591233105
 GameObject:
   m_ObjectHideFlags: 0
