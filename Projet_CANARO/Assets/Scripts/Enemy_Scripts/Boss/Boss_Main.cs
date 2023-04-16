@@ -100,10 +100,11 @@ public class Boss_Main : MonoBehaviour
     IEnumerator Stun()
     {
         rb.bodyType = RigidbodyType2D.Static;
-        Able_To_Run = true;
+        Able_To_Run = false;
         yield return new WaitForSeconds(Stunned_Time);
         Is_Attacking = false;
         Can_Wait_To_Attack = true;
+        Able_To_Run = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
         Is_Stunned = false;
     }
