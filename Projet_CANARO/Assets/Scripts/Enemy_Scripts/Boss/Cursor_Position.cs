@@ -10,7 +10,7 @@ public class Cursor_Position : MonoBehaviour
 
     void Update()
     {
-        if(bm.Is_Attacking == false)
+        if(bm.Is_Attacking == false && bm.Is_Stunned == false)
         {
             if (Mathf.Abs(bm.Direction_To_Run.x) > Mathf.Abs(bm.Direction_To_Run.y))
             {

@@ -719,12 +719,12 @@ GameObject:
   m_Component:
   - component: {fileID: 789322520}
   - component: {fileID: 789322522}
-  - component: {fileID: 789322521}
   - component: {fileID: 789322523}
+  - component: {fileID: 789322521}
   - component: {fileID: 789322524}
   m_Layer: 11
   m_Name: Tail
-  m_TagString: Unhookable
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3953,6 +3953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341b6d60628c2c4449c686c53fe1ed99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ba: {fileID: 2017321347}
+  bm: {fileID: 2017321349}
+  cp: {fileID: 962776491}
 --- !u!114 &2017321349
 MonoBehaviour:
   m_ObjectHideFlags: 0

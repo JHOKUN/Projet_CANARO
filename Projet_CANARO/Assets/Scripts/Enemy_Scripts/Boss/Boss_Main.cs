@@ -89,11 +89,10 @@ public class Boss_Main : MonoBehaviour
     IEnumerator Wait_After_Hit(float Time)
     {
         rb.bodyType = RigidbodyType2D.Static;
-        Able_To_Run = false;
+        Able_To_Run = true;
         Able_To_Attack = false;
         Is_Attacking = false;
         yield return new WaitForSeconds(Time);
-        Able_To_Run = true;
         Can_Wait_To_Attack = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
     }
@@ -101,9 +100,9 @@ public class Boss_Main : MonoBehaviour
     IEnumerator Stun()
     {
         rb.bodyType = RigidbodyType2D.Static;
+        Able_To_Run = true;
         yield return new WaitForSeconds(Stunned_Time);
         Is_Attacking = false;
-        Able_To_Run = true;
         Can_Wait_To_Attack = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
         Is_Stunned = false;
@@ -111,7 +110,7 @@ public class Boss_Main : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D Collision)
     {
-        if(Is_Attacking == true && Collision.gameObject.CompareTag("Unhookable")) //peut être rajouter si le grappin à voir avec Jean
+        if(Is_Attacking == true && Collision.gameObject.CompareTag("Unhookable"))
         {
             Is_Stunned = true;
             Able_To_Attack = false;
