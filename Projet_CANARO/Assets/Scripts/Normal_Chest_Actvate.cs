@@ -10,6 +10,8 @@ public class Normal_Chest_Actvate : MonoBehaviour
     public bool Is_Open = false;
     [SerializeField] private int Key_Amount;
     [SerializeField] private int Potion_Amount;
+    [SerializeField] public bool Opened_2;
+    [SerializeField] public bool Opened_3;
     public bool Player_In_Range = false;
     public GameObject dialogue_box;
     public bool Is_Dialoguing = false;
@@ -40,6 +42,8 @@ public class Normal_Chest_Actvate : MonoBehaviour
         Chest_Animator.SetTrigger("Open_Chest");
         Player.GetComponent<Inventory_Placeholder>().Add_Key_To_Inventory(Key_Amount);
         Player.GetComponent<Inventory_Placeholder>().Add_Potion_To_Inventory(Potion_Amount);
+        Player.GetComponent<Player_Achievements>().Chest_2_Opened = Opened_2;
+        Player.GetComponent<Player_Achievements>().Chest_3_Opened = Opened_3;
         yield return new WaitForSeconds(1f);
         dialogue_box.SetActive(true);
         Time.timeScale = 0.00000000001f;

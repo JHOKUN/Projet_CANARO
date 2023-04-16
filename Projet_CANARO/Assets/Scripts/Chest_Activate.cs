@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Chest_Activate : MonoBehaviour
 {
-    public GameObject Player;   
+    public GameObject Player;
     public Animator Chest_Animator;
     public BoxCollider2D Collider;
     public bool Is_Open = false;
@@ -24,13 +24,6 @@ public class Chest_Activate : MonoBehaviour
             Player = Collider.gameObject;
         }
 
-        if(Collider.gameObject.CompareTag("Disabler"))
-        {
-            if(Collider.gameObject.GetComponent<Player_Achievements>().Chest_1_Opened == true)
-            {
-                Collider.gameObject.SetActive(false);
-            }
-        }
     
 
     }

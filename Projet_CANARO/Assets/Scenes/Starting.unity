@@ -271,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door_Animator: {fileID: 950827165}
   Button_Animator: {fileID: 54770400}
+  Activate: 0
 --- !u!95 &54770400
 Animator:
   serializedVersion: 4
@@ -1975,6 +1976,9 @@ MonoBehaviour:
   Detector: {fileID: 1116299846}
   Boss_Beaten: 0
   Chest_1_Opened: 0
+  Chest_2_Opened: 0
+  Chest_3_Opened: 0
+  Door_1_Opened: 0
 --- !u!1 &456358506
 GameObject:
   m_ObjectHideFlags: 0
