@@ -5,14 +5,35 @@ using UnityEngine;
 public class Enemy_Health : MonoBehaviour
 {
     public GameObject Enemy;
-    public EnemyAI AI;
+    public float Waiting_Time;
+    public int Damage_Amount;
     public int Enemy_Health_Value = 5;
 
 
-    public void Enemy_Taking_Damage(int Damage_Amount)
+    void Start()
+    {
+        Waiting_Time = 1.5f;
+    }
+    
+    void Enemy_Taking_Damage()
     {
         Enemy_Health_Value -= Damage_Amount;
-        StartCoroutine(AI.Wait_After_Hit());
+        StartCoroutine(Wait_After_Hit());
+    }
+
+    IEnumerator Wait_After_Hit()
+    {
+        Enemy.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        yield return new WaitForSeconds(Waiting_Time);
+        Enemy.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    void OnTriggerEnter2D(Collider2D Collision)
+    {
+        if(Collision.gameObject.CompareTag("Dagger"))
+        {
+            Enemy_Taking_Damage();
+        }
     }
 
     void Update()

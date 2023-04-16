@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 271415469}
   m_Layer: 0
   m_Name: Right_Attack_Zone
-  m_TagString: Untagged
+  m_TagString: Dagger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2544,7 +2544,7 @@ GameObject:
   - component: {fileID: 529980712}
   m_Layer: 0
   m_Name: Up_Attack_Zone
-  m_TagString: Untagged
+  m_TagString: Dagger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7140,7 +7140,7 @@ GameObject:
   - component: {fileID: 1946874183}
   m_Layer: 0
   m_Name: Down_Attack_Zone
-  m_TagString: Untagged
+  m_TagString: Dagger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8979,7 +8979,7 @@ GameObject:
   - component: {fileID: 2034181956}
   m_Layer: 0
   m_Name: Left_Attack_Zone
-  m_TagString: Untagged
+  m_TagString: Dagger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
