@@ -2053,7 +2053,7 @@ MonoBehaviour:
   Potion_Amount: 1
   Has_Been_Picked_Up: 0
   Player_In: 0
-  dialogue_box: {fileID: 0}
+  dialogue_box: {fileID: 990940570}
   Is_Dialoguing: 0
 --- !u!61 &642056309
 BoxCollider2D:
@@ -2916,7 +2916,7 @@ MonoBehaviour:
   Text_Component: {fileID: 1710560124}
   Lines:
   - VOUS AVEZ OBTENU UNE POTION !
-  - APPUYEZ SUR X POUR VOUS SOIGNER.
+  - APPUYEZ SUR -H- POUR VOUS SOIGNER.
   Text_Speed: 5e-13
 --- !u!1 &1076929037
 GameObject:

@@ -8839,7 +8839,7 @@ MonoBehaviour:
   Text_Component: {fileID: 446345797}
   Lines:
   - VOUS AVEZ OBTENU UNE POTION
-  - APPUYEZ SUR X POUR VOUS SOIGNER.
+  - APPUYEZ SUR -H- POUR VOUS SOIGNER.
   Text_Speed: 5e-13
 --- !u!224 &1722337602
 RectTransform:

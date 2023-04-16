@@ -10,7 +10,7 @@ public class Potion_Use : MonoBehaviour
     
     void Use_Potion()
     {
-        if(Able_To_Use == true && Inventory.Potions > 0 && Health.Current_Player_Health < Health.Max_Player_Health && Input.GetKeyDown(KeyCode.X))
+        if(Able_To_Use == true && Inventory.Potions > 0 && Health.Current_Player_Health < Health.Max_Player_Health && Input.GetKeyDown(KeyCode.H))
         {
             Inventory.Remove_Potion(1);
             Health.Healing(2);
@@ -20,9 +20,5 @@ public class Potion_Use : MonoBehaviour
     void Update()
     {
         Use_Potion();
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            Inventory.Add_Potion(1);
-        }
     }
 }
