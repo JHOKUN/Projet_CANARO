@@ -1020,8 +1020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack_Zone: {fileID: 271415468}
-  Enemy_Life: {fileID: 0}
 --- !u!1 &342090981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,8 +2590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack_Zone: {fileID: 529980711}
-  Enemy_Life: {fileID: 0}
 --- !u!1 &576223906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,8 +4174,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: -34}
-  m_SizeDelta: {x: 567.7632, y: 140.1521}
+  m_AnchoredPosition: {x: 2.5, y: -16}
+  m_SizeDelta: {x: 736.0229, y: 144.256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1110505437
 MonoBehaviour:
@@ -4201,7 +4197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press R To Start
+  m_text: Appuyez sur R pour commencer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6ac297ccbcd8b24bb3de65a6c5ffdd4, type: 2}
   m_sharedMaterial: {fileID: 2812375589873633722, guid: e6ac297ccbcd8b24bb3de65a6c5ffdd4, type: 2}
@@ -6835,7 +6831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1820222588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7188,8 +7184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack_Zone: {fileID: 1946874182}
-  Enemy_Life: {fileID: 0}
 --- !u!1 &2001607990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9027,8 +9021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack_Zone: {fileID: 2034181955}
-  Enemy_Life: {fileID: 0}
 --- !u!1 &2094535132
 GameObject:
   m_ObjectHideFlags: 0
