@@ -28,7 +28,7 @@ public class Player_Achievements : MonoBehaviour
         {
             collider.gameObject.SetActive(false);
         }
-        if(collider.GetComponent<Normal_Chest_Actvate>() && Chest_3_Opened == true)
+        if(collider.gameObject.name == "Chest_1" && Chest_3_Opened == true)
         {
             collider.gameObject.SetActive(false);
         }
