@@ -9,7 +9,6 @@ TagManager:
   - Hook
   - Unhookable
   - Boss
-  - Disabler
   layers:
   - Default
   - TransparentFX
