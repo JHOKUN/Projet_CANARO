@@ -2096,6 +2096,8 @@ MonoBehaviour:
   Is_Open: 0
   Key_Amount: 1
   Potion_Amount: 0
+  Opened_2: 1
+  Opened_3: 0
   Player_In_Range: 0
   dialogue_box: {fileID: 621644865}
   Is_Dialoguing: 0
@@ -2678,6 +2680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Collider: {fileID: 516995967}
   Key_Door_Animator: {fileID: 516995963}
+  Activate: 0
 --- !u!61 &516995967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3726,6 +3729,8 @@ MonoBehaviour:
   Is_Open: 0
   Key_Amount: 0
   Potion_Amount: 1
+  Opened_2: 0
+  Opened_3: 1
   Player_In_Range: 0
   dialogue_box: {fileID: 1722337598}
   Is_Dialoguing: 0

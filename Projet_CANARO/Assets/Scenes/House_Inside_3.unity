@@ -4065,8 +4065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Main_Land
-  Player_Position: {x: 0.5, y: 0.5}
-  Position_To_Load: {x: 0.5, y: 0.5}
+  Player_Position: {x: -12, y: 6}
+  Position_To_Load: {x: -12, y: 6}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!1 &1626837045
 GameObject:
