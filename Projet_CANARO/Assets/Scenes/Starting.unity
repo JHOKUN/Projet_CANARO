@@ -1928,10 +1928,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2599c314fc620d41958f36b1502bf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio_Manager: {fileID: 704460541}
   Resume: {fileID: 1756993578}
   Real_Inventory: {fileID: 1740590242}
   New_Pos: {x: 0, y: 0}
   Fader: {fileID: 739328134}
+  Clip_Is_Village: 0
+  Clip_Is_Dungeon: 0
   In_Village: 0
   Entrance_Dungeon: 0
   Exit_Dungeon: 0
@@ -2758,6 +2761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704460543}
   - component: {fileID: 704460542}
+  - component: {fileID: 704460544}
   m_Layer: 0
   m_Name: Audio_Manager
   m_TagString: Untagged
@@ -2777,7 +2781,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2876,6 +2880,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &704460544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704460541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f6e43f416b9a64f9e7f3cc673bd8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips:
+  - {fileID: 8300000, guid: 95ff283721b36e347bfb1eb833387dea, type: 3}
+  - {fileID: 8300000, guid: 1c3332b5e6a3c8044b59215f6ca1e7b9, type: 3}
+  Source: {fileID: 704460542}
+  Play_Village: 0
+  Play_Dungeon: 0
 --- !u!1 &713840428
 GameObject:
   m_ObjectHideFlags: 0

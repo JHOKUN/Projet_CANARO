@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Inventory_Placeholder : MonoBehaviour
 {
+    public GameObject Audio_Manager;
     public Resume_Game_Script Resume;
     public Inventory_System Real_Inventory;
     public Vector2 New_Pos;
     public Animator Fader;
+    public bool Clip_Is_Village = false;
+    public bool Clip_Is_Dungeon = false;
     public bool In_Village;
     public bool Entrance_Dungeon;
     public bool Exit_Dungeon;
@@ -53,9 +56,15 @@ public class Inventory_Placeholder : MonoBehaviour
         Resume.Last_Resume_Point = New_Pos;
     }
 
+    void Update_Audio()
+    {
+        Audio_Manager.GetComponent<Audio_Player>().Play_Village = Clip_Is_Village;
+        Audio_Manager.GetComponent<Audio_Player>().Play_Dungeon = Clip_Is_Dungeon;
+    }
     void Update()
     {
         Update_Bools();
+        Update_Audio();
         StartCoroutine(Fade());
 
         if(Hook_Getting == true)
@@ -67,5 +76,6 @@ public class Inventory_Placeholder : MonoBehaviour
         {
             Has_Key = true;
         }
+
     }
 }
