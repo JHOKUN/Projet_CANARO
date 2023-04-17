@@ -1933,6 +1933,7 @@ MonoBehaviour:
   Fader: {fileID: 739328134}
   Clip_Is_Village: 0
   Clip_Is_Dungeon: 0
+  Clip_Is_Shop: 0
   In_Village: 0
   Entrance_Dungeon: 0
   Exit_Dungeon: 0
@@ -2892,9 +2893,11 @@ MonoBehaviour:
   Clips:
   - {fileID: 8300000, guid: 95ff283721b36e347bfb1eb833387dea, type: 3}
   - {fileID: 8300000, guid: 1c3332b5e6a3c8044b59215f6ca1e7b9, type: 3}
+  - {fileID: 8300000, guid: 57083e262f144df4abc37fbfa8195965, type: 3}
   Source: {fileID: 704460542}
   Play_Village: 0
   Play_Dungeon: 0
+  Play_Shop: 0
 --- !u!1 &713840428
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,7 +6905,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820222587}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}

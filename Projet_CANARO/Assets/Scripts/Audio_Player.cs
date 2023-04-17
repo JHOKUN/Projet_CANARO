@@ -9,6 +9,7 @@ public class Audio_Player : MonoBehaviour
     public AudioSource Source;
     public bool Play_Village = false;
     public bool Play_Dungeon = false;
+    public bool Play_Shop = false;
 
     void Clip_Define()
     {
@@ -19,6 +20,10 @@ public class Audio_Player : MonoBehaviour
         else if(Play_Dungeon == true)
         {
             Source.clip = Clips[1];
+        }
+        else if(Play_Shop == true)
+        {
+            Source.clip = Clips[2];
         }
     }
     void Update()

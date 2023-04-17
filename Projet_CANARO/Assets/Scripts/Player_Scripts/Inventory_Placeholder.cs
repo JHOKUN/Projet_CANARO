@@ -11,6 +11,7 @@ public class Inventory_Placeholder : MonoBehaviour
     public Animator Fader;
     public bool Clip_Is_Village = false;
     public bool Clip_Is_Dungeon = false;
+    public bool Clip_Is_Shop = false;
     public bool In_Village;
     public bool Entrance_Dungeon;
     public bool Exit_Dungeon;
@@ -60,6 +61,7 @@ public class Inventory_Placeholder : MonoBehaviour
     {
         Audio_Manager.GetComponent<Audio_Player>().Play_Village = Clip_Is_Village;
         Audio_Manager.GetComponent<Audio_Player>().Play_Dungeon = Clip_Is_Dungeon;
+        Audio_Manager.GetComponent<Audio_Player>().Play_Shop = Clip_Is_Shop;
     }
     void Update()
     {
