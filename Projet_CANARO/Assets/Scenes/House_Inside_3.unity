@@ -3877,6 +3877,80 @@ Transform:
   m_Father: {fileID: 713405555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1432165714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432165717}
+  - component: {fileID: 1432165716}
+  - component: {fileID: 1432165715}
+  m_Layer: 0
+  m_Name: Dialogue_Changer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1432165715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432165714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bbab5582c317e48a20560ec1e3308c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collider: {fileID: 1432165716}
+  Mij: {fileID: 1984075179}
+  New_Dialogue: {fileID: 1491605098}
+--- !u!61 &1432165716
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432165714}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1432165717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432165714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.53, y: -7.72, z: -0.09890473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453068860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,7 +4132,7 @@ GameObject:
   - component: {fileID: 1491605101}
   - component: {fileID: 1491605100}
   m_Layer: 5
-  m_Name: Mij_P_Begining_Dialogue_Box (1)
+  m_Name: Mij_P_Ending_Dialogue_Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4137,7 +4211,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text_Component: {fileID: 101691395}
   Lines:
-  - 'VOUS AVEZ VAINCU '
+  - "VOUS \xCATES PARVENU \xC0 FAIRE DISPARA\xCETRE LA MENACE DES INSCECTES !"
+  - VOUS AVEZ MA RECONNAISSANCE LA PLUS PROFONDE.
+  - "LES \xC9PREUVES QUE VOUS AVEZ ENDUR\xC9ES ONT D\xDB VOUS \xC9PUISER."
+  - JE VOUS EN PRIE, REPOSEZ-VOUS ET PROFITEZ DU VILLAGE.
   Text_Speed: 5e-13
 --- !u!1 &1492784061
 GameObject:
@@ -5393,6 +5470,7 @@ GameObject:
   - component: {fileID: 1984075183}
   - component: {fileID: 1984075182}
   - component: {fileID: 1984075181}
+  - component: {fileID: 1984075186}
   m_Layer: 0
   m_Name: Mij_P
   m_TagString: Unhookable
@@ -5544,6 +5622,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1984075186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984075179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5aa9609b9bb4b46adbc6910ab14d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2017321337
 GameObject:
   m_ObjectHideFlags: 0
