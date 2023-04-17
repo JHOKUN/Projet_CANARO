@@ -2856,7 +2856,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004238654, y: -0.051196028}
+  m_Offset: {x: -0.0034318492, y: -0.029594962}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2867,7 +2867,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1056369, y: 0.104879044}
+  m_Size: {x: 0.045933835, y: 0.14808118}
   m_EdgeRadius: 0
 --- !u!114 &1581320102
 MonoBehaviour:
@@ -3733,7 +3733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2017321337}
-  AI: {fileID: 2017321340}
+  Waiting_Time: 0
+  Damage_Amount: 0
   Enemy_Health_Value: 5
 --- !u!1 &2034118702
 GameObject:
