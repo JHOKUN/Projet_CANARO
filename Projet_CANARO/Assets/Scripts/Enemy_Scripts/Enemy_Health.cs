@@ -13,6 +13,7 @@ public class Enemy_Health : MonoBehaviour
     void Start()
     {
         Waiting_Time = 1.5f;
+        Damage_Amount = 1;
     }
     
     void Enemy_Taking_Damage()

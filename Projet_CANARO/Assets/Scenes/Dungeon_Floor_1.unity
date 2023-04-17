@@ -1469,7 +1469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 564057244}
-  AI: {fileID: 564057248}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &564057247
 MonoBehaviour:
@@ -2052,7 +2053,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 660765887}
-  AI: {fileID: 660765891}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &660765890
 MonoBehaviour:
@@ -5999,6 +6001,8 @@ MonoBehaviour:
   Collider: {fileID: 1652207196}
   Current_Clip_Village: 0
   Current_Clip_Dungeon: 1
+  Current_Clip_Shop: 0
+  Current_Clip_Boss: 0
 --- !u!1 &1687177880
 GameObject:
   m_ObjectHideFlags: 0
@@ -22834,7 +22838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2049216163}
-  AI: {fileID: 2049216167}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &2049216166
 MonoBehaviour:

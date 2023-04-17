@@ -676,7 +676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 353790616}
-  AI: {fileID: 353790620}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &353790619
 MonoBehaviour:
@@ -2331,9 +2332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon_Floor_1
-  Player_Position: {x: -4.5, y: 8.5}
   Position_To_Load: {x: -4.5, y: 8.5}
-  Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!212 &496008009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3086,7 +3085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 631840052}
-  AI: {fileID: 631840056}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &631840055
 MonoBehaviour:
@@ -7758,7 +7758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1424173416}
-  AI: {fileID: 1424173420}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &1424173419
 MonoBehaviour:
@@ -8068,7 +8069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1559744711}
-  AI: {fileID: 1559744715}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &1559744714
 MonoBehaviour:
@@ -8347,7 +8349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1586355070}
-  AI: {fileID: 1586355074}
+  Waiting_Time: 1.5
+  Damage_Amount: 1
   Enemy_Health_Value: 1
 --- !u!114 &1586355073
 MonoBehaviour:
@@ -8618,9 +8621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene_To_Load: Dungeon_Floor_3
-  Player_Position: {x: 8.5, y: 25}
   Position_To_Load: {x: 8.5, y: 25}
-  Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
 --- !u!61 &1657803189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9742,7 +9743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2017321337}
-  AI: {fileID: 2017321340}
+  Waiting_Time: 0
+  Damage_Amount: 0
   Enemy_Health_Value: 5
 --- !u!1 &2034118702
 GameObject:
