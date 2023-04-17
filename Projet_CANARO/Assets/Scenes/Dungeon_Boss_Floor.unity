@@ -3540,9 +3540,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1299744688}
   - component: {fileID: 1299744690}
-  - component: {fileID: 1299744689}
+  - component: {fileID: 1299744691}
   m_Layer: 0
-  m_Name: Check_Point_1
+  m_Name: Boss_Floor_Entrance
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3556,28 +3556,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299744687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.93, y: -5.53, z: -0.16229245}
+  m_LocalPosition: {x: 7.49, y: 0.51, z: -0.16229245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274639850}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1299744689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299744687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b223390f9f1b9642b10c435eb9ee08e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Holes: {fileID: 368521896}
-  Collider2D: {fileID: 1299744690}
-  Position: {fileID: 1299744688}
 --- !u!61 &1299744690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3591,7 +3576,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.02461958, y: 0.50060046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3602,8 +3587,25 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.299039, y: 2.001201}
   m_EdgeRadius: 0
+--- !u!114 &1299744691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299744687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a220e1d39bea0724e867fb962690567f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collider: {fileID: 1299744690}
+  Current_Clip_Village: 0
+  Current_Clip_Dungeon: 0
+  Current_Clip_Shop: 0
+  Current_Clip_Boss: 1
 --- !u!1 &1498477057
 GameObject:
   m_ObjectHideFlags: 0

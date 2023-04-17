@@ -1934,6 +1934,7 @@ MonoBehaviour:
   Clip_Is_Village: 0
   Clip_Is_Dungeon: 0
   Clip_Is_Shop: 0
+  Clip_Is_Boss: 0
   In_Village: 0
   Entrance_Dungeon: 0
   Exit_Dungeon: 0
@@ -2894,10 +2895,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 95ff283721b36e347bfb1eb833387dea, type: 3}
   - {fileID: 8300000, guid: 1c3332b5e6a3c8044b59215f6ca1e7b9, type: 3}
   - {fileID: 8300000, guid: 57083e262f144df4abc37fbfa8195965, type: 3}
+  - {fileID: 8300000, guid: 79418fdad9fe90d40bfde2662a7d7cf1, type: 3}
   Source: {fileID: 704460542}
   Play_Village: 0
   Play_Dungeon: 0
   Play_Shop: 0
+  Play_Boss: 0
 --- !u!1 &713840428
 GameObject:
   m_ObjectHideFlags: 0

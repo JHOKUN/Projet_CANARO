@@ -12,6 +12,7 @@ public class Inventory_Placeholder : MonoBehaviour
     public bool Clip_Is_Village = false;
     public bool Clip_Is_Dungeon = false;
     public bool Clip_Is_Shop = false;
+    public bool Clip_Is_Boss = false;
     public bool In_Village;
     public bool Entrance_Dungeon;
     public bool Exit_Dungeon;
