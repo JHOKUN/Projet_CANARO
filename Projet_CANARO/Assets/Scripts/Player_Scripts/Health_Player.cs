@@ -67,10 +67,6 @@ public class Health_Player : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M))
-        {
-            Current_Player_Health = 0;
-        }
         if(Current_Player_Health == 0 && Is_Dead == false)
         {
             StartCoroutine(Dying());

@@ -453,7 +453,6 @@ GameObject:
   m_Component:
   - component: {fileID: 271415467}
   - component: {fileID: 271415468}
-  - component: {fileID: 271415469}
   m_Layer: 0
   m_Name: Right_Attack_Zone
   m_TagString: Dagger
@@ -492,18 +491,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.120950125, y: -0.086394005}
   m_Size: {x: 0.75810206, y: 0.27430254}
   m_Direction: 1
---- !u!114 &271415469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271415466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &342090981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,8 +1278,6 @@ MonoBehaviour:
   Chest_3_Opened: 0
   Door_1_Opened: 0
   Door_2_Opened: 0
-  Door_3_Opened: 0
-  Door_4_Opened: 0
 --- !u!1 &492421769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1725,6 @@ GameObject:
   m_Component:
   - component: {fileID: 529980710}
   - component: {fileID: 529980711}
-  - component: {fileID: 529980712}
   m_Layer: 0
   m_Name: Up_Attack_Zone
   m_TagString: Dagger
@@ -1779,18 +1763,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.1777767, y: 0.19718659}
   m_Size: {x: 0.3325193, y: 0.8853147}
   m_Direction: 0
---- !u!114 &529980712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529980709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &576223906
 GameObject:
   m_ObjectHideFlags: 0
@@ -5704,7 +5676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1946874181}
   - component: {fileID: 1946874182}
-  - component: {fileID: 1946874183}
   m_Layer: 0
   m_Name: Down_Attack_Zone
   m_TagString: Dagger
@@ -5743,18 +5714,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.091942966, y: 0.15527123}
   m_Size: {x: 0.36707652, y: 0.88531435}
   m_Direction: 0
---- !u!114 &1946874183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946874180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2001607990
 GameObject:
   m_ObjectHideFlags: 0
@@ -6221,7 +6180,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2034181954}
   - component: {fileID: 2034181955}
-  - component: {fileID: 2034181956}
   m_Layer: 0
   m_Name: Left_Attack_Zone
   m_TagString: Dagger
@@ -6260,18 +6218,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.10367144, y: -0.06911451}
   m_Size: {x: 0.7000002, y: 0.25927642}
   m_Direction: 1
---- !u!114 &2034181956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034181953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab5a2b4030ece543acb03e36895d736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2094535132
 GameObject:
   m_ObjectHideFlags: 0

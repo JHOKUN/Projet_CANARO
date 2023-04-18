@@ -44,13 +44,5 @@ public class Inventory_System : MonoBehaviour
     }
   }
 
-  void Update() // à supp quand on aura fini 
-  {
-    if(Input.GetKeyDown(KeyCode.P))
-    {
-      Hook_Get = true;
-    }
-  }
-
   
 }
