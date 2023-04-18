@@ -63,6 +63,7 @@ public class Inventory_Placeholder : MonoBehaviour
         Audio_Manager.GetComponent<Audio_Player>().Play_Village = Clip_Is_Village;
         Audio_Manager.GetComponent<Audio_Player>().Play_Dungeon = Clip_Is_Dungeon;
         Audio_Manager.GetComponent<Audio_Player>().Play_Shop = Clip_Is_Shop;
+        Audio_Manager.GetComponent<Audio_Player>().Play_Boss = Clip_Is_Boss;
     }
     void Update()
     {
