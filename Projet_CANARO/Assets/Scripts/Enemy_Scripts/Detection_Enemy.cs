@@ -12,6 +12,7 @@ public class Detection_Enemy : MonoBehaviour
         if(collider.gameObject.CompareTag("Player"))
         {
             AI.Target = collider.gameObject.GetComponent<Transform>();
+            Collider.enabled = false;
         }
     } 
 }

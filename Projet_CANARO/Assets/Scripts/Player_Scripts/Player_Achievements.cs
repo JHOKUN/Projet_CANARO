@@ -11,8 +11,6 @@ public class Player_Achievements : MonoBehaviour
     public bool Chest_3_Opened = false;
     public bool Door_1_Opened = false;
     public bool Door_2_Opened = false;
-    public bool Door_3_Opened = false;
-    public bool Door_4_Opened = false;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -24,7 +22,7 @@ public class Player_Achievements : MonoBehaviour
         {
             collider.gameObject.SetActive(false);
         }
-        if(collider.GetComponent<Normal_Chest_Actvate>() && Chest_2_Opened == true)
+        if(collider.gameObject.name == "Chest_2" && Chest_2_Opened == true)
         {
             collider.gameObject.SetActive(false);
         }
@@ -36,13 +34,9 @@ public class Player_Achievements : MonoBehaviour
         {
             collider.GetComponent<Door_Room_Open>().Activate = true;
         }
-        if(collider.GetComponent<Key_Door_Open>() && Door_2_Opened == true)
+        if(collider.gameObject.name == "Key_Door" && Door_2_Opened == true)
         {
             collider.GetComponent<Key_Door_Open>().Activate = true;
-        }
-        if(collider.GetComponent<Enemy_Detection_Door>() && Door_3_Opened)
-        {
-            collider.GetComponent<Enemy_Detection_Door>().Doors_Open = true;
         }
         if(collider.CompareTag("Boss") && Boss_Beaten == true)
         {

@@ -34,11 +34,6 @@ public class Boss_Detection : MonoBehaviour
         {
             Player_In = false;
         }
-
-        if(collider.gameObject.tag == "Boss")
-        {
-            Boss_Death_Count += 1;
-        }
     }
 
 
@@ -50,10 +45,6 @@ public class Boss_Detection : MonoBehaviour
 
     void Update()
     {
-        if(Boss_Death_Count == 1)
-        {
-            No_More_Boss = true;
-        }
 
         if(Player_In == true && No_More_Boss == false)
         {

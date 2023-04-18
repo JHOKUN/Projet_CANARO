@@ -3637,6 +3637,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bm: {fileID: 2017321349}
+  Player: {fileID: 0}
+  Teleporter: {fileID: 2082279995}
+  Door_Boss: {fileID: 589457905}
 --- !u!61 &1498477059
 BoxCollider2D:
   m_ObjectHideFlags: 0
