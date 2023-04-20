@@ -19,11 +19,14 @@ public class Falling_System : MonoBehaviour
     IEnumerator Fall(Collider2D Player)
     {
         Player.GetComponent<Player_Movement>().Is_Falling = true;
+        Player.GetComponent<Player_Movement>().Able_To_Dash = false;
         Player.GetComponent<Player_Movement>().Fall();
         yield return new WaitForSeconds(1.2f);
-        Player.gameObject.GetComponent<Health_Player>().Taking_Damage(1);
         Player_Position_Storage.Spawn_Point_Value = Player_Position;
-        Player.GetComponent<Player_Movement>().Must_Respawn = true;    
+        Player.GetComponent<Player_Movement>().Must_Respawn = true;
+        Player.GetComponent<Player_Movement>().Is_Falling = false;
+        Player.gameObject.GetComponent<Health_Player>().Taking_Damage(1);
+        Player.GetComponent<Player_Movement>().Able_To_Dash = true;    
     }
 
     void Update()

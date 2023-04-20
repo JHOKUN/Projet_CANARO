@@ -150,7 +150,6 @@ public class Player_Movement : MonoBehaviour
         Player_Animator.SetBool("Is_Falling", true);
         yield return new WaitForSeconds(1f);
         Player_Animator.SetBool("Is_Falling", false);
-        Is_Falling = false;
     }
 
     void Awake()
