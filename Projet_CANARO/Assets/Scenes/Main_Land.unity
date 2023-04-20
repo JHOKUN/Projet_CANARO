@@ -1308,7 +1308,7 @@ MonoBehaviour:
   Enemy: {fileID: 375391569}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &375391575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2274,7 +2274,7 @@ MonoBehaviour:
   Enemy: {fileID: 578013761}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &578013767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2998,7 +2998,7 @@ MonoBehaviour:
   Enemy: {fileID: 854924694}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &854924700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19814,8 +19814,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581320099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.5, y: 51.83865, z: 0}
-  m_LocalScale: {x: 0.39, y: 0.3606, z: 1}
+  m_LocalPosition: {x: 20.49952, y: 51.83865, z: 0}
+  m_LocalScale: {x: 0.39238024, y: 0.3606, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 470552266}
@@ -20258,7 +20258,7 @@ MonoBehaviour:
   Enemy: {fileID: 1653248643}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &1653248649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20465,7 +20465,7 @@ MonoBehaviour:
   Enemy: {fileID: 1666379974}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &1666379980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20672,7 +20672,7 @@ MonoBehaviour:
   Enemy: {fileID: 1691313800}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &1691313806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20879,7 +20879,7 @@ MonoBehaviour:
   Enemy: {fileID: 1752493892}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!114 &1752493898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23272,7 +23272,7 @@ MonoBehaviour:
   Enemy: {fileID: 2017321337}
   Waiting_Time: 0
   Damage_Amount: 1
-  Enemy_Health_Value: 5
+  Enemy_Health_Value: 3
 --- !u!1 &2034118702
 GameObject:
   m_ObjectHideFlags: 0
