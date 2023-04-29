@@ -43,12 +43,4 @@ public class Player_Achievements : MonoBehaviour
             collider.gameObject.SetActive(false);
         }
     }
-
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.N))
-        {
-            Boss_Beaten = true;
-        }
-    }
 }
