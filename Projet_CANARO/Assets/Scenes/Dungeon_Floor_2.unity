@@ -840,6 +840,7 @@ GameObject:
   - component: {fileID: 368521894}
   - component: {fileID: 368521893}
   - component: {fileID: 368521896}
+  - component: {fileID: 368521897}
   m_Layer: 9
   m_Name: Holes
   m_TagString: Untagged
@@ -873,7 +874,7 @@ TilemapCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -1908,6 +1909,27 @@ MonoBehaviour:
   Last_Check_Point: {fileID: 0}
   Player_Position: {x: 0, y: 0}
   Player_Position_Storage: {fileID: 11400000, guid: cc784a758a6a2c74cb2ab5f0f21266ff, type: 2}
+  effector: {fileID: 368521897}
+--- !u!250 &368521897
+PointEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368521891}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_ForceMagnitude: -25
+  m_ForceVariation: 0
+  m_DistanceScale: 0.1
+  m_ForceSource: 1
+  m_ForceTarget: 0
+  m_ForceMode: 2
+  m_Drag: 0
+  m_AngularDrag: 0
 --- !u!1 &446345796
 GameObject:
   m_ObjectHideFlags: 0

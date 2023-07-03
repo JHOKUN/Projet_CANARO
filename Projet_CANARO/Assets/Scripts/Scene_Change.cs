@@ -12,6 +12,7 @@ public class Scene_Change : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            other.GetComponent<Player_Movement>().Freeze();
             StartCoroutine(Changing_Scene(other));
         }
     }

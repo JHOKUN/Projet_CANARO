@@ -33,6 +33,7 @@ public class Player_Movement : MonoBehaviour
     public bool Able_To_Dash = true;
     public bool Able_To_Refill = false;
     public bool Dashed = false;
+    public bool isFreezed = false;
     public float Max_Player_Stamina;
     public float Current_Player_Stamina;
     public float Move_Speed = 5f;
@@ -44,6 +45,27 @@ public class Player_Movement : MonoBehaviour
     public static event Action OnPlayerDashed;
 
 
+
+    
+    
+
+
+
+    public void Freeze()
+    {
+        StartCoroutine(DontMove());
+    }
+
+    public IEnumerator DontMove()
+    {
+        isFreezed = true;
+        Attack.Able_To_Attack = false;
+        Able_To_Dash = false;
+        yield return new WaitForSeconds(1.5f);
+        isFreezed = false;
+        Attack.Able_To_Attack = true;
+        Able_To_Dash = true;
+    }
 
     private void Running()
     {   
@@ -148,6 +170,10 @@ public class Player_Movement : MonoBehaviour
     public IEnumerator Falling_Animation()
     {
         Player_Animator.SetBool("Is_Falling", true);
+        Player_Animator.SetBool("Is_Facing_Foreward", false);
+        Player_Animator.SetBool("Is_Facing_Backward", false);
+        Player_Animator.SetBool("Is_Facing_Side", false);
+        Player_Animator.SetBool("Is_Facing_Right", false);
         yield return new WaitForSeconds(1f);
         Player_Animator.SetBool("Is_Falling", false);
     }
@@ -232,7 +258,7 @@ public class Player_Movement : MonoBehaviour
         {
             Hook_Drag();
         }
-        if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false && Is_Falling == false)
+        if(Is_Dashing == false && Attack.Is_Attacking == false && Hook.Is_Shooting == false && Is_Falling == false && isFreezed == false)
         {
             Use_Potion.Able_To_Use = true;
             Running();
