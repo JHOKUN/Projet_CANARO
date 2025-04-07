@@ -6,7 +6,7 @@ R : Interagir
 
 ESPACE : Dash
 
-I : Inventaire
+E : Inventaire
 
 
 Le jeu n'est pas compatible manette
